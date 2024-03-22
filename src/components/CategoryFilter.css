@@ -1,0 +1,141 @@
+@import "./root.css"
+;
+
+:root {
+    --background-white: #ffff;
+    --background-red: #ff0037;
+    --primary-blue: #0766ad;
+    --blue-dark: #0D4C7C;
+    --green-light: #c5e897;
+    --green-dark: #9BBC6E;
+    --black-light: #C0C0C0;
+    --black-dark: #4E5656;
+    --neutral-blue: #29adb2;
+    --text-black: #3e4141;
+    --text-white: #f3f3f3;
+    --text-grey: #a7a7a7;
+    --Desktop-Text-Heading1: 48px;
+    --Desktop-Text-Heading2: 40px;
+    --Desktop-Text-Heading3: 32px;
+    --Desktop-Text-Heading4: 24px;
+    --Common-Text-Subtitle: 20px;
+    --Common-Text-Label: 16px;
+    --Common-Text-Body1: 20px;
+    --Common-Text-Body2: 16px;
+    --Common-Text-Caption: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: var(--background-white);
+
+}
+
+
+/* CATAGORY */
+
+.category-filter {
+    border-right: 2px solid var(--green-dark);
+    margin-left: 0px;
+    border-radius: 0px;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+
+}
+
+.category-filter ul {
+    margin-left: 0;
+}
+
+.category-filter .fa-filter {
+
+    padding-right: 8px;
+}
+
+
+
+.category-filter .bussiness-type {
+    font-size: 1.2rem;
+    color: var(--primary-blue)
+}
+
+.category-filter .bussiness-type:hover {
+    color: var(--blue-dark);
+}
+
+.category-filter li {
+    list-style: none;
+}
+
+.category-filter .fa-caret-down {
+    font-size: 1.2rem;
+    padding: 8px;
+    color: var(--primary-blue);
+}
+
+.category-filter .property-show li,
+.category-filter .product-type-show li {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.category-filter .property-show li:hover,
+.category-filter .product-type-show li:hover {
+    color: var(--primary-blue);
+}
+
+.category-filter input {
+    margin: 16px;
+
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .category-filter {
+        border: none;
+    }
+
+    .text {
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        place-items: center;
+        gap: 8px;
+        margin-left: 12px;
+    }
+
+    .filter-box {
+        border: 1px solid var(--green-light);
+        border-radius: 8px;
+        padding: 16px;
+    }
+
+
+
+
+}

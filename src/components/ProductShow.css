@@ -1,0 +1,137 @@
+@import "./root.css";
+
+:root {
+    --background-white: #ffff;
+    --background-red: #ff0037;
+    --primary-blue: #0766ad;
+    --blue-dark: #0D4C7C;
+    --green-light: #c5e897;
+    --green-dark: #9BBC6E;
+    --black-light: #C0C0C0;
+    --black-dark: #4E5656;
+    --neutral-blue: #29adb2;
+    --text-black: #3e4141;
+    --text-white: #f3f3f3;
+    --text-grey: #a7a7a7;
+    --Desktop-Text-Heading1: 48px;
+    --Desktop-Text-Heading2: 40px;
+    --Desktop-Text-Heading3: 32px;
+    --Desktop-Text-Heading4: 24px;
+    --Common-Text-Subtitle: 20px;
+    --Common-Text-Label: 16px;
+    --Common-Text-Body1: 20px;
+    --Common-Text-Body2: 16px;
+    --Common-Text-Caption: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: var(--background-white);
+
+}
+
+
+.products {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: 32px;
+}
+
+
+
+.product-img {
+    width: 30%;
+}
+
+.product-img img {
+    text-align: center;
+    border: solid 1px var(--primary-blue);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.product-img img {
+    border-radius: 6px;
+    width: 200px;
+    height: 200px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    transition: transform 0.6s ease;
+}
+
+.products:hover .product-img img {
+    transform: scale(1.1);
+
+}
+
+.products:hover .btn-quickview {
+    display: block;
+}
+
+.btn-quickview {
+    position: relative;
+    height: 30px;
+    width: 120px;
+    top: -120px;
+    left: 40px;
+    background-color: var(--green-light);
+    color: var(--text-black);
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.btn-quickview:hover {
+    background-color: var(--primary-blue);
+    color: var(--text-white);
+}
+
+.product-info {
+    position: relative;
+    font-size: var(--Common-Text-Body2);
+}
+
+
+.product-info p {
+    margin-bottom: 0;
+}
+
+.product-info .product-name {
+    font-size: var(--Common-Text-Label);
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: bold;
+
+}
+
+.product-info .product-name:hover {
+    color: var(--blue-dark);
+}
+
+.product-info .product-code {
+    color: var(--text-grey);
+}
+
+.product-info .product-price {
+    color: var(--primary-blue);
+}
+
+.product-info .product-price:hover {
+    color: var(--background-red)
+}
+
+.detail-product-page {
+    z-index: 2000;
+    width: 100%;
+}

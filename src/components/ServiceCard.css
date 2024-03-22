@@ -1,0 +1,88 @@
+:root {
+    --background-white: #ffff;
+    --background-red: #ff0037;
+    --primary-blue: #0766ad;
+    --blue-dark: #0D4C7C;
+    --green-light: #c5e897;
+    --green-dark: #9BBC6E;
+    --black-light: #C0C0C0;
+    --black-dark: #4E5656;
+    --neutral-blue: #29adb2;
+    --text-black: #3e4141;
+    --text-white: #f3f3f3;
+    --text-grey: #a7a7a7;
+    --Desktop-Text-Heading1: 48px;
+    --Desktop-Text-Heading2: 40px;
+    --Desktop-Text-Heading3: 32px;
+    --Desktop-Text-Heading4: 24px;
+    --Common-Text-Subtitle: 20px;
+    --Common-Text-Label: 16px;
+    --Common-Text-Body1: 20px;
+    --Common-Text-Body2: 16px;
+    --Common-Text-Caption: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: var(--background-white);
+
+}
+
+.service-card {
+    position: relative;
+    text-align: center;
+}
+
+.service-card .content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-white);
+}
+
+.service-card .getstart-btn {
+    margin-bottom: 16px;
+
+}
+
+
+.service-card h2 {
+    text-transform: uppercase;
+}
+
+.service-card h2:hover {
+    color: var(--green-light);
+}
+
+.service-card img {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+
+
+.service-card .bg-overlay {
+    background: rgba(0, 0, 0, 5);
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .service-card .bg-overlay {
+        left: 42px
+    }
+}
