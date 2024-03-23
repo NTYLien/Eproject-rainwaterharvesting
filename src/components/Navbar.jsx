@@ -31,12 +31,16 @@ function Navbar({ handleInputChange, query }) {
                         onFocus={() => { nav('/products') }}
                         value={query} />
 
-                    <button className="shopping-cart-button">
+                    <button className="shopping-cart-button"
+                        onClick={() => { nav('/shoppingcart') }}
+                    >
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span> 0 Items</span>
                     </button>
 
-                    <button className="wishlist-button">
+                    <button className="wishlist-button"
+                        onClick={() => { nav('/wishlist') }}
+                    >
                         <i class="fa-solid fa-heart"></i>
 
                     </button>

@@ -19,6 +19,12 @@ import { useState } from 'react';
 import ProductShow from './components/ProductShow';
 import ProductDetails from './components/pages/ProductDetails';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Payment from './components/pages/Payment';
+import ShoppingCart from './components/pages/ShoppingCart';
+import WishList from './components/pages/WishList';
+
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -99,6 +105,11 @@ function App() {
 
 
 
+
+
+
+
+
   return (
     <div className="App">
       <div className='Container'>
@@ -107,6 +118,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<ContentSession />}></Route >
+        <Route path='/shoppingcart' element={<ShoppingCart />}></Route >
+        <Route path='/wishlist' element={<WishList />}></Route >
         <Route path='/learn-and-ask' element={<LearnandAsk />}></Route >
         <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} handleClickQuickView={handleClickQuickView} />}>
         </Route >
@@ -118,9 +131,33 @@ function App() {
         <Route path='/news' element={<News />}></Route >
         <Route path='/interactive-tools' element={<InteractiveTools />}></Route >
         <Route path='/contact-us' element={<ContactUs />}></Route >
+        <Route path='/payment/:productCode' element={<Payment />}></Route >
       </Routes>
 
       <Footer />
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+
+      <ToastContainer />
+
+
+
+
+
+
+
+
     </div >
 
 
