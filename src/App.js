@@ -40,8 +40,16 @@ function App() {
     setSelectedCategory(e.target.value)
   }
 
+  // Button Filter
+  const handleClickQuickView = (e) => {
+    setSelectedCategory(e.target.value)
+  }
+
+
   function filteredData(products, selected, query) {
     let filteredProducts = products;
+
+
 
     // Filtering Input Items
     if (query) {
@@ -56,6 +64,9 @@ function App() {
         || name === selected);
 
     }
+
+
+
 
     return filteredProducts.map(({ id, name, productCode, price, imgurl, description, type, category, storageCapacity, material, location, features1, features2, features3, features4, features5, features6 }) => (<ProductShow
 
@@ -97,12 +108,11 @@ function App() {
       <Routes>
         <Route path='/' element={<ContentSession />}></Route >
         <Route path='/learn-and-ask' element={<LearnandAsk />}></Route >
-        <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} />}>
+        <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} handleClickQuickView={handleClickQuickView} />}>
+        </Route >
+        <Route path='/products/:productCode' element={<ProductDetails productData={productData} />}>
         </Route >
 
-        <Route path='/products/:productCode' element={<ProductDetails productData={productData}
-        />}>
-        </Route >
         <Route path='/our-projects' element={<Projects />}></Route >
         <Route path='/about-us' element={<Aboutus />}></Route >
         <Route path='/news' element={<News />}></Route >

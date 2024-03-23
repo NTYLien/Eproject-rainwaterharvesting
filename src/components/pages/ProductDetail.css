@@ -40,6 +40,7 @@ body {
 .product-detail {
     width: 100%;
     z-index: 2000;
+
 }
 
 
@@ -88,8 +89,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--background-white);
-    border-radius: 6px;
     column-gap: 10px;
+
 }
 
 .product-detail .product-div-left,
@@ -128,10 +129,15 @@ body {
 
 .product-detail .product-name {
     font-size: 26px;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
     font-weight: 700;
     letter-spacing: 1px;
     opacity: 0.9;
+    color: var(--primary-blue);
+}
+
+.product-detail .product-name:hover {
+    color: var(--blue-dark);
 }
 
 .product-detail .product-code {
@@ -141,17 +147,37 @@ body {
 
 .product-detail .product-price {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     opacity: 0.9;
     font-weight: 500;
 }
 
+.product-detail .product-price:hover {
+    color: var(--green-dark);
+}
+
 .product-detail .product-description {
-    font-weight: 18px;
+    font-size: 16px;
     line-height: 1.6;
     font-weight: 300;
     opacity: 0.9;
     margin-top: 22px;
+}
+
+.product-detail .title-features {
+    color: var(--primary-blue);
+    font-size: 18px;
+}
+
+.product-detail .feature-content li {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.product-detail .btn-submit-groups button {
+    margin-right: 8px;
 }
 
 .product-detail .btn-submit-groups button .fas {

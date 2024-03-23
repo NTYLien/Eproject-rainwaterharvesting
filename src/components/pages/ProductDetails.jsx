@@ -1,8 +1,28 @@
 
+import { useParams } from 'react-router-dom';
 import './ProductDetail.css'
 
 
-function ProductDetails() {
+function ProductDetails(props) {
+
+    const productData = props.productData;
+    let { productCode } = useParams();
+    const item = productData.find(x => x.productCode === productCode);
+    const name = item.name;
+    const img1 = item.img1;
+    const img2 = item.img2;
+    const img3 = item.img3;
+    const imgurl = item.imgurl;
+    const price = item.price;
+    const description = item.description;
+    const features1 = item.features1;
+    const features2 = item.features2;
+    const features3 = item.features3;
+    const features4 = item.features4;
+    const features5 = item.features5;
+    const features6 = item.features6;
+
+
 
     return (
         <>
@@ -12,28 +32,39 @@ function ProductDetails() {
                         <div className="close-btn"> <i className="fa-solid fa-xmark"></i></div>
                         <div className="product-div-left">
                             <div className="img-container">
-                                <img src="https://picsum.photos/200" alt="product1" />
+                                <img src={img1} alt="product1" />
                             </div>
                             <div className="hover-container">
                                 <div>
-                                    <img src="https://picsum.photos/200" alt="product2" />
+                                    <img src={img2} alt="product3" />
                                 </div>
                                 <div>
-                                    <img src="https://picsum.photos/200" alt="product3" />
+                                    <img src={img3} alt="product3" />
                                 </div>
                                 <div>
-                                    <img src="https://picsum.photos/200" alt="product4" />
+                                    <img src={imgurl} alt="product4" />
                                 </div>
 
                             </div>
                         </div>
                         <div className="product-div-right">
-                            <span className="product-name">Lorem ipsum dolor sit</span>
-                            <span className="product-code">xxx</span>
-                            <span className="product-price">$ 50.25</span>
-                            <p className="product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi
-                                ad minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis
-                                quidem exercitationem voluptas.</p>
+                            <span className="product-name">{name}</span>
+                            <span className="product-code">SKU: {productCode}</span>
+                            <span className="product-price">$ {price}</span>
+                            <p className="product-description">{description}</p>
+                            <div className='feature-content'>
+                                <p className='title-features'>Features of the GWDD System:</p>
+                                <ul className='Feature-list'>
+                                    <li>{features1}</li>
+                                    <li>{features2}</li>
+                                    <li>{features3}</li>
+                                    <li>{features4}</li>
+                                    <li>{features5}</li>
+                                    <li>{features6}</li>
+
+
+                                </ul>
+                            </div>
                             <div className="button-quantity">
                                 <button className="increase">
                                     <i className="fa-solid fa-plus"></i>
