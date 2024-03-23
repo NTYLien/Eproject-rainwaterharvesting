@@ -8,12 +8,12 @@ function Aboutus(props) {
                 <div className='ourstory-container'>
                     <div className='ourstory-image'>
                         <div className="imgs-large">
-                            <img className="large-image" src="https://picsum.photos/200" alt="Aboutus-1" />
+                            <img src="https://www.wateraid.org/in/sites/g/files/jkxoof336/files/rainwater-harvesting.jpg" alt="Aboutus-1" />
                         </div>
 
                         <div className='imgs-small'>
-                            <img src="https://picsum.photos/200" alt="Aboutus-2" />
-                            <img src="https://picsum.photos/200" alt="Aboutus-3" />
+                            <img src="https://www.vectus.in/blog/wp-content/uploads/2020/10/1.png" alt="Aboutus-2" />
+                            <img src="https://www.vectus.in/blog/wp-content/uploads/2020/10/1.png" alt="Aboutus-3" />
                         </div>
 
                     </div>
@@ -34,7 +34,7 @@ function Aboutus(props) {
                     </div>
 
                     <div className="mission-image">
-                        <img src="https://picsum.photos/200" alt="Aboutus4" />
+                        <img src="https://m.media-amazon.com/images/I/71viaz9tnwL._AC_UF1000,1000_QL80_.jpg" alt="Aboutus4" />
                     </div>
                 </div>
             </div >
