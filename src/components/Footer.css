@@ -38,7 +38,7 @@ body {
 }
 
 footer {
-    margin-top: 32px;
+    margin-top: 0px;
     background: var(--green-light);
     padding: 32px;
 

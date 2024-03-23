@@ -1,4 +1,4 @@
-@import "../root.css";
+@import '../root.css';
 
 :root {
     --background-white: #ffff;
@@ -22,4 +22,35 @@
     --Common-Text-Body1: 20px;
     --Common-Text-Body2: 16px;
     --Common-Text-Caption: 13px;
+}
+
+.projects-page {
+    text-align: center;
+    background: var(--primary-blue);
+    height: 100%;
+    padding-bottom: 64px;
+}
+
+.projects-page header {
+    text-align: center;
+    color: var(--text-white);
+    margin-top: 64px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.projects-content .title {
+    text-align: left;
+    color: var(--primary-blue);
+    background: var(--background-white);
+    border-radius: 6px;
+    width: fit-content;
+    padding: 8px;
+    margin-left: 64px;
+    margin-top: 64px;
+}
+
+.projects-content .title:hover {
+    background-color: var(--green-light);
+
 }

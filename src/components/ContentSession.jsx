@@ -3,7 +3,6 @@ import './ContentSession.css'
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import ServiceCard from './ServiceCard';
-import Navbar from './Navbar';
 import TopBanner from './TopBanner';
 
 function ContentSession(props) {
@@ -162,7 +161,26 @@ function ContentSession(props) {
                 <div className='content-session2'>
                     <h1 className='title'> <i class="fa-solid fa-cloud-rain"> </i>  Our Services </h1>
 
-                    <Carousel responsive={responsive}>
+                    <Carousel
+                        additionalTransfrom={0}
+                        arrows
+                        autoPlay
+                        autoPlaySpeed={2000}
+                        centerMode={false}
+                        className=""
+                        containerClass="container-with-dots"
+                        dotListClass=""
+                        draggable
+                        focusOnSelect={false}
+                        infinite={false}
+                        itemClass=""
+                        keyBoardControl
+                        minimumTouchDrag={80}
+                        pauseOnHover
+                        renderArrowsWhenDisabled={false}
+                        renderButtonGroupOutside={false}
+                        renderDotsOutside={false}
+                        responsive={responsive}>
                         {service}
                     </Carousel>
                 </div>
@@ -170,7 +188,26 @@ function ContentSession(props) {
 
                 <div className='content-session3'>
                     <h1 className='title'> <i class="fa-solid fa-cloud-rain"></i>Our Projects</h1>
-                    <Carousel responsive={responsive}>
+                    <Carousel
+                        additionalTransfrom={0}
+                        arrows
+                        autoPlay
+                        autoPlaySpeed={2000}
+                        centerMode={false}
+                        className=""
+                        containerClass="container-with-dots"
+                        dotListClass=""
+                        draggable
+                        focusOnSelect={false}
+                        infinite={false}
+                        itemClass=""
+                        keyBoardControl
+                        minimumTouchDrag={80}
+                        pauseOnHover
+                        renderArrowsWhenDisabled={false}
+                        renderButtonGroupOutside={false}
+                        renderDotsOutside={false}
+                        responsive={responsive}>
                         {project}
 
 
@@ -225,7 +262,7 @@ function ContentSession(props) {
                                 <div className='news-card-content'>
                                     <h4 className='news-title' >Rainwater harvesting systems got a boost from 2019 Act: CM
                                     </h4>
-                                    <p className='description'>Over the weekend, Burning Man attendees were forced to shelter in place when the usually-parched Black Rock Desert got roughly 3 months’ worth of rain in 24 hours.</p>
+                                    <p className='description'>Over the weekend, Burning Man attendees were forced to shelter in place when the usually-parched Black Rock Desert got roughly 3 months' worth of rain in 24 hours.</p>
 
                                     <button className='getstart-btn'>Read more <i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
