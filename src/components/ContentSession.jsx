@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 import ServiceCard from './ServiceCard';
 import TopBanner from './TopBanner';
+import ProjectCard from './pages/ProjectCard';
 
 function ContentSession(props) {
     const responsive = {
@@ -27,91 +28,20 @@ function ContentSession(props) {
 
     };
 
-    const serviceData = [
-        {
-            id: 1,
-            imgurl: "https://picsum.photos/200?random=1",
-            name: "Design & Consulting",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 2,
-            imgurl: "https://picsum.photos/200?random=2",
-            name: "Residential Installation",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 3,
-            imgurl: "https://picsum.photos/200?random=3",
-            name: "Commercial Construction",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 4,
-            imgurl: "https://picsum.photos/200?random=4",
-            name: "DIY & System Kits",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 5,
-            imgurl: "https://picsum.photos/200?random=5",
-            name: "Maintaince",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-        {
-            id: 6,
-            imgurl: "https://picsum.photos/200?random=6",
-            name: "Inspection & Testing",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        }
-    ];
-
+    const serviceData = props.ServiceData;
     const service = serviceData.map((item) => (<ServiceCard
         imgurl={item.imgurl}
         name={item.name}
         description={item.description}
     />));
 
-    const projectData = [
-        {
-            id: 1,
-            imgurl: "https://picsum.photos/200?random=1",
-            name: "Design & Consulting",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
+    const projectData = props.ProjectData;
 
-        {
-            id: 2,
-            imgurl: "https://picsum.photos/200?random=2",
-            name: "Residential Installation",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 3,
-            imgurl: "https://picsum.photos/200?random=3",
-            name: "Commercial Construction",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 4,
-            imgurl: "https://picsum.photos/200?random=4",
-            name: "DIY & System Kits",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        }
-
-
-    ];
-
-    const project = projectData.map((item) => (<ServiceCard
+    const project = projectData.map((item) => (<ProjectCard
         imgurl={item.imgurl}
         name={item.name}
         description={item.description}
+        id={item.id}
     />));
 
 

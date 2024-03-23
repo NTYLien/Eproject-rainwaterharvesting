@@ -24,6 +24,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import Payment from './components/pages/Payment';
 import ShoppingCart from './components/pages/ShoppingCart';
 import WishList from './components/pages/WishList';
+import ProjectData from './ProjectData.json';
+import ServiceData from './ServiceData.json';
+import ProjectDetail from './components/pages/ProjectDetail';
+import OurServices from './components/pages/OurServices';
+import ScrollToTop from './components/ScrollTopTop';
 
 
 function App() {
@@ -117,7 +122,8 @@ function App() {
       </div>
 
       <Routes>
-        <Route path='/' element={<ContentSession />}></Route >
+
+        <Route path='/' element={<ContentSession ServiceData={ServiceData} ProjectData={ProjectData} />}></Route >
         <Route path='/shoppingcart' element={<ShoppingCart />}></Route >
         <Route path='/wishlist' element={<WishList />}></Route >
         <Route path='/learn-and-ask' element={<LearnandAsk />}></Route >
@@ -126,8 +132,10 @@ function App() {
         <Route path='/products/:productCode' element={<ProductDetails productData={productData} />}>
         </Route >
 
-        <Route path='/our-projects' element={<Projects />}></Route >
+        <Route path='/our-projects' element={<Projects ProjectData={ProjectData} />}></Route >
+        <Route path='/our-projects/:id' element={<ProjectDetail ProjectData={ProjectData} />}></Route >
         <Route path='/about-us' element={<Aboutus />}></Route >
+        <Route path='/about-us/our-services' element={<OurServices />}></Route >
         <Route path='/news' element={<News />}></Route >
         <Route path='/interactive-tools' element={<InteractiveTools />}></Route >
         <Route path='/contact-us' element={<ContactUs />}></Route >

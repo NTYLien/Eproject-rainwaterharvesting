@@ -28,103 +28,22 @@ function Projects(props) {
 
     };
 
-    const commercialData = [
-        {
-            id: 1,
-            imgurl: "https://picsum.photos/200?random=2",
-            name: "Design & Consulting",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
+    const commercialData = (props.ProjectData).filter(x => x.type === "commercial");
 
-        {
-            id: 2,
-            imgurl: "https://picsum.photos/200?random=2",
-            name: "Residential Installation",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 3,
-            imgurl: "https://picsum.photos/200?random=3",
-            name: "Commercial Construction",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 4,
-            imgurl: "https://picsum.photos/200?random=4",
-            name: "DIY & System Kits",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 5,
-            imgurl: "https://picsum.photos/200?random=5",
-            name: "Maintaince",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-        {
-            id: 6,
-            imgurl: "https://picsum.photos/200?random=6",
-            name: "Inspection & Testing",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        }
-    ];
-
-
-    const residentialData = [
-        {
-            id: 1,
-            imgurl: "https://picsum.photos/200?random=1",
-            name: "Design & Consulting",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 2,
-            imgurl: "https://picsum.photos/200?random=2",
-            name: "Residential Installation",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 3,
-            imgurl: "https://picsum.photos/200?random=3",
-            name: "Commercial Construction",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 4,
-            imgurl: "https://picsum.photos/200?random=4",
-            name: "DIY & System Kits",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-
-        {
-            id: 5,
-            imgurl: "https://picsum.photos/200?random=5",
-            name: "Maintaince",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        },
-        {
-            id: 6,
-            imgurl: "https://picsum.photos/200?random=6",
-            name: "Inspection & Testing",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
-        }
-    ];
+    const residentialData = (props.ProjectData).filter(x => x.type === "commercial");
 
     const commercial = commercialData.map((item) => (<ProjectCard
         imgurl={item.imgurl}
         name={item.name}
         description={item.description}
+        id={item.id}
     />));
 
     const residential = residentialData.map((item) => (<ProjectCard
         imgurl={item.imgurl}
         name={item.name}
         description={item.description}
+        id={item.id}
     />));
 
 

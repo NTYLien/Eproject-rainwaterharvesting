@@ -58,28 +58,24 @@ body {
     font-size: var(--Desktop-Text-Heading4);
     text-align: center;
     color: var(--blue-dark);
+    justify-content: center;
 
 }
 
-.text {
+.product-page .text {
     font-size: var(--Common-Text-Body2);
     text-align: center;
     margin: 0 32px;
 }
 
-.title {
-    justify-content: center;
-    color: var(--blue-dark);
-    padding: 32px;
-}
 
-.show-filter {
+.product-page.show-filter {
 
     position: sticky;
     top: 0;
 }
 
-.show-filter.active {
+.product-page.show-filter.active {
     background: none;
 }
 
