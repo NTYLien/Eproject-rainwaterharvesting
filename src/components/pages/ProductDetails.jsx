@@ -2,11 +2,15 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import './ProductDetail.css'
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+
+import { ToastContainer, toast } from 'react-toastify';
 
 
 function ProductDetails(props) {
+
+
     const nav = useNavigate();
+    const addToWishList = props.addToWishList;
     const addToCart = props.addToCart;
     const productData = props.productData;
     let { productCode } = useParams();
@@ -73,7 +77,7 @@ function ProductDetails(props) {
                             </div>
                         </div>
                         <div className="product-div-right">
-                            <span className="product-name">{name}</span>
+                            <span className="product-name" >{name}</span>
                             <span className="product-code">SKU: {productCode}</span>
                             <span className="product-price">$ {price}</span>
                             <p className="product-description">{description}</p>
@@ -106,17 +110,26 @@ function ProductDetails(props) {
                             </div>
                             <div className="btn-submit-groups">
                                 <button type="button" className="add-wishlist-btn"
-                                    onClick={() => { toast.success("Product successfully added to your wishlist ") }}
+                                    onClick={() => {
+                                        toast.success("Product successfully added to your wishlist ");
+                                        addToWishList(item);
+
+                                    }}
                                 ><i className="fa-solid fa-heart"></i> Add to Wishlist</button>
 
                                 <button type="button" className="add-cart-btn"
                                     onClick={() => {
-                                        // toast.success("Product successfully added to your shopping cart", { toastId: 1 });
+                                        toast("Product successfully added to your shopping cart", { toastId: 15 });
+
                                         addToCart(item, quantity);
+
 
 
                                     }}
                                 ><i className="fas fa-shopping-cart"></i> Add to cart</button>
+
+
+
 
                                 <button type="button" className="buy-now-btn"
                                     onClick={() => {

@@ -13,19 +13,20 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
                 <tr>
                     <th>No</th>
                     <th>Product</th>
-                    <th>Price (USD)</th>
+                    <th>Unit Price</th>
                     <th>Quantity</th>
                     <th>Total(USD)</th>
                     <th>Delete</th>
                 </tr>
                 {cart.map((item, index) => {
+                    const totalCost = item.price * item.quantity;
                     return (
                         <tr>
                             <td data-cell="No: " className="No">{index + 1}</td>
                             <td data-cell className="product-item">
-                                <img src="https://picsum.photos/200" alt="product" />
+                                <img src={item.imgurl} alt="product" />
                                 <div className="product-info">
-                                    <span className="product-name">{item.name}</span>
+                                    <span className="product-name" onClick={() => { nav(`/products/${item.productCode}`) }}>{item.name}</span>
                                     <p className="product-code">Product Code: <span>{item.productCode}</span>
                                     </p>
                                 </div>
@@ -50,7 +51,7 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
                                 </div>
 
                             </td>
-                            <td data-cell="Total: " className="total">{item.price * item.quantity}<span>$</span></td>
+                            <td data-cell="Total: " className="total">{totalCost}<span>$</span></td>
                             <td data-cell className="remove-btn"
                             >
                                 <button onClick={() => { removeFromCart(item) }}> <i className="fa-solid fa-trash"></i></button>
@@ -69,7 +70,12 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
                     onClick={() => { nav('/products') }}>
                     <i className="fa-solid fa-arrow-left"></i>
                     Continue to shopping</button>
-                <button className="checkout-btn">Check out
+                <button className={totalCost !== 0 ? "checkout-btn" : "checkout-btn-disable"} onClick={() => {
+                    if (totalCost !== 0) {
+                        nav('/payment')
+                    }
+
+                }}>Check out
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
 

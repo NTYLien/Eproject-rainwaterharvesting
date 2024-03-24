@@ -35,10 +35,52 @@ import ToolProductSuggestion from './components/pages/ToolProductSuggestion';
 import ToolCostSugeestion from './components/pages/ToolCostSuggestion';
 import SystemCostGuide from './components/pages/SystemCostGuide';
 
+const useLocalStorageState = (initialData, key) => {
+  const localStorageState = JSON.parse(window.localStorage.getItem(key) || JSON.stringify(initialData));
+  const [state, setState] = useState(localStorageState);
+  const setLocalStorageState = (newState) => {
+    setState(newState)
+    window.localStorage.setItem(key, JSON.stringify(newState))
+  }
+  return [state, setLocalStorageState]
+}
 
 function App() {
-  const [cart, setCart] = useState([]);
-  console.log({ cart })
+  const [wishList, setWishList] = useLocalStorageState([], "wishlist")
+
+  const addToWishList = (product) => {
+    const existingItem = wishList.find((item) => item.id === product.id)
+    let addingItem;
+    if (existingItem) {
+      addingItem = { ...existingItem };
+      const newWishList = wishList.map((item) => {
+        if (item.id === existingItem) {
+          return addingItem;
+        } else {
+          return item;
+        }
+      })
+      setWishList(newWishList)
+    } else {
+      addingItem = { ...product };
+      const newWishList = [...wishList, addingItem]
+      setWishList(newWishList)
+    }
+
+  };
+
+  const removeFromWishList = (product) => {
+    const newWishList = wishList.filter((item) => item.id !== product.id)
+    setWishList(newWishList)
+  }
+
+
+
+
+
+
+  const [cart, setCart] = useLocalStorageState([], "cart");
+
   const addToCart = (product, quantity) => {
     const existingItem = cart.find((item) => item.id === product.id);
     let addingItem;
@@ -79,10 +121,11 @@ function App() {
   }
 
   const descreaseCartQuantity = (product) => {
+
     const newCart = cart.map((item) => {
       return {
         ...item,
-        quantity: item.id === product.id ? item.quantity - 1 : item.quantity
+        quantity: (item.id === product.id && item.quantity > 1) ? item.quantity - 1 : item.quantity
       }
     })
     setCart(newCart)
@@ -197,12 +240,17 @@ function App() {
           totalCost={totalCost}
           cart={cart}
         />}></Route >
-        <Route path='/wishlist' element={<WishList productData={productData} />}></Route >
+        <Route path='/payment' element={<Payment />}></Route >
+        <Route path='/wishlist' element={<WishList productData={productData}
+          removeFromWishList={removeFromWishList}
+          wishList={wishList}
+
+        />}></Route >
         <Route path='/log-in' element={<Login />}></Route >
         <Route path='/learn-and-ask' element={<LearnandAsk LearnAndAsk={LearnAndAsk} />}></Route >
         <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} handleClickQuickView={handleClickQuickView} />}>
         </Route >
-        <Route path='/products/:productCode' element={<ProductDetails productData={productData} addToCart={addToCart} />}>
+        <Route path='/products/:productCode' element={<ProductDetails productData={productData} addToCart={addToCart} addToWishList={addToWishList} />}>
         </Route >
 
         <Route path='/our-projects' element={<Projects ProjectData={ProjectData} />}></Route >
@@ -222,7 +270,7 @@ function App() {
 
       <ToastContainer
         position="top-right"
-        autoClose={5000}
+        autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

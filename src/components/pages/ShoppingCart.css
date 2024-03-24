@@ -25,7 +25,7 @@
 }
 
 .shoppingcart-page {
-    margin: 16px 64px;
+    margin: 16px 16px;
 }
 
 .shoppingcart-page h1 {
@@ -51,7 +51,7 @@
 
 .shoppingcart-page table {
     margin-left: 32px;
-    width: 100px;
+
     text-align: center;
     border-collapse: collapse;
     border-color: transparent;
@@ -67,6 +67,7 @@
     text-decoration: none;
     font-size: var(--Common-Text-Label);
     color: var(--primary-blue);
+    cursor: pointer;
 }
 
 .shoppingcart-page .product-code {
@@ -118,6 +119,12 @@
     margin-top: 16px;
     border-radius: 6px;
 
+}
+
+.checkout-btn {}
+
+.checkout-btn-disable {
+    display: none;
 }
 
 .shoppingcart-page .button-quantity .increase {
@@ -180,6 +187,11 @@
     border-radius: 6px;
     padding: 8px;
 
+}
+
+button {
+    border: none;
+    background: none;
 }
 
 .shoppingcart-page .btn-groups button:hover {

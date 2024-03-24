@@ -24,11 +24,12 @@
     --Common-Text-Caption: 13px;
 }
 
-.shoppingcart-page {
+.wishlist-page {
     margin: 16px 64px;
+
 }
 
-.shoppingcart-page h1 {
+.wishlist-page h1 {
     margin-top: 16px;
     font-size: var(--Desktop-Text-Heading3);
     color: var(--primary-blue);
@@ -36,7 +37,7 @@
 }
 
 
-.shoppingcart-page .total-cost-text {
+.wishlist-page .total-cost-text {
     color: var(--text-black);
     font-size: var(--Desktop-Text-Heading4);
     margin-top: 16px;
@@ -44,109 +45,115 @@
     margin-left: 32px;
 }
 
-.shoppingcart-page .total-cost-number {
+.wishlist-page .total-cost-number {
     color: var(--background-red);
 
 }
 
-.shoppingcart-page table {
+.wishlist-page table {
     margin-left: 32px;
-    width: 100px;
     text-align: center;
     border-collapse: collapse;
     border-color: transparent;
     border-width: 0;
+    width: 100%;
+
 
 }
 
-.shoppingcart-page table tr {
-    border-bottom: 2px solid var(--primary-blue);
+.wishlist-page table tr {
+    border-bottom: 1px solid var(--primary-blue);
+
 }
 
-.shoppingcart-page .product-name {
+.wishlist-page .product-name {
     text-decoration: none;
-    font-size: var(--Common-Text-Label);
+    font-size: 1.2rem;
     color: var(--primary-blue);
 }
 
-.shoppingcart-page .product-code {
-    font-size: var(--Common-Text-Caption);
+.wishlist-page .product-code {
+    font-size: 1.2rem;
     color: var(--black-dark);
 }
 
 
 
 
-.shoppingcart-page table th {
+.wishlist-page table th {
     margin-top: 16px;
-    font-size: var(--Common-Text-Label);
+    font-size: 1.2rem;
     color: var(--primary-blue);
     padding: 4px 64px;
     border-bottom: 2px solid var(--primary-blue);
 
 }
 
-.shoppingcart-page td {
+.wishlist-page td {
     color: var(--black-dark);
-    font-size: var(--Common-Text-Body2);
+    font-size: 1.2rem;
 
 }
 
 
-.shoppingcart-page .product-item {
+.wishlist-page .product-item {
     display: flex;
     padding: 8px;
     text-align: center;
     align-items: center;
+
 }
 
-.shoppingcart-page .product-item img {
+.wishlist-page .product-item img {
 
     width: 100px;
     height: 100px;
     border-radius: 6px;
 }
 
-.shoppingcart-page .product-item .product-info {
+.wishlist-page .product-item .product-info {
     padding: 6px;
     text-align: left;
+
+
 }
 
 
-.shoppingcart-page .button-quantity button {
+
+.wishlist-page .button-quantity button {
     padding: 6px;
     margin-top: 16px;
     border-radius: 6px;
 
 }
 
-.shoppingcart-page .button-quantity .increase {
+.wishlist-page .button-quantity .increase {
     background-color: var(--primary-blue);
     border: 2px solid var(--primary-blue);
     color: var(--text-white);
 
 }
 
-.shoppingcart-page .button-quantity .increase:hover {
+.wishlist-page .button-quantity .increase:hover {
     background-color: var(--blue-dark);
     border: none;
     cursor: pointer;
 }
 
-.shoppingcart-page .button-quantity .decrease {
+.wishlist-page .button-quantity .decrease {
     background-color: var(--text-grey);
     border: 2px solid var(--text-grey);
     color: var(--text-white);
 
 }
 
-.shoppingcart-page .button-quantity .decrease:hover {
+.wishlist-page .button-quantity .decrease:hover {
     background-color: var(--black-dark);
     border: none;
     cursor: pointer;
 }
 
-.shoppingcart-page .button-quantity input {
+.wishlist-page .button-quantity input {
     padding: 8px;
     width: 64px;
     font-size: var(--Common-Text-Body1);
@@ -157,14 +164,14 @@
     margin: 8px;
 }
 
-.shoppingcart-page .remove-btn i {
+.wishlist-page .remove-btn i {
     color: var(--background-red);
     font-size: var(--Common-Text-Body1);
     padding: 8px 16px;
 }
 
 
-.shoppingcart-page .btn-groups {
+.wishlist-page .btn-groups {
     display: flex;
     justify-content: space-between;
     margin: 40px;
@@ -172,7 +179,7 @@
 
 
 
-.shoppingcart-page .btn-groups button {
+.wishlist-page .btn-groups button {
 
     background-color: var(--primary-blue);
     border: none;
@@ -182,7 +189,7 @@
 
 }
 
-.shoppingcart-page .btn-groups button:hover {
+.wishlist-page .btn-groups button:hover {
     background: var(--green-light);
     color: var(--text-black);
 
@@ -195,7 +202,7 @@
 
 @media (max-width: 650px) {
 
-    .shoppingcart-page h1 {
+    .wishlist-page h1 {
         margin-top: 16px;
         font-size: 24px;
         color: var(--primary-blue);
@@ -227,14 +234,14 @@
 
     }
 
-    .shoppingcart-page .btn-groups {
+    .wishlist-page .btn-groups {
         display: flex;
         flex-direction: column;
         text-align: center;
 
     }
 
-    .shoppingcart-page .btn-groups button {
+    .wishlist-page .btn-groups button {
         margin: 16px;
         text-align: center;
     }
