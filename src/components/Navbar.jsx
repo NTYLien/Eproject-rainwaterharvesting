@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 
 
+
 function Navbar({ handleInputChange, query, totalCartItems }) {
 
     const nav = useNavigate();

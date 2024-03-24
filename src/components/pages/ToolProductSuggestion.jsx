@@ -3,7 +3,7 @@ import './ToolProductSuggestion.css'
 
 function ToolProductSuggestion(props) {
     return (
-        <div>
+        <div className='tool-page-form'>
             <div class="form">
                 <div class="header">
                     <h2>Find the right products for your property</h2>

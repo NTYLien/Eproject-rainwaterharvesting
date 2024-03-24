@@ -1,7 +1,6 @@
 
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
 import Navbar from './components/Navbar';
 import Headroom from 'react-headroom';
 import Footer from './components/Footer';
@@ -18,7 +17,7 @@ import productData from './ProductData.json';
 import { useState } from 'react';
 import ProductShow from './components/ProductShow';
 import ProductDetails from './components/pages/ProductDetails';
-
+import Login from './components/pages/Login';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Payment from './components/pages/Payment';
@@ -30,10 +29,10 @@ import LearnAndAsk from './LearnAndAsk.json';
 import NewsData from "./News.json"
 import ProjectDetail from './components/pages/ProjectDetail';
 import OurServices from './components/pages/OurServices';
-import Login from './components/pages/Login';
 import ToolProductSuggestion from './components/pages/ToolProductSuggestion';
 import ToolCostSugeestion from './components/pages/ToolCostSuggestion';
 import SystemCostGuide from './components/pages/SystemCostGuide';
+import CreateAccount from './components/pages/CreateAccount';
 
 const useLocalStorageState = (initialData, key) => {
   const localStorageState = JSON.parse(window.localStorage.getItem(key) || JSON.stringify(initialData));
@@ -225,8 +224,11 @@ function App() {
   return (
     <div className="App">
       <div className='Container'>
+
         <Headroom>   <Navbar query={query} handleInputChange={handleInputChange} totalCartItems={totalCartItems} /></Headroom>
+
       </div>
+
 
       <Routes>
 
@@ -247,6 +249,7 @@ function App() {
 
         />}></Route >
         <Route path='/log-in' element={<Login />}></Route >
+        <Route path='/create-account' element={<CreateAccount />}></Route >
         <Route path='/learn-and-ask' element={<LearnandAsk LearnAndAsk={LearnAndAsk} />}></Route >
         <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} handleClickQuickView={handleClickQuickView} />}>
         </Route >
@@ -266,11 +269,13 @@ function App() {
         <Route path='/payment/:productCode' element={<Payment />}></Route >
       </Routes>
 
+
+
       <Footer />
 
       <ToastContainer
         position="top-right"
-        autoClose={3000}
+        autoClose={1000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

@@ -37,6 +37,10 @@ body {
 
 }
 
+button.getstart-btn {
+    background: var(--background-white);
+}
+
 
 
 .content-homepage .title {

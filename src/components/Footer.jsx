@@ -15,10 +15,20 @@ function Footer(props) {
                         </span></p>
                         <h3 className='follow-us'>Follow Us On</h3>
                         <div className='social-media-icon'>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-youtube"></i>
-                            <i class="fa-brands fa-tiktok"></i>
+                            <ul class="social-media-list">
+                                <li><a href="#" target="_blank" class="contact-icon">
+                                    <i class="fab fa-github" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#" target="_blank" class="contact-icon">
+                                    <i class="fab fa-codepen" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#" target="_blank" class="contact-icon">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="#" target="_blank" class="contact-icon">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 

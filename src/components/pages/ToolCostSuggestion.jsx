@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function ToolCostSuggestion(props) {
     const nav = useNavigate();
     return (
-        <div className='tool-cost-suggestion-page'>
+        <div className='tool-page-form'>
             <div class="form">
                 <div class="header">
                     <h2>Calculate the cost of your Rainwater Collection System</h2>

@@ -1,67 +1,69 @@
 import React from 'react';
+import "./Login.css"
+import logo from "../logo-rainharvesting.jpg"
+import { useNavigate } from 'react-router-dom';
 
 function Login(props) {
+    const nav = useNavigate();
     return (
-        <>
-            <div classNameNameName='login'>
-                <div classNameName="modal" id="myModal">
-                    <div classNameName="modal-dialog">
-                        <div classNameName="modal-content">
+        <div classNameName='login-page'>
+            <div className="main_div">
+                <div className="title">Login Form</div>
+                <div className="social-icons">
+                    <a href="#">
+                        <i className="fa-brands fa-google"></i><span>Google</span>
+                    </a>
 
-                            <div classNameName="modal-header">
-                                <img src="" alt="LOGO" classNameName="logologin" />
-                                <button type="button" classNameName="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
+                    <a href="#">
+                        <i className="fa-brands fa-facebook"></i><span>Facebook</span>
+                    </a>
 
+                </div>
 
-                            <div classNameName="modal-body">
-                                <div>
-                                    <div classNameName="modal-title" style={{ textAlign: "center" }}>
-                                        <h1><span classNameName="mdi--user-circle"></span>Log In
-                                        </h1>
-                                        <p>with your Rainharvesting account</p>
-                                    </div>
+                <form action="#">
+                    <div className="input-box">
+                        <input type="text" placeholder="Email or Phone" required />
+                        <div className="icon">
+                            <i className="fa-solid fa-user"></i>
 
-                                    <div>
-                                        <button classNameName="another-signin">
-                                            <span classNameName="flat-color-icons--google"></span>Sign in with google
-                                        </button>
-
-                                        <button classNameName="another-signin">
-                                            <span classNameName="logos--facebook"></span>Sign in with facebook
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div classNameName="mycontainer">
-                                    <div classNameName="InputLogin">
-                                        <h5>Email:</h5>
-                                        <input type="email" />
-
-                                        <h5 >Password</h5>
-                                        <input type="password" />
-
-                                        <span>
-                                            <h6>Forget your password?</h6>
-                                        </span>
-                                    </div>
-
-                                    <button classNameName="loginbutton">
-                                        <h5>LOG IN</h5>
-                                    </button>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div className="modal-footer" style={{ justifyContent: "center" }}>
-                            or <h5><div data-bs-toggle="modal" data-bs-target="#myModalSignUp" > Create an
-                                Account</div></h5>
                         </div>
                     </div>
-                </div>
+
+                    <div className="input-box">
+                        <input type="password" placeholder="Password" required />
+                        <div className="icon">
+                            <i className="fa-solid fa-lock"></i>
+
+                        </div>
+                    </div>
+
+                    <div className="option_div">
+                        <div className="checkbox">
+                            <input type="checkbox" />
+                            <span>Remember me</span>
+                        </div>
+
+                        <div className="forget_div">
+                            <a href="#">Forget password</a>
+                        </div>
+
+                    </div>
+
+                    <div className="input-box button">
+                        <input type="submit" value="Login" />
+
+
+
+                    </div>
+
+                    <div className="sign_up" onClick={() => { nav(`/create-account`) }}>
+                        Not a member? <a href="#">Signup now</a>
+                    </div>
+
+                </form>
             </div >
-        </>
+        </div >
+
     );
 }
 
