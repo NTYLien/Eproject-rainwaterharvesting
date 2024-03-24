@@ -39,7 +39,7 @@
 
 }
 
-.container {
+.create-account-page.container {
     max-width: 700px;
     width: 100%;
     background: var(--green-light);

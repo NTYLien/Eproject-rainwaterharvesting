@@ -4,6 +4,8 @@ import './ProductDetail.css'
 import { useState } from 'react';
 
 import { ToastContainer, toast } from 'react-toastify';
+import ProductShow from '../ProductShow';
+import Products from './Products';
 
 
 function ProductDetails(props) {

@@ -142,7 +142,7 @@ function ToolCostSuggestion(props) {
                                 </p>
 
                                 <div>
-                                    <button onClick={() => { nav(`/system-cost-guide`) }}>Submit</button>
+                                    <button >Submit</button>
                                 </div>
                             </div>
                         </div>

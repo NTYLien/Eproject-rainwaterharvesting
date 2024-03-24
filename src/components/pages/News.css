@@ -32,7 +32,15 @@
 
 
 
+.pic-show {
+    display: flex;
+    flex-direction: column;
+}
 
+.left-side {
+    display: flex;
+    text-align: center;
+}
 
 .news-page .date-publish {
     margin-top: 8px;
