@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 
 
-function Navbar({ handleInputChange, query }) {
+function Navbar({ handleInputChange, query, totalCartItems }) {
 
     const nav = useNavigate();
     const [click, setClick] = useState(false);
@@ -35,7 +35,7 @@ function Navbar({ handleInputChange, query }) {
                         onClick={() => { nav('/shoppingcart') }}
                     >
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <span> 0 Items</span>
+                        <span> {totalCartItems} Items</span>
                     </button>
 
                     <button className="wishlist-button"

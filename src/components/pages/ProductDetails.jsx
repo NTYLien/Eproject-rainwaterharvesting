@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 
 function ProductDetails(props) {
     const nav = useNavigate();
-
+    const addToCart = props.addToCart;
     const productData = props.productData;
     let { productCode } = useParams();
     const item = productData.find(x => x.productCode === productCode);
@@ -110,17 +110,24 @@ function ProductDetails(props) {
                                 ><i className="fa-solid fa-heart"></i> Add to Wishlist</button>
 
                                 <button type="button" className="add-cart-btn"
-                                    onClick={() => { toast.success("Product successfully added to your shopping cart") }}
+                                    onClick={() => {
+                                        // toast.success("Product successfully added to your shopping cart", { toastId: 1 });
+                                        addToCart(item, quantity);
+
+
+                                    }}
                                 ><i className="fas fa-shopping-cart"></i> Add to cart</button>
 
                                 <button type="button" className="buy-now-btn"
-                                    onClick={() => { nav(`/payment/${productCode}`) }}
+                                    onClick={() => {
+                                        nav(`/payment/${productCode}`)
+                                    }}
                                 >Buy Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
 
         </>
     );

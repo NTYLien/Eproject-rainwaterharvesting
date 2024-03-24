@@ -1,8 +1,11 @@
 import React from 'react';
+import './ToolCostSuggestion.css'
+import { useNavigate } from 'react-router-dom';
 
-function ToolCostSugeestion(props) {
+function ToolCostSuggestion(props) {
+    const nav = useNavigate();
     return (
-        <div>
+        <div className='tool-cost-suggestion-page'>
             <div class="form">
                 <div class="header">
                     <h2>Calculate the cost of your Rainwater Collection System</h2>
@@ -12,6 +15,7 @@ function ToolCostSugeestion(props) {
 
                 <div class="body">
 
+
                     <div class="steps">
                         <div class="step">
                             <h4>Your requirements details</h4>
@@ -19,22 +23,22 @@ function ToolCostSugeestion(props) {
                             <div class="grid">
                                 <div class="col">
                                     <lable for="name">Name</lable>
-                                    <input type="text" id="name" />
+                                    <input type="text" id="name" required />
                                 </div>
 
                                 <div class="col">
                                     <lable for="email">Email</lable>
-                                    <input type="text" id="email" />
+                                    <input type="text" id="email" required />
                                 </div>
 
                                 <div class="col">
                                     <lable for="phone">Phone number</lable>
-                                    <input type="phone" id="phone" />
+                                    <input type="phone" id="phone" required />
                                 </div>
 
                                 <div class="col">
                                     <lable for="country">Your country </lable>
-                                    <input type="text" id="country" />
+                                    <input type="text" id="country" required />
                                 </div>
                             </div>
                         </div>
@@ -138,7 +142,7 @@ function ToolCostSugeestion(props) {
                                 </p>
 
                                 <div>
-                                    <button>Submit</button>
+                                    <button onClick={() => { nav(`/system-cost-guide`) }}>Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -150,8 +154,9 @@ function ToolCostSugeestion(props) {
 
             </div>
 
+
         </div>
     );
 }
 
-export default ToolCostSugeestion;
+export default ToolCostSuggestion;

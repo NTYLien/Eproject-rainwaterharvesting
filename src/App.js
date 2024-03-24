@@ -32,10 +32,70 @@ import ProjectDetail from './components/pages/ProjectDetail';
 import OurServices from './components/pages/OurServices';
 import Login from './components/pages/Login';
 import ToolProductSuggestion from './components/pages/ToolProductSuggestion';
-import ToolCostSugeestion from './components/pages/ToolCostSugeestion';
+import ToolCostSugeestion from './components/pages/ToolCostSuggestion';
+import SystemCostGuide from './components/pages/SystemCostGuide';
 
 
 function App() {
+  const [cart, setCart] = useState([]);
+  console.log({ cart })
+  const addToCart = (product, quantity) => {
+    const existingItem = cart.find((item) => item.id === product.id);
+    let addingItem;
+    if (existingItem) {
+      addingItem = { ...existingItem, quantity: existingItem.quantity + quantity }
+      const newCart = cart.map((item) => {
+        if (item.id === existingItem.id) {
+          return addingItem;
+        } else {
+          return item;
+        }
+      })
+      setCart(newCart)
+    } else {
+      addingItem = {
+        ...product,
+        quantity: quantity
+      }
+      const newCart = [...cart, addingItem]
+      setCart(newCart)
+    }
+  };
+
+  const removeFromCart = (product) => {
+    const newCart = cart.filter((item) => item.id !== product.id)
+    setCart(newCart)
+  }
+
+  const increaseCartQuantity = (product) => {
+    const newCart = cart.map((item) => {
+      return {
+        ...item,
+        quantity: item.id === product.id ? item.quantity + 1 : item.quantity
+      }
+
+    })
+    setCart(newCart)
+  }
+
+  const descreaseCartQuantity = (product) => {
+    const newCart = cart.map((item) => {
+      return {
+        ...item,
+        quantity: item.id === product.id ? item.quantity - 1 : item.quantity
+      }
+    })
+    setCart(newCart)
+  }
+
+  const totalCartItems = cart.reduce((acc, cur) => {
+    return acc + cur.quantity
+  }, 0);
+
+  const totalCost = cart.reduce((acc, cur) => {
+    return acc + cur.price * cur.quantity
+  }, 0)
+
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [query, setQuery] = useState("");
 
@@ -122,20 +182,27 @@ function App() {
   return (
     <div className="App">
       <div className='Container'>
-        <Headroom>   <Navbar query={query} handleInputChange={handleInputChange} /></Headroom>
+        <Headroom>   <Navbar query={query} handleInputChange={handleInputChange} totalCartItems={totalCartItems} /></Headroom>
       </div>
 
       <Routes>
 
         <Route path='/' element={<ContentSession ServiceData={ServiceData} ProjectData={ProjectData} />}></Route >
         <Route path='/our-services' element={<OurServices ServiceData={ServiceData} />}></Route >
-        <Route path='/shoppingcart' element={<ShoppingCart productData={productData} />}></Route >
+        <Route path='/shoppingcart' element={<ShoppingCart productData={productData}
+          removeFromCart={removeFromCart}
+          increaseCartQuantity={increaseCartQuantity}
+          descreaseCartQuantity={descreaseCartQuantity}
+          totalCartItems={totalCartItems}
+          totalCost={totalCost}
+          cart={cart}
+        />}></Route >
         <Route path='/wishlist' element={<WishList productData={productData} />}></Route >
         <Route path='/log-in' element={<Login />}></Route >
         <Route path='/learn-and-ask' element={<LearnandAsk LearnAndAsk={LearnAndAsk} />}></Route >
         <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} handleClickQuickView={handleClickQuickView} />}>
         </Route >
-        <Route path='/products/:productCode' element={<ProductDetails productData={productData} />}>
+        <Route path='/products/:productCode' element={<ProductDetails productData={productData} addToCart={addToCart} />}>
         </Route >
 
         <Route path='/our-projects' element={<Projects ProjectData={ProjectData} />}></Route >
@@ -145,6 +212,7 @@ function App() {
         <Route path='/news' element={<News newsData={NewsData} />}></Route >
         <Route path='/interactive-tools' element={<InteractiveTools />}></Route >
         <Route path='/interactive-tools-cost-suggesttion/' element={<ToolCostSugeestion />}></Route >
+        <Route path='/system-cost-guide' element={<SystemCostGuide />}></Route >
         <Route path='/interactive-tools-product-suggesttion/' element={<ToolProductSuggestion />}></Route >
         <Route path='/contact-us' element={<ContactUs />}></Route >
         <Route path='/payment/:productCode' element={<Payment />}></Route >

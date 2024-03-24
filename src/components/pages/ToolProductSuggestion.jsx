@@ -1,4 +1,5 @@
 import React from 'react';
+import './ToolProductSuggestion.css'
 
 function ToolProductSuggestion(props) {
     return (
@@ -36,7 +37,7 @@ function ToolProductSuggestion(props) {
                                 <div class="col">
                                     <div class="checkbox">
                                         <input type="checkbox" id="large-storage" />
-                                        <label for="large-storage">More than 1∏0.000L</label>
+                                        <label for="large-storage">More than 10.000L</label>
                                     </div>
                                 </div>
 

@@ -1,0 +1,148 @@
+@import "../root.css";
+
+:root {
+    --background-white: #ffff;
+    --background-red: #ff0037;
+    --primary-blue: #0766ad;
+    --blue-dark: #0D4C7C;
+    --green-light: #c5e897;
+    --green-dark: #9BBC6E;
+    --black-light: #C0C0C0;
+    --black-dark: #4E5656;
+    --neutral-blue: #29adb2;
+    --text-black: #3e4141;
+    --text-white: #f3f3f3;
+    --text-grey: #a7a7a7;
+    --Desktop-Text-Heading1: 48px;
+    --Desktop-Text-Heading2: 40px;
+    --Desktop-Text-Heading3: 32px;
+    --Desktop-Text-Heading4: 24px;
+    --Common-Text-Subtitle: 20px;
+    --Common-Text-Label: 16px;
+    --Common-Text-Body1: 20px;
+    --Common-Text-Body2: 16px;
+    --Common-Text-Caption: 13px;
+}
+
+
+
+.tool-cost-suggestion-page {}
+
+
+.form .header {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    gap: 5px;
+    color: var(--primary-blue);
+
+}
+
+.form .header p {
+    color: #555;
+}
+
+.form .body {
+
+    border-radius: 20px;
+    border: 2px solid var(--primary-blue);
+    margin: 16px 64px;
+
+}
+
+
+
+.form .steps {
+
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.form .steps .step {
+
+    padding: 5px 15px 15px;
+
+
+}
+
+.form .steps .step h4 {
+    margin-bottom: 5px;
+    color: var(--blue-dark);
+
+}
+
+.form .steps .step p {
+    color: #555;
+    max-width: 90%;
+    font-size: 15px;
+
+
+}
+
+.form .steps .step .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+
+.form .steps .step .grid .col {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form .steps .step .grid input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+}
+
+
+.form .steps .step .grid .col .checkbox input {
+    display: none;
+
+}
+
+.form .steps .step .grid .col .checkbox label {
+    display: flex;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+.form .steps .step .grid .col .checkbox input:checked+label {
+    background: #00aace;
+    color: #fff;
+
+}
+
+.form .steps .step .confirmation {
+    display: grid;
+    text-align: center;
+    place-items: center;
+    gap: 16px;
+}
+
+.form .steps .step .confirmation button {
+    background: var(--primary-blue);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form .steps .step .confirmation button:hover {
+    background: var(--green-light);
+    color: var(--black-dark);
+}
