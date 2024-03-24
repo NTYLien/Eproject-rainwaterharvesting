@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Login.css"
 import logo from "../logo-rainharvesting.jpg"
 import { useNavigate } from 'react-router-dom';
-
+import { toast } from 'react-toastify';
 function Login(props) {
     const nav = useNavigate();
+
+    const [userName, setUserName] = useState("");
+    const [password, setPassword] = useState("");
+
+    const loginAccount = {
+        userName: userName.trim(),
+        password: password.trim()
+    }
+
+
+
     return (
         <div classNameName='login-page'>
             <div className="main_div">
@@ -22,7 +33,9 @@ function Login(props) {
 
                 <form action="#">
                     <div className="input-box">
-                        <input type="text" placeholder="Email or Phone" required />
+                        <input type="text" placeholder="Email or Phone" id='username'
+                            onChange={(e) => { setUserName(e.target.value) }}
+                            required />
                         <div className="icon">
                             <i className="fa-solid fa-user"></i>
 
@@ -30,7 +43,8 @@ function Login(props) {
                     </div>
 
                     <div className="input-box">
-                        <input type="password" placeholder="Password" required />
+                        <input type="password" placeholder="Password" required
+                            onChange={(e) => { setPassword(e.target.value) }} />
                         <div className="icon">
                             <i className="fa-solid fa-lock"></i>
 
@@ -43,14 +57,37 @@ function Login(props) {
                             <span>Remember me</span>
                         </div>
 
-                        <div className="forget_div">
+                        <div className="forget_div" onClick={() => {
+                            if (!loginAccount.userName) {
+                                toast.info("Please enter your email address so we can send you an email to reset your password.");
+                                return;
+                            }
+                            toast.success("We sent you an email to reset your password. Please check!")
+
+                        }}>
                             <a href="#">Forget password</a>
                         </div>
 
                     </div>
 
                     <div className="input-box button">
-                        <input type="submit" value="Login" />
+                        <input type="submit" value="Login"
+                            onClick={() => {
+                                if (!loginAccount.userName || !loginAccount.password) {
+                                    toast.error("Please input required box");
+                                    return;
+                                }
+                                if (loginAccount.userName.match("admin") && loginAccount.password.match("admin")) {
+                                    toast.success("Login Successfully!")
+                                    nav("/")
+                                    return;
+                                } else {
+                                    toast.error("Your username or password not match!")
+                                    return;
+                                }
+
+                            }}
+                        />
 
 
 

@@ -76,7 +76,7 @@ function ContactForm(props) {
 
                         const phoneRegEx = /^\d{8}$/;
                         if (!infoContact.phone.match(phoneRegEx)) {
-                            toast.error("Your phone number must be  more 8 digits")
+                            toast.error("Your phone number must be 8 digits")
                             return;
                         }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./ContactUs.css"
+import GoogleMaps from '../GoogleMaps';
 
 
 function ContactUs(props) {
@@ -31,7 +32,10 @@ function ContactUs(props) {
 
                 <div className="right-side">
                     <div className="topic-text">Find Us On Google Maps</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur voluptatum maxime architecto nulla vitae laboriosam natus distinctio amet voluptas qui aspernatur ipsam laborum, neque exercitationem modi deleniti debitis? Quasi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur voluptatum maxime architecto nulla vitae labi.</p>
+                    <div className='map'>
+                        <GoogleMaps />
+                    </div>
 
 
 
