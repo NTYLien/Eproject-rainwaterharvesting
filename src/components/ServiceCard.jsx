@@ -2,7 +2,7 @@ import React from 'react';
 import './ServiceCard.css'
 import { useNavigate } from 'react-router-dom';
 
-function ServiceCard({ imgurl, name, description }) {
+function ServiceCard({ id, imgurl, imgBg, name, description }) {
     const nav = useNavigate();
     return (
         <div className='service-card'>
@@ -14,7 +14,7 @@ function ServiceCard({ imgurl, name, description }) {
                 <p className='description'>{description}</p>
 
                 <button className='getstart-btn'
-                    onClick={() => { nav(`/about-us/our-services`) }}
+                    onClick={() => { nav(`/our-services/`) }}
                 >Get Start <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>

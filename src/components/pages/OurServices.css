@@ -24,17 +24,17 @@
     --Common-Text-Caption: 13px;
 }
 
-.our-learn {
+.our-service {
     display: flex;
     flex-direction: column;
     width: 100%;
+
     align-items: center;
     text-align: center;
     margin: 16px auto;
-
 }
 
-.our-learn .learn-intro {
+.our-service .service-intro {
     background: #e2e2e2;
     padding: 16px;
     text-align: center;
@@ -43,15 +43,16 @@
     color: var(--text-black);
 }
 
-.our-learn .learn-intro:hover {
-    scale: 1.1;
+.our-service .service-intro:hover {
+    /* width: 100%; */
+    scale: 1.1
 }
 
-.our-learn .learn-intro .title:hover {
+.our-service .service-intro .title:hover {
     color: var(--primary-blue);
 }
 
-.our-learn .showmore-btn {
+.our-service .showmore-btn {
     background: var(--primary-blue);
     color: var(--text-white);
     border: none;
@@ -61,11 +62,11 @@
     font-weight: 500;
 }
 
-.our-learn .showmore-btn:hover {
+.our-service .showmore-btn:hover {
     color: var(--text-white);
     background: var(--neutral-blue);
 }
 
-.our-learn .learn-content {
+.our-service .service-content {
     margin: 16px 64px;
 }

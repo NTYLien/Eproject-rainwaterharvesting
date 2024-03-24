@@ -6,8 +6,6 @@ function ProjectDetail(props) {
 
     const projectData = props.ProjectData;
     const { id } = useParams();
-    debugger
-
     const project = projectData.find(x => x.id === id);
     const title = project.title;
     const description = project.description;

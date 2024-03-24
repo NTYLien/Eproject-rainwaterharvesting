@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "title": "Most sensational news of the weeks",
+        "date": "10 Oct 2021 - By ABC News",
+        "paragraph1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea incidunt minima ut eos eveniet laudantium dolor itaque, deserunt porro dolores modi, provident consectetur. Voluptatem sint ex expedita! Saepe, laudantium.",
+        "paragraph2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea incidunt minima ut eos eveniet laudantium dolor itaque, deserunt porro dolores modi, provident consectetur. Voluptatem sint ex expedita! Saepe, laudantium.",
+        "thumbnail": "https://picsum.photos/200/100",
+        "mainPhoto": "https://www.embracerelief.org/wp-content/uploads/2017/12/world_vision_high_res_0-1-e1513595694236.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Lorem ipsum dolor sit amet consecte",
+        "date": "10 Oct 2021 - By ABC News",
+        "paragraph1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea incidunt minima ut eos eveniet laudantium dolor itaque, deserunt porro dolores modi, provident consectetur. Voluptatem sint ex expedita! Saepe, laudantium.",
+        "paragraph2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea incidunt minima ut eos eveniet laudantium dolor itaque, deserunt porro dolores modi, provident consectetur. Voluptatem sint ex expedita! Saepe, laudantium.",
+        "thumbnail": "https://picsum.photos/200/100",
+        "mainPhoto": "https://www.embracerelief.org/wp-content/uploads/2017/12/world_vision_high_res_0-1-e1513595694236.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Most sensational news of the weeks",
+        "date": "10 Oct 2021 - By ABC News",
+        "paragraph1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea incidunt minima ut eos eveniet laudantium dolor itaque, deserunt porro dolores modi, provident consectetur. Voluptatem sint ex expedita! Saepe, laudantium.",
+        "paragraph2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea incidunt minima ut eos eveniet laudantium dolor itaque, deserunt porro dolores modi, provident consectetur. Voluptatem sint ex expedita! Saepe, laudantium.",
+        "thumbnail": "https://picsum.photos/200/100",
+        "mainPhoto": "https://www.embracerelief.org/wp-content/uploads/2017/12/world_vision_high_res_0-1-e1513595694236.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Most sensational news of the weeks",
+        "date": "10 Oct 2021 - By ABC News",
+        "paragraph1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea incidunt minima ut eos eveniet laudantium dolor itaque, deserunt porro dolores modi, provident consectetur. Voluptatem sint ex expedita! Saepe, laudantium.",
+        "paragraph2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ea incidunt minima ut eos eveniet laudantium dolor itaque, deserunt porro dolores modi, provident consectetur. Voluptatem sint ex expedita! Saepe, laudantium.",
+        "thumbnail": "https://picsum.photos/200/100",
+        "mainPhoto": "https://www.embracerelief.org/wp-content/uploads/2017/12/world_vision_high_res_0-1-e1513595694236.jpg"
+    }
+]

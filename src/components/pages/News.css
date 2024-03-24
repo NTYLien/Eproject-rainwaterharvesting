@@ -24,48 +24,48 @@
     --Common-Text-Caption: 13px;
 }
 
-.our-learn {
+.news-page {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin: 16px auto;
-
+    margin: 32px 64px;
 }
 
-.our-learn .learn-intro {
-    background: #e2e2e2;
-    padding: 16px;
-    text-align: center;
-    width: 50%;
+
+
+
+
+.news-page .date-publish {
+    margin-top: 8px;
+    color: var(--green-dark);
+}
+
+
+
+.news-page .pic-show img {
+    border: 8px;
+    width: 350px;
+    height: 200px;
     border-radius: 8px;
-    color: var(--text-black);
 }
 
-.our-learn .learn-intro:hover {
+.news-page .pic-show img:hover {
     scale: 1.1;
 }
 
-.our-learn .learn-intro .title:hover {
+.news-page .news-photo img {
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.news-page .pic-show h4 {
+    font-size: 1.2rem;
     color: var(--primary-blue);
 }
 
-.our-learn .showmore-btn {
-    background: var(--primary-blue);
-    color: var(--text-white);
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    margin-top: 8px;
-    font-weight: 500;
+.news-page .pic-show h4:hover {
+    color: var(--text-black);
 }
 
-.our-learn .showmore-btn:hover {
-    color: var(--text-white);
-    background: var(--neutral-blue);
-}
-
-.our-learn .learn-content {
-    margin: 16px 64px;
+.news-page .news-container .title {
+    color: var(--primary-blue);
 }

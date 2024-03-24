@@ -33,6 +33,8 @@ function ContentSession(props) {
         imgurl={item.imgurl}
         name={item.name}
         description={item.description}
+        id={item.id}
+        imgBg={item.imgBg}
     />));
 
     const projectData = props.ProjectData;

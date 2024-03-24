@@ -45,9 +45,10 @@ function Navbar({ handleInputChange, query }) {
 
                     </button>
 
-                    <button className='log-in'>
+                    <button className='log-in'
+                        onClick={() => { nav('/log-in') }}>
                         <span>Login</span>
-                        <i class="fa-solid fa-circle-user"></i>
+                        <i className="fa-solid fa-circle-user"></i>
                     </button>
                 </div>
 
