@@ -268,7 +268,7 @@ function App() {
         <Route path='/interactive-tools-product-suggesttion/' element={<ToolProductSuggestion />}></Route >
         <Route path='/contact-us' element={<ContactUs />}></Route >
         <Route path='/payment/:productCode' element={<Payment />}></Route >
-        <Route path='/*' element={<NotFound />}></Route >
+        <Route path='*' element={<NotFound />}></Route >
       </Routes>
 
 
