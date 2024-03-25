@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Eproject-rainwaterharvesting/static/css/main.33378ec8.css",
-    "main.js": "/Eproject-rainwaterharvesting/static/js/main.78742c66.js",
+    "main.css": "/Eproject-rainwaterharvesting/static/css/main.530486f5.css",
+    "main.js": "/Eproject-rainwaterharvesting/static/js/main.c075a865.js",
     "static/js/453.81625e41.chunk.js": "/Eproject-rainwaterharvesting/static/js/453.81625e41.chunk.js",
     "static/media/video-raining.mp4": "/Eproject-rainwaterharvesting/static/media/video-raining.a74f75c16e2b9922079c.mp4",
     "static/media/logo-rainharvesting.jpg": "/Eproject-rainwaterharvesting/static/media/logo-rainharvesting.58bb1d89bbbdaba1151d.jpg",
@@ -9,12 +9,12 @@
     "static/media/revicons.ttf": "/Eproject-rainwaterharvesting/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/Eproject-rainwaterharvesting/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Eproject-rainwaterharvesting/index.html",
-    "main.33378ec8.css.map": "/Eproject-rainwaterharvesting/static/css/main.33378ec8.css.map",
-    "main.78742c66.js.map": "/Eproject-rainwaterharvesting/static/js/main.78742c66.js.map",
+    "main.530486f5.css.map": "/Eproject-rainwaterharvesting/static/css/main.530486f5.css.map",
+    "main.c075a865.js.map": "/Eproject-rainwaterharvesting/static/js/main.c075a865.js.map",
     "453.81625e41.chunk.js.map": "/Eproject-rainwaterharvesting/static/js/453.81625e41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33378ec8.css",
-    "static/js/main.78742c66.js"
+    "static/css/main.530486f5.css",
+    "static/js/main.c075a865.js"
   ]
 }
