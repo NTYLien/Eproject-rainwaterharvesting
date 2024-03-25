@@ -179,9 +179,9 @@ function ToolCostSuggestion(props) {
 
                                             }
 
-                                            const phoneRegEx = /^\d{8}$/;
+                                            const phoneRegEx = /^(\D*\d){8}$/;
                                             if (!userInfoFromTool.phone.match(phoneRegEx)) {
-                                                toast.error("Your phone number must be 8 digits")
+                                                toast.error("Your phone number must be at least 8 digits")
                                                 return;
                                             }
 
