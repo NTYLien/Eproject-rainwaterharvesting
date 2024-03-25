@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ToolProductSuggestion.css'
 
 function ToolProductSuggestion(props) {
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [country, setCountry] = useState("");
+
+    const userInfoFromTool = {
+        name: name.trim(),
+
+    }
+
+
+
     return (
         <div className='tool-page-form'>
             <div class="form">
