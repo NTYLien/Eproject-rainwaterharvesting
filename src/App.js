@@ -33,6 +33,7 @@ import ToolProductSuggestion from './components/pages/ToolProductSuggestion';
 import ToolCostSugeestion from './components/pages/ToolCostSuggestion';
 import SystemCostGuide from './components/pages/SystemCostGuide';
 import CreateAccount from './components/pages/CreateAccount';
+import NotFound from './components/pages/NotFound';
 
 const useLocalStorageState = (initialData, key) => {
   const localStorageState = JSON.parse(window.localStorage.getItem(key) || JSON.stringify(initialData));
@@ -267,6 +268,7 @@ function App() {
         <Route path='/interactive-tools-product-suggesttion/' element={<ToolProductSuggestion />}></Route >
         <Route path='/contact-us' element={<ContactUs />}></Route >
         <Route path='/payment/:productCode' element={<Payment />}></Route >
+        <Route path='/*' element={<NotFound />}></Route >
       </Routes>
 
 
