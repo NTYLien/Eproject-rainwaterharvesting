@@ -3,15 +3,7 @@ import './ToolProductSuggestion.css'
 
 function ToolProductSuggestion(props) {
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
-    const [country, setCountry] = useState("");
 
-    const userInfoFromTool = {
-        name: name.trim(),
-
-    }
 
 
 
@@ -35,7 +27,9 @@ function ToolProductSuggestion(props) {
                             <div class="grid">
                                 <div class="col">
                                     <div class="checkbox">
-                                        <input type="checkbox" id="small-storage" />
+                                        <input type="checkbox" id="small-storage"
+
+                                        />
                                         <label for="small-storage">Less than 3.000L</label>
                                     </div>
                                 </div>

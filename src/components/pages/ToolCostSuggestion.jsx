@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ToolCostSuggestion.css'
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function ToolCostSuggestion(props) {
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [country, setCountry] = useState("");
+
+    const userInfoFromTool = {
+        name: name.trim(),
+        email: email.trim(),
+        phone: phone.trim(),
+        country: country.trim()
+    }
     const nav = useNavigate();
     return (
         <div className='tool-page-form'>
@@ -23,22 +36,28 @@ function ToolCostSuggestion(props) {
                             <div class="grid">
                                 <div class="col">
                                     <lable for="name">Name</lable>
-                                    <input type="text" id="name" required />
+                                    <input type="text" id="name" required
+                                        onChange={(e) => { setName(e.target.value) }} />
                                 </div>
 
                                 <div class="col">
                                     <lable for="email">Email</lable>
-                                    <input type="text" id="email" required />
+                                    <input type="text" id="email" required
+                                        onChange={(e) => { setEmail(e.target.value) }}
+                                    />
                                 </div>
 
                                 <div class="col">
                                     <lable for="phone">Phone number</lable>
-                                    <input type="phone" id="phone" required />
+                                    <input type="phone" id="phone" required
+                                        onChange={(e) => { setPhone(e.target.value) }}
+                                    />
                                 </div>
 
                                 <div class="col">
                                     <lable for="country">Your country </lable>
-                                    <input type="text" id="country" required />
+                                    <input type="text" id="country" required
+                                        onChange={(e) => { setCountry(e.target.value) }} />
                                 </div>
                             </div>
                         </div>
@@ -142,7 +161,34 @@ function ToolCostSuggestion(props) {
                                 </p>
 
                                 <div>
-                                    <button >Submit</button>
+                                    <button
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            if (!userInfoFromTool.name || !userInfoFromTool.email || !userInfoFromTool.phone || !userInfoFromTool.country) {
+                                                toast.error("Sorry! Please fill-in required information before submit the form");
+                                                return;
+                                            }
+
+
+
+                                            const emailRegEx = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+                                            if (!userInfoFromTool.email.match(emailRegEx)) {
+                                                toast.error("Invalid email")
+                                                return;
+
+                                            }
+
+                                            const phoneRegEx = /^\d{8}$/;
+                                            if (!userInfoFromTool.phone.match(phoneRegEx)) {
+                                                toast.error("Your phone number must be 8 digits")
+                                                return;
+                                            }
+
+
+                                            toast.success('Thank you! Our sales team will contact you ASAP!')
+                                        }}
+                                    >Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +201,7 @@ function ToolCostSuggestion(props) {
             </div>
 
 
-        </div>
+        </div >
     );
 }
 

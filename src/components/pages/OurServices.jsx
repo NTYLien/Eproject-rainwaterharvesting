@@ -11,18 +11,20 @@ function OurServices(props) {
 
         <>
             {serviceData.map((x) => {
+                debugger
                 return (
                     <div className='our-service'>
                         <div className="service-intro">
                             <h3 className="title">{x.name}</h3>
                             <div className='description'>{x.description}</div>
                             <button className="showmore-btn" onClick={() =>
+
                                 setShow({ ...show, [x.id]: !show[x.id] })}>{show[x.id] ? "Click to Hide" : "Show more"}</button>
 
                         </div >
 
-                        <div className="service-content">
-                            {show && <p className='service-info'>{x.content}</p>}
+                        <div className="learn-content">
+                            {show[x.id] && <p className='learn-info'>{x.content}</p>}
                         </div>
 
                     </div >

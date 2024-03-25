@@ -48,6 +48,10 @@
     scale: 1.1
 }
 
+.learn-info {
+    margin-top: 16px;
+}
+
 .our-service .service-intro .title:hover {
     color: var(--primary-blue);
 }
