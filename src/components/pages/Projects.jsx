@@ -30,7 +30,7 @@ function Projects(props) {
 
     const commercialData = (props.ProjectData).filter(x => x.type === "commercial");
 
-    const residentialData = (props.ProjectData).filter(x => x.type === "commercial");
+    const residentialData = (props.ProjectData).filter(x => x.type === "residential");
 
     const commercial = commercialData.map((item) => (<ProjectCard
         imgurl={item.imgurl}
@@ -52,7 +52,7 @@ function Projects(props) {
         <div className='projects-page'>
             <header>
                 <h1>We are creating a better world through the power of design</h1>
-                <p>We empower people to engage and participate in their own unique water journey as part of a bigger movement to contribute to water sustainability across the world. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque possimus exercitationem quae temporibus nesciunt ratione corrupti quod dignissimos, in omnis quasi id nostrum provident perspiciatis culpa fugiat inventore accusantium.</p>
+                <p>We empower people to engage and participate in their own unique water journey as part of a bigger movement to contribute to water sustainability across the world. The following is one of the main projects we have implemented, covering both residential and commercial areas across various provinces in Vietnam, with the aim of providing water for humanity.</p>
             </header>
 
             <div className='projects-content'>

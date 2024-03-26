@@ -35,7 +35,7 @@ function TopBanner(props) {
             <div className="top-banner">
                 <video src={videoBg} loop ref={videoRef}></video>
 
-                <div className='bg-overlay'></div>
+                <div className={click ? 'bg-overlay' : 'bg-overlay-active'}></div>
                 <div className='content'>
                     <div className='toggleVideo-icon'>
                         <i onClick={toggleVideo} className={click ? 'fa-solid fa-volume-high' : 'fa-solid fa-volume-xmark'}></i></div>
