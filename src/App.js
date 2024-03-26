@@ -143,6 +143,8 @@ function App() {
   const [query, setQuery] = useState("");
 
 
+
+
   // Search Filter
 
   const handleInputChange = (e) => {
@@ -157,6 +159,8 @@ function App() {
   const handleChange = (e) => {
     setSelectedCategory(e.target.value)
   }
+
+
 
   // Button Filter
   const handleClickQuickView = (e) => {

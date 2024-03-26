@@ -54,10 +54,14 @@ function ProductDetails(props) {
     return (
         <>
             < div className="product-detail" >
+
                 <div className="container">
                     <div className="product-div">
-                        <div className="close-btn"> <i className="fa-solid fa-xmark"></i></div>
+
                         <div className="product-div-left">
+                            <button className='close-btn'
+                                onClick={() => { nav('/products') }}
+                            > <i class="fa-solid fa-angle-left"></i> Back</button>
                             <div className="img-container">
 
                                 <img src={imgs[mainImageIndex]} alt="product1" />
@@ -79,6 +83,7 @@ function ProductDetails(props) {
                             </div>
                         </div>
                         <div className="product-div-right">
+
                             <span className="product-name" >{name}</span>
                             <span className="product-code">SKU: {productCode}</span>
                             <span className="product-price">$ {price}</span>

@@ -19,7 +19,8 @@ function OurServices(props) {
                             <div className='description'>{x.description}</div>
                             <button className="showmore-btn" onClick={() =>
 
-                                setShow({ ...show, [x.id]: !show[x.id] })}>{show[x.id] ? "Click to Hide" : "Show more"}</button>
+                                setShow({ ...show, [x.id]: !show[x.id] })}>
+                                {show[x.id] ? "Click to Hide" : "Show more"}</button>
 
                         </div >
 

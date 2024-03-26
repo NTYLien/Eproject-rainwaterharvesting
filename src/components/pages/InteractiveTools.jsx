@@ -8,7 +8,7 @@ function InteractiveTools(props) {
         <div className="tools-page">
             <header>
                 <h1>We are creating a better world through the power of design</h1>
-                <p>We empower people to engage and participate in their own unique water journey as part of a bigger movement to contribute to water sustainability across the world. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque possimus exercitationem quae temporibus nesciunt ratione corrupti quod dignissimos, in omnis quasi id nostrum provident perspiciatis culpa fugiat inventore accusantium.</p>
+                <p>RainHarvest Systems is your comprehensive resource for residential and commercial water harvesting, treatment and reuse products and systems. Our innovative products work seamlessly together to provide a solution for your specific requirements. Our systems, both residential and commercial, are designed around the same principle - the capture, treatment, and reuse of collected water.</p>
             </header>
             <div className="container-content">
                 <div className="colunm1">

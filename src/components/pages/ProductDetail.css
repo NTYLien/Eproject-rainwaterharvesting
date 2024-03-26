@@ -41,26 +41,27 @@ body {
     width: 100%;
     z-index: 2000;
 
+    border: none;
+
+
 }
 
-
 .product-detail .close-btn {
-    cursor: pointer;
     position: absolute;
-    margin-top: 12px;
-    margin-right: 24px;
-    padding: 6px;
-    right: 16px;
-    scale: 1.2;
-    color: var(--text-black);
-    border: 1px solid var(--background-white);
-    border-radius: 20%;
-
+    color: var(--text-white);
+    z-index: 100;
+    background: var(--primary-blue);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 0.8rem;
 }
 
 .product-detail .close-btn:hover {
-    background-color: var(--black-light);
+    background: var(--green-light);
+    color: var(--black-dark);
 }
+
+
 
 .product-detail img {
     width: 100%;
@@ -84,12 +85,13 @@ body {
 }
 
 .product-detail .product-div {
-    margin: 1rem, 0;
+
     padding: 2rem, 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--background-white);
     column-gap: 10px;
+    margin: 64px 32px;
 
 }
 

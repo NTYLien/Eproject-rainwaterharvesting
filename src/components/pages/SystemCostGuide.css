@@ -1,4 +1,4 @@
-@import "../root.css";
+@import '../root.css';
 
 :root {
     --background-white: #ffff;
@@ -24,10 +24,40 @@
     --Common-Text-Caption: 13px;
 }
 
-.category-question {
-    background: var(--green-light);
-    border-radius: 8px;
-    padding: 6px;
-    width: fit-content;
-    font-style: italic;
+.cost-guide-page {
+    margin: 16px 64px;
+}
+
+.cost-guide-page h2 {
+    text-align: center;
+    color: var(--primary-blue);
+}
+
+.cost-guide-page h3 {
+    color: var(--primary-blue);
+    margin-top: 32px;
+}
+
+.cost-guide-page h4 {
+    color: var(--primary-blue);
+    margin-top: 16px;
+}
+
+.contact {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--neutral-blue);
+    padding-top: 32px;
+}
+
+.contact:hover {
+    color: var(--text-black);
+}
+
+.contact span {
+    color: var(--green-dark)
+}
+
+.contact span:hover {
+    color: var(--primary-blue);
 }
