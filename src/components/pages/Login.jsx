@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Login.css"
 import logo from "../logo-rainharvesting.jpg"
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 function Login({ setLoggedUser }) {
     const nav = useNavigate();
@@ -100,8 +100,8 @@ function Login({ setLoggedUser }) {
 
                     </div>
 
-                    <div className="input-box button">
-                        <input type="submit" value="Login"
+                    <div className="input-box">
+                        <button className='submit-btn' type="submit" value="Login"
                             onClick={(e) => {
                                 e.preventDefault();
                                 if (!loginAccount.userName || !loginAccount.password) {
@@ -125,14 +125,14 @@ function Login({ setLoggedUser }) {
                                     toast.error("Wrong username!");
                                 }
                             }}
-                        />
+                        >Login</button>
 
 
 
                     </div>
 
                     <div className="sign_up" >
-                        Not a member? <a href="#" onClick={() => { nav(`/create-account`) }}>Signup now</a>
+                        Not a member? <Link to='/create-account' >Signup now</Link>
                     </div>
 
                 </form>

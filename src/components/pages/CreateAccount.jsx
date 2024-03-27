@@ -122,7 +122,7 @@ function CreateAccount(props) {
 
 
                     <div className="button">
-                        <input type="submit" value="Register"
+                        <button className='submit-btn' type="submit" value="Register"
                             onClick={(e) => {
                                 e.preventDefault();
 
@@ -174,7 +174,7 @@ function CreateAccount(props) {
 
 
                             }}
-                        />
+                        >Sign Up</button>
                     </div>
 
 

@@ -38,6 +38,10 @@ body {
 }
 
 
+.contact-form {
+    margin-bottom: 32px;
+}
+
 .name-input {
     display: flex;
     gap: 32px;
@@ -52,9 +56,9 @@ body {
 }
 
 
+
 .contact-form form .user-details .input-box {
     margin: 8px 0 8px 0;
-    width: calc(100% /2 -16px);
     height: auto
 }
 
@@ -99,28 +103,32 @@ body {
     border-color: var(--primary-blue);
 }
 
-
-form .button {
-    height: 45px;
-    margin: 24px 0;
-
-}
-
-form .button input {
+.submit-btn {
     height: 100%;
     width: 100px;
-    outline: none;
     color: var(--text-white);
     font-size: 18px;
     font-weight: 500;
     border: none;
     border-radius: 5px;
     background: var(--primary-blue);
+    margin-top: 16px;
+
 }
 
-form .button input:hover {
-    background: linear-gradient(-135deg, var(--primary-blue), var(--blue-dark));
+.user-details form .button {
+    height: 45px;
+    margin: 24px 0;
 
+}
+
+
+.submit-btn:hover {
+    background: var(--neutral-blue)
+}
+
+.submit-btn {
+    padding: 8px;
 }
 
 @media (max-width: 1200px) {
@@ -128,13 +136,13 @@ form .button input:hover {
         max-width: 100%;
     }
 
-    form .user-details .input-box {
+    .user-details form .user-details .input-box {
         margin-bottom: 15px;
         width: 100%
     }
 
 
-    form .subscribes-news-dot {
+    .user-details form .subscribes-news-dot {
 
         width: 100%;
     }

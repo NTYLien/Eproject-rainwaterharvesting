@@ -90,7 +90,7 @@
 }
 
 
-form .user-details .input-box {
+.create-account-page form .user-details .input-box {
     margin: 20px 0 24px 0;
     width: calc(100% /2 -20px);
 
@@ -118,11 +118,11 @@ form .user-details .input-box {
     border-color: var(--primary-blue);
 }
 
-form .gender-details .gender-title {
+.create-account-page form .gender-details .gender-title {
     font-weight: 500;
 }
 
-form .gender-details .category {
+.create-account-page form .gender-details .category {
     display: flex;
     width: 80%;
     margin: 14px 0;
@@ -162,17 +162,17 @@ form .gender-details .category {
 
 }
 
-form input [type="radio"] {
+.create-account-page form input [type="radio"] {
     display: none;
 }
 
-form .button {
+.create-account-page form .button {
     height: 45px;
     margin: 45px 0;
 
 }
 
-form .button input {
+.create-account-page .submit-btn {
     height: 100%;
     width: 100%;
     outline: none;
@@ -194,13 +194,13 @@ form .button input {
         max-width: 100%;
     }
 
-    form .user-details .input-box {
+    .create-account-page form .user-details .input-box {
         margin-bottom: 15px;
         width: 100%
     }
 
 
-    form .gender-details .category {
+    .create-account-page form .gender-details .category {
 
         width: 100%;
     }

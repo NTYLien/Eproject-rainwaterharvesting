@@ -58,8 +58,8 @@ function ContactForm(props) {
 
                 </div>
 
-                <div className="button">
-                    <input type="submit" value="Submit" onClick={(e) => {
+                <div >
+                    <button className="submit-btn" type="submit" value="Submit" onClick={(e) => {
                         e.preventDefault();
                         const infoContact = {
                             firstname: firstname.trim(),
@@ -88,7 +88,7 @@ function ContactForm(props) {
 
 
 
-                    }} />
+                    }} >Submit </button>
                 </div>
             </form>
 
