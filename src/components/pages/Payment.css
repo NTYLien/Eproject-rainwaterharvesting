@@ -41,15 +41,16 @@
     flex-direction: row;
 }
 
-.Cart {
+.back-to-shopping-cart {
     display: flex;
     flex-direction: row;
     gap: 32px;
     background: var(--neutral-blue);
     padding: 32px;
+    height: 100%;
 }
 
-.Cart h2 {
+.back-to-shopping-cart h2 {
     color: var(--text-white);
 }
 
@@ -71,6 +72,8 @@
 .container-payment-page {
     display: flex;
     flex-direction: row;
+    margin-left: 40px;
+    gap: 64px;
 
 }
 
@@ -87,6 +90,7 @@
 .form {
     margin-left: 32px;
     margin-bottom: 64px;
+    margin-top: 0px;
 }
 
 .row-info-flex {
@@ -102,7 +106,13 @@
     border-radius: 8px;
     color: var(--text-white);
     margin-left: 32px;
+    margin-bottom: 64px;
+    margin-top: 24px;
 
+}
+
+.accept-card p {
+    color: var(--primary-blue);
 }
 
 .proceed-check-out:hover {
@@ -118,6 +128,7 @@
     border-radius: 5px;
     padding: 8px;
     border: 1px solid var(--primary-blue);
+    width: 300px;
 }
 
 .form input:hover {

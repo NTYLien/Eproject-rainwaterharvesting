@@ -200,6 +200,20 @@
     padding: 8px;
 }
 
+.view-icon i {
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+
+.view-icon i:hover {
+    color: var(--neutral-blue);
+}
+
+.product-name {
+    cursor: pointer;
+}
+
+
 @media (max-width: 650px) {
 
     .wishlist-page h1 {

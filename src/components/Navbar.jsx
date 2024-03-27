@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 
-function Navbar({ handleInputChange, query, totalCartItems }) {
+function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem }) {
 
     const nav = useNavigate();
     const [click, setClick] = useState(false);
@@ -42,7 +42,7 @@ function Navbar({ handleInputChange, query, totalCartItems }) {
                     <button className="wishlist-button"
                         onClick={() => { nav('/wishlist') }}
                     >
-                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>{totalWishListItem} items
 
                     </button>
 

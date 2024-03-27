@@ -34,6 +34,8 @@ import ToolCostSugeestion from './components/pages/ToolCostSuggestion';
 import SystemCostGuide from './components/pages/SystemCostGuide';
 import CreateAccount from './components/pages/CreateAccount';
 import NotFound from './components/pages/NotFound';
+import ThankYou from './components/pages/ThankYou';
+
 
 const useLocalStorageState = (initialData, key) => {
   const localStorageState = JSON.parse(window.localStorage.getItem(key) || JSON.stringify(initialData));
@@ -69,6 +71,8 @@ function App() {
 
   };
 
+
+  const totalWishListItem = wishList.length;
   const removeFromWishList = (product) => {
     const newWishList = wishList.filter((item) => item.id !== product.id)
     setWishList(newWishList)
@@ -230,7 +234,7 @@ function App() {
     <div className="App">
       <div className='Container'>
 
-        <Headroom>   <Navbar query={query} handleInputChange={handleInputChange} totalCartItems={totalCartItems} /></Headroom>
+        <Headroom>   <Navbar query={query} handleInputChange={handleInputChange} totalCartItems={totalCartItems} totalWishListItem={totalWishListItem} /></Headroom>
 
       </div>
 
@@ -251,6 +255,7 @@ function App() {
         <Route path='/wishlist' element={<WishList productData={productData}
           removeFromWishList={removeFromWishList}
           wishList={wishList}
+          totalWishListItem={totalWishListItem}
 
         />}></Route >
         <Route path='/log-in' element={<Login />}></Route >
@@ -272,6 +277,7 @@ function App() {
         <Route path='/interactive-tools-product-suggesttion/' element={<ToolProductSuggestion />}></Route >
         <Route path='/contact-us' element={<ContactUs />}></Route >
         <Route path='/payment/:productCode' element={<Payment />}></Route >
+        <Route path='/thankyou' element={<ThankYou />}></Route >
         <Route path='*' element={<NotFound />}></Route >
       </Routes>
 
@@ -281,7 +287,7 @@ function App() {
 
       <ToastContainer
         position="top-right"
-        autoClose={1000}
+        autoClose={100}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

@@ -1,25 +1,56 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./CreateAccount.css";
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
 function CreateAccount(props) {
     const nav = useNavigate();
+    const [id, setId] = useState("");
     const [userName, setUserName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [password, setPassword] = useState("");
-    const [confirmpassword, setConfirmPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
 
     const newAccount = {
+        id: id,
         userName: userName.trim(),
         email: email.trim(),
         phone: phone.trim(),
         password: password.trim(),
-        confirmpassword: confirmpassword.trim(),
+        confirmPassword: confirmPassword.trim(),
     }
+    const [userList, setUserList] = useState(null);
+
+    useEffect(() => {
+        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/${id}`
+            , {
+                method: 'GET',
+                headers: { 'content-type': 'application/json' },
+            }).then(res => {
+                if (res.ok) {
+                    return res.json();
+                }
+                // handle error
+            }).then(user => {
+                setUserList(user)
+            });
+    }, [id]);
+
+    useEffect(() => {
+        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/${id}`, {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(newAccount)
+        }).then(res => {
+            if (res.ok) {
+                return res.json();
+            }
+        })
+    }, [])
+
     return (
-        <div classNameName='create-account-page'>
+        <div className='create-account-page'>
             <div className="container">
                 <div className="title">
                     Registration Form
@@ -78,13 +109,13 @@ function CreateAccount(props) {
 
                     <div className="terms">
                         <div className='term'>
-                            <input type="radio" name="terms" checked />
+                            <input type="checkbox" name="terms" checked />
                             I consent to Rainwater Harvesting collecting and managing my personal information in accordance with the Rainwater Harvesting Privacy Policy and Terms and Conditions.
                         </div>
 
                         <div className='term'>
 
-                            <input type="radio" name="terms" />
+                            <input type="checkbox" name="terms" />
                             Send me the latest Rainwater Harvesting updates, with newsletters, catalogues and helpful tips.
                         </div>
                     </div>
@@ -94,7 +125,14 @@ function CreateAccount(props) {
                         <input type="submit" value="Register"
                             onClick={(e) => {
                                 e.preventDefault();
-                                if (!newAccount.userName || !newAccount.email || !newAccount.phone || !newAccount.password || !newAccount.confirmpassword) {
+                                const foundEmail = userList.find((user) => user.email === newAccount.email)
+                                if (foundEmail) {
+
+                                    toast.error("This email is already exist! Please change your email")
+                                    return;
+                                }
+
+                                if (!newAccount.userName || !newAccount.email || !newAccount.phone || !newAccount.password || !newAccount.confirmPassword) {
                                     toast.error("Sorry! Please fill-in required information before submit the form");
                                     return;
                                 }
@@ -114,26 +152,25 @@ function CreateAccount(props) {
 
                                 }
 
-                                const phoneRegEx = /^\d{8}$/;
+                                const phoneRegEx = /^\d{8,}$/;
                                 if (!newAccount.phone.match(phoneRegEx)) {
-                                    toast.error("Your phone number must be 8 digits")
+                                    toast.error("Your phone number must be at least 8 digits")
                                     return;
                                 }
-                                const passwordRegEx = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+                                const passwordRegEx = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/;
                                 if (!newAccount.password.match(passwordRegEx)) {
-                                    toast.error("Password have to minimum eight characters, at least one letter and one number.")
+                                    toast.error("Password have to minimum 5 characters, at least one letter and one number.")
                                     return;
                                 }
 
-                                if (newAccount.password !== newAccount.confirmpassword) {
+                                if (newAccount.password !== newAccount.confirmPassword) {
                                     toast.error("Confirm Password not match!")
                                     return;
                                 }
 
-
-
                                 toast.success('Congratulation, your account has been successfully created!')
                                 nav("/")
+
 
                             }}
                         />

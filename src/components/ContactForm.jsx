@@ -74,13 +74,13 @@ function ContactForm(props) {
                             return;
                         }
 
-                        const phoneRegEx = /^\d{8}$/;
+                        const phoneRegEx = /^\d{8,}$/;
                         if (!infoContact.phone.match(phoneRegEx)) {
-                            toast.error("Your phone number must be 8 digits")
+                            toast.error("Your phone number must be at least 8 digits")
                             return;
                         }
-
-                        if (!infoContact.email.match("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")) {
+                        const emailRegEx = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+                        if (!infoContact.email.match(emailRegEx)) {
                             toast.error("Invalid email")
                             return;
                         }

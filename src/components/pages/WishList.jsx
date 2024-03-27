@@ -2,19 +2,18 @@ import React from 'react';
 import './WishList.css'
 import { useNavigate } from 'react-router-dom';
 
-function WishList({ productData, removeFromWishList, wishList }) {
+function WishList({ productData, removeFromWishList, wishList, totalWishListItem }) {
     const nav = useNavigate();
     return (
         <div>
             <div className="wishlist-page">
-                <h1> Your Saved Items({wishList.length} items)</h1>
+                <h1> Your Saved Items({totalWishListItem} items)</h1>
                 <table>
                     <tr>
                         <th>No</th>
                         <th>Product</th>
                         <th>Unit Price</th>
-
-
+                        <th>View</th>
                         <th>Remove</th>
                     </tr>
 
@@ -30,13 +29,14 @@ function WishList({ productData, removeFromWishList, wishList }) {
                                 <td data-cell className="product-item">
                                     <img src={item.imgurl} alt="product" />
                                     <div className="product-info">
-                                        <span className="product-name">{item.name}</span>
+                                        <span className="product-name" onClick={() => { nav(`/products/${item.productCode}`) }}>{item.name}</span>
                                         <p className="product-code">Product Code: <span>{item.productCode}</span>
                                         </p>
                                     </div>
 
                                 </td>
                                 <td data-cell="Price: " className="price">{item.price} <span>$</span></td>
+                                <td className='view-icon' onClick={() => { nav(`/products/${item.productCode}`) }}><i class="fa-solid fa-eye"></i></td>
                                 <td data-cell className="remove-btn">
 
                                     <button className="remove-btn"

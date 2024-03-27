@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Login.css"
 import logo from "../logo-rainharvesting.jpg"
 import { useNavigate } from 'react-router-dom';
@@ -6,6 +6,9 @@ import { toast } from 'react-toastify';
 function Login(props) {
     const nav = useNavigate();
 
+    const [id, setId] = useState("");
+
+    const [userList, setUserList] = useState(null)
     const [userName, setUserName] = useState("");
     const [password, setPassword] = useState("");
 
@@ -13,6 +16,33 @@ function Login(props) {
         userName: userName.trim(),
         password: password.trim()
     }
+
+
+    useEffect(() => {
+        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/${id}`
+            , {
+                method: 'GET',
+                headers: { 'content-type': 'application/json' },
+            }).then(res => {
+                if (res.ok) {
+                    return res.json();
+                }
+                // handle error
+            }).then(user => {
+                setUserList(user)
+
+
+            });
+    }, [id]);
+
+
+
+
+
+
+
+
+
 
 
 
@@ -33,7 +63,7 @@ function Login(props) {
 
                 <form action="#">
                     <div className="input-box">
-                        <input type="text" placeholder="Email or Phone" id='username'
+                        <input type="text" placeholder="Username" id='username'
                             onChange={(e) => { setUserName(e.target.value) }}
                             required />
                         <div className="icon">
@@ -53,8 +83,8 @@ function Login(props) {
 
                     <div className="option_div">
                         <div className="checkbox">
-                            <input type="checkbox" />
-                            <span>Remember me</span>
+                            <input className='rememberme' type="checkbox" />
+                            <span >Remember me</span>
                         </div>
 
                         <div className="forget_div" onClick={() => {
@@ -72,20 +102,25 @@ function Login(props) {
 
                     <div className="input-box button">
                         <input type="submit" value="Login"
-                            onClick={() => {
+                            onClick={(e) => {
+                                e.preventDefault();
                                 if (!loginAccount.userName || !loginAccount.password) {
                                     toast.error("Please input required box");
                                     return;
-                                }
-                                if (loginAccount.userName.match("admin") && loginAccount.password.match("admin")) {
-                                    toast.success("Login Successfully!")
-                                    nav("/")
-                                    return;
-                                } else {
-                                    toast.error("Your username or password not match!")
-                                    return;
-                                }
+                                };
 
+                                const foundUser = userList.find((user) => user.userName === loginAccount.userName);
+
+                                if (foundUser) {
+                                    if (foundUser.password === loginAccount.password) {
+                                        toast.success("Login Successfully!")
+                                        nav('/')
+                                    } else {
+                                        toast.error("Wrong password!")
+                                    }
+                                } else {
+                                    toast.error("Wrong username!");
+                                }
                             }}
                         />
 
@@ -93,8 +128,8 @@ function Login(props) {
 
                     </div>
 
-                    <div className="sign_up" onClick={() => { nav(`/create-account`) }}>
-                        Not a member? <a href="#">Signup now</a>
+                    <div className="sign_up" >
+                        Not a member? <a href="#" onClick={() => { nav(`/create-account`) }}>Signup now</a>
                     </div>
 
                 </form>

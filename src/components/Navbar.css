@@ -197,6 +197,14 @@ login-in i:hover {
     color: var(--primary-blue);
 }
 
+.wishlist-button {
+
+    font-size: 20.8px;
+}
+
+.fa-heart {
+    padding-right: 8px;
+}
 
 
 @media screen and (max-width: 680px) {

@@ -61,7 +61,7 @@ function ProductDetails(props) {
                         <div className="product-div-left">
                             <button className='close-btn'
                                 onClick={() => { nav('/products') }}
-                            > <i class="fa-solid fa-angle-left"></i> Back</button>
+                            > <i class="fa-solid fa-angle-left"></i> Continue shopping</button>
                             <div className="img-container">
 
                                 <img src={imgs[mainImageIndex]} alt="product1" />

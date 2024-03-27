@@ -61,6 +61,10 @@ body {
     color: var(--black-dark);
 }
 
+.img-container {
+    margin-top: 64px;
+}
+
 
 
 .product-detail img {
