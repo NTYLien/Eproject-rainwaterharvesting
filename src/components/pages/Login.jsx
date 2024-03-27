@@ -3,7 +3,7 @@ import "./Login.css"
 import logo from "../logo-rainharvesting.jpg"
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-function Login(props) {
+function Login({ setLoggedUser }) {
     const nav = useNavigate();
 
     const [id, setId] = useState("");
@@ -114,6 +114,9 @@ function Login(props) {
                                 if (foundUser) {
                                     if (foundUser.password === loginAccount.password) {
                                         toast.success("Login Successfully!")
+                                        setLoggedUser(loginAccount.userName)
+
+
                                         nav('/')
                                     } else {
                                         toast.error("Wrong password!")

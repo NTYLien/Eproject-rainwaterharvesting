@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 
-function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem }) {
+function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem, isUserLoggedIn, logOut }) {
 
     const nav = useNavigate();
     const [click, setClick] = useState(false);
@@ -46,11 +46,30 @@ function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem })
 
                     </button>
 
-                    <button className='log-in'
-                        onClick={() => { nav('/log-in') }}>
-                        <span>Login</span>
-                        <i className="fa-solid fa-circle-user"></i>
-                    </button>
+                    {
+                        isUserLoggedIn ? (
+
+                            <button className='log-in'
+                                onClick={() => {
+                                    if (window.confirm("Do you want to log out??")) {
+                                        logOut();
+                                        nav('/')
+                                    }
+
+                                }}>
+
+                                <span>
+                                    Log out</span>
+                                <i class="fa-solid fa-face-grin-stars"></i>
+                            </button>
+                        ) : (
+                            <button className='log-in'
+                                onClick={() => { nav('/log-in') }}>
+                                <span>Login</span>
+                                <i className="fa-solid fa-circle-user"></i>
+                            </button>
+                        )
+                    }
                 </div>
 
                 <div className='navbar'>

@@ -48,7 +48,16 @@ const useLocalStorageState = (initialData, key) => {
 }
 
 function App() {
-  const [wishList, setWishList] = useLocalStorageState([], "wishlist")
+
+  const [loggedUser, setLoggedUser] = useState(null);
+  const isUserLoggedIn = loggedUser != null;
+  const logOut = () => {
+    setLoggedUser(null)
+  }
+
+
+
+  const [wishList, setWishList] = useLocalStorageState([], "wishlist");
 
   const addToWishList = (product) => {
     const existingItem = wishList.find((item) => item.id === product.id)
@@ -234,7 +243,11 @@ function App() {
     <div className="App">
       <div className='Container'>
 
-        <Headroom>   <Navbar query={query} handleInputChange={handleInputChange} totalCartItems={totalCartItems} totalWishListItem={totalWishListItem} /></Headroom>
+        <Headroom>   <Navbar query={query} handleInputChange={handleInputChange} totalCartItems={totalCartItems} totalWishListItem={totalWishListItem}
+          isUserLoggedIn={isUserLoggedIn}
+          logOut={logOut}
+
+        /></Headroom>
 
       </div>
 
@@ -258,7 +271,8 @@ function App() {
           totalWishListItem={totalWishListItem}
 
         />}></Route >
-        <Route path='/log-in' element={<Login />}></Route >
+        <Route path='/log-in' element={<Login
+          setLoggedUser={setLoggedUser} />}></Route >
         <Route path='/create-account' element={<CreateAccount />}></Route >
         <Route path='/learn-and-ask' element={<LearnandAsk LearnAndAsk={LearnAndAsk} />}></Route >
         <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} handleClickQuickView={handleClickQuickView} />}>

@@ -125,15 +125,16 @@ function CreateAccount(props) {
                         <input type="submit" value="Register"
                             onClick={(e) => {
                                 e.preventDefault();
+
+                                if (!newAccount.userName || !newAccount.email || !newAccount.phone || !newAccount.password || !newAccount.confirmPassword) {
+                                    toast.error("Sorry! Please fill-in required information before submit the form");
+                                    return;
+                                }
+
                                 const foundEmail = userList.find((user) => user.email === newAccount.email)
                                 if (foundEmail) {
 
                                     toast.error("This email is already exist! Please change your email")
-                                    return;
-                                }
-
-                                if (!newAccount.userName || !newAccount.email || !newAccount.phone || !newAccount.password || !newAccount.confirmPassword) {
-                                    toast.error("Sorry! Please fill-in required information before submit the form");
                                     return;
                                 }
 
