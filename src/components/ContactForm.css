@@ -59,7 +59,8 @@ body {
 
 .contact-form form .user-details .input-box {
     margin: 8px 0 8px 0;
-    height: auto
+    height: auto;
+    width: 100%;
 }
 
 .user-details .input-box .details {
