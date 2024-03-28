@@ -57,6 +57,8 @@ function App() {
 
 
 
+
+
   const [wishList, setWishList] = useLocalStorageState([], "wishlist");
 
   const addToWishList = (product) => {
@@ -264,6 +266,7 @@ function App() {
           totalCartItems={totalCartItems}
           totalCost={totalCost}
           cart={cart}
+          isUserLoggedIn={isUserLoggedIn}
         />}></Route >
         <Route path='/payment' element={<Payment />}></Route >
         <Route path='/wishlist' element={<WishList productData={productData}

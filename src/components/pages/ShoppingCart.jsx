@@ -3,7 +3,7 @@ import './ShoppingCart.css'
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
-function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQuantity, descreaseCartQuantity, totalCartItems, totalCost, cart }) {
+function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQuantity, descreaseCartQuantity, totalCartItems, totalCost, cart, isUserLoggedIn }) {
     const nav = useNavigate();
     return (
         <div className="shoppingcart-page">
@@ -33,7 +33,7 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
 
                             </td>
                             <td data-cell="Price: " className="price">{item.price}<span>$</span></td>
-                            <td data-cell="" className="quantiy">
+                            <td data-cell="" className="quantity">
                                 <div className="button-quantity">
                                     <button className="increase"
                                         onClick={() => {
@@ -70,12 +70,23 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
                     onClick={() => { nav('/products') }}>
                     <i className="fa-solid fa-arrow-left"></i>
                     Continue to shopping</button>
-                <button className={totalCost !== 0 ? "checkout-btn" : "checkout-btn-disable"} onClick={() => {
-                    if (totalCost !== 0) {
-                        nav('/payment')
-                    }
+                <button className={totalCost !== 0 ? "checkout-btn" : "checkout-btn-disable"}
+                    onClick={() => {
 
-                }}>Check out
+                        if (totalCost !== 0) {
+                            if (isUserLoggedIn) { nav('/payment') } else {
+                                if (window.confirm("You must log in before doing payment. Login now?")) {
+                                    nav("/log-in")
+                                }
+
+                            }
+
+
+
+
+                        }
+
+                    }}>Check out
                     <i className="fa-solid fa-arrow-right"></i>
                 </button>
 

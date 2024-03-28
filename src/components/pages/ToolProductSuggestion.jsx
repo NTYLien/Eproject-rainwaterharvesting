@@ -14,6 +14,7 @@ function ToolProductSuggestion({ productData }) {
 
     const [clickSubmit, setClickSubmit] = useState(false)
 
+    console.log(storage)
 
 
     return (
@@ -57,8 +58,8 @@ function ToolProductSuggestion({ productData }) {
                                     <div class="col">
                                         <div class="checkbox">
                                             <input type="radio" name='storage' id="small-storage"
-                                                value="3000"
-                                                onChange={(e) => { setStorage(e.target.value) }}
+                                                value="small-storage"
+                                                onClick={(e) => { setStorage(e.target.value) }}
                                             />
                                             <label for="small-storage">Less than 3.000L</label>
                                         </div>
@@ -66,16 +67,16 @@ function ToolProductSuggestion({ productData }) {
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" name='storage' id="medium-storage" value="5000"
-                                                onChange={(e) => { setStorage(e.target.value) }} />
+                                            <input type="radio" name='storage' id="medium-storage" value="medium-storage"
+                                                onClick={(e) => { setStorage(e.target.value) }} />
                                             <label for="medium-storage">3.000L-6.000L</label>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" name='storage' id="large-storage" value='10000'
-                                                onChange={(e) => { setStorage(e.target.value) }} />
+                                            <input type="radio" name='storage' id="large-storage" value='large-storage'
+                                                onClick={(e) => { setStorage(e.target.value) }} />
                                             <label for="large-storage">More than 6.000L</label>
                                         </div>
                                     </div>
@@ -93,7 +94,7 @@ function ToolProductSuggestion({ productData }) {
                                     <div class="col">
                                         <div class="checkbox">
                                             <input type="radio" name='location' id="above-ground" value='aboveground'
-                                                onChange={(e) => { setLocation(e.target.value) }} />
+                                                onClick={(e) => { setLocation(e.target.value) }} />
                                             <label for="above-ground">Above Ground</label>
                                         </div>
                                     </div>
@@ -101,7 +102,7 @@ function ToolProductSuggestion({ productData }) {
                                     <div class="col">
                                         <div class="checkbox">
                                             <input type="radio" name='location' id="partially-buried" value='partially burried'
-                                                onChange={(e) => { setLocation(e.target.value) }} />
+                                                onClick={(e) => { setLocation(e.target.value) }} />
                                             <label for="partially-buried">Partially Buried</label>
                                         </div>
                                     </div>
@@ -109,7 +110,7 @@ function ToolProductSuggestion({ productData }) {
                                     <div class="col">
                                         <div class="checkbox">
                                             <input type="radio" name='location' id="in-ground" value='underground'
-                                                onChange={(e) => { setLocation(e.target.value) }} />
+                                                onClick={(e) => { setLocation(e.target.value) }} />
                                             <label for="in-ground">In-Ground</label>
                                         </div>
                                     </div>
@@ -127,7 +128,7 @@ function ToolProductSuggestion({ productData }) {
                                     <div class="col">
                                         <div class="checkbox">
                                             <input type="radio" id="irrigation-system" name='purpose' value="irrigation"
-                                                onChange={(e) => { setPurpose(e.target.value) }} />
+                                                onClick={(e) => { setPurpose(e.target.value) }} />
                                             <label for="irrigation-system">Irrigation System</label>
                                         </div>
                                     </div>
@@ -135,18 +136,8 @@ function ToolProductSuggestion({ productData }) {
                                     <div class="col">
                                         <div class="checkbox">
                                             <input type="radio" id="appliances" name='purpose' value="appliances"
-                                                onChange={(e) => { setPurpose(e.target.value) }} />
+                                                onClick={(e) => { setPurpose(e.target.value) }} />
                                             <label for="appliances">Appliances</label>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="col">
-                                        <div class="checkbox">
-                                            <input type="radio" id="all" name='purpose' value="both"
-                                                onChange={(e) => { setPurpose(e.target.value) }} />
-                                            <label for="all">Both</label>
                                         </div>
                                     </div>
 
@@ -163,7 +154,7 @@ function ToolProductSuggestion({ productData }) {
                                     <div class="col">
                                         <div class="checkbox">
                                             <input type="radio" id="rain-water" name='filter' value="rain-water"
-                                                onChange={(e) => { setFilter(e.target.value) }} />
+                                                onClick={(e) => { setFilter(e.target.value) }} />
                                             <label for="rain-water">Rain water</label>
                                         </div>
                                     </div>
@@ -171,18 +162,11 @@ function ToolProductSuggestion({ productData }) {
                                     <div class="col">
                                         <div class="checkbox">
                                             <input type="radio" id="mains-water" name='filter' value="mains-water"
-                                                onChange={(e) => { setFilter(e.target.value) }} />
+                                                onClick={(e) => { setFilter(e.target.value) }} />
                                             <label for="mains-water">Mains water</label>
                                         </div>
                                     </div>
 
-                                    <div class="col">
-                                        <div class="checkbox">
-                                            <input type="radio" id="both" name='filter' value='both'
-                                                onChange={(e) => { setFilter(e.target.value) }} />
-                                            <label for="both">Both</label>
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>
@@ -207,9 +191,9 @@ function ToolProductSuggestion({ productData }) {
 
             </div >
             {
-                clickSubmit && (
-
-                    productData.map(product => {
+                clickSubmit &&
+                (
+                    productData.filter((product) => (product["storage-capacity"] === storage && product.location === location) || product.purpose === purpose || product.category === "pump").map(product => {
                         return <div className='result-product'>
                             <h4>{product.name}</h4>
                             <img src={product.imgurl} alt="" />

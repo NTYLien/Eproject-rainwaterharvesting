@@ -115,9 +115,8 @@ function Login({ setLoggedUser }) {
                                     if (foundUser.password === loginAccount.password) {
                                         toast.success("Login Successfully!")
                                         setLoggedUser(loginAccount.userName)
+                                        nav(-1)
 
-
-                                        nav('/')
                                     } else {
                                         toast.error("Wrong password!")
                                     }

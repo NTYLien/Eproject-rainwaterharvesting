@@ -135,6 +135,10 @@
     border-color: var(--green-dark);
 }
 
+.cvv input {
+    width: 100px;
+}
+
 @media (max-width: 650px) {
 
 

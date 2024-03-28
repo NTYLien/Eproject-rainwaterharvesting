@@ -255,5 +255,11 @@ button {
         text-align: center;
     }
 
+    .shoppingcart-page .remove-btn i {
+
+        font-size: 24px;
+
+    }
+
 
 }

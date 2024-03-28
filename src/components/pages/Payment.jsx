@@ -197,7 +197,7 @@ function Payment(props) {
                                 <div className="cvv">
                                     <label for="cvv">CVV</label>
                                     <br />
-                                    <input className="cvv" type="text" name="cvv" id="cvv" placeholder="Card verification value" required
+                                    <input className="cvv" type="password" name="cvv" id="cvv" required
                                         onChange={(e) => { setCvv(e.target.value) }} />
                                     <br />
                                 </div>

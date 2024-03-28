@@ -84,3 +84,10 @@
     background: var(--green-light);
     color: var(--text-black);
 }
+
+.result-product {
+    border: 2px solid var(--green-light);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 64px;
+}
