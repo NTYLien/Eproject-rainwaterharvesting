@@ -26,7 +26,7 @@ function WishList({ productData, removeFromWishList, wishList, totalWishListItem
 
                             <tr>
                                 <td data-cell="No: " className="No">{index + 1}</td>
-                                <td data-cell className="product-item">
+                                <td data-cell="" className="product-item">
                                     <img src={item.imgurl} alt="product" />
                                     <div className="product-info">
                                         <span className="product-name" onClick={() => { nav(`/products/${item.productCode}`) }}>{item.name}</span>
@@ -36,8 +36,8 @@ function WishList({ productData, removeFromWishList, wishList, totalWishListItem
 
                                 </td>
                                 <td data-cell="Price: " className="price">{item.price} <span>$</span></td>
-                                <td className='view-icon' onClick={() => { nav(`/products/${item.productCode}`) }}><i class="fa-solid fa-eye"></i></td>
-                                <td data-cell className="remove-btn">
+                                <td className='view-icon' onClick={() => { nav(`/products/${item.productCode}`) }}><i class="fa-solid fa-eye"></i>View</td>
+                                <td data-cell="" className="remove-btn">
 
                                     <button className="remove-btn"
                                         onClick={() => { removeFromWishList(item) }}

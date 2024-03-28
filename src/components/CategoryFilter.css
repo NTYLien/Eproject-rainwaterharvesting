@@ -51,6 +51,10 @@ body {
 
 }
 
+.category-filter .active {
+    background: none;
+}
+
 
 
 .category-filter ul {
@@ -97,6 +101,7 @@ body {
 
 .category-filter input {
     margin: 16px;
+    cursor: pointer;
 
 }
 
@@ -118,24 +123,59 @@ body {
 @media screen and (max-width: 768px) {
     .category-filter {
         border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .category-filter input {
+        margin: 9px;
+    }
+
+    .show-filter {
+        padding: 0;
     }
 
     .text {
-        position: relative;
 
         display: flex;
-        flex-direction: row;
-        text-align: center;
-        place-items: center;
-        gap: 8px;
-        margin-left: 12px;
+        flex-direction: column;
+
     }
 
-    .filter-box {
-        border: 1px solid var(--green-light);
-        border-radius: 8px;
-        padding: 16px;
+    .property-show {
+        display: flex;
+
+
+
     }
+
+    .product-type-show {
+        display: flex;
+    }
+
+
+
+    .category-filter {
+        margin: 0px;
+
+    }
+
+
+    .category-filter {
+        background: #e9e9e9;
+        width: 100vw;
+        padding: 8px;
+        margin-bottom: 16px;
+
+    }
+
+
+
+
+
+
+
+
 
 
 

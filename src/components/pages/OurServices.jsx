@@ -25,7 +25,16 @@ function OurServices(props) {
                         </div >
 
                         <div className="learn-content">
-                            {show[x.id] && <p className='learn-info'>{x.content}</p>}
+                            {show[x.id] &&
+                                <div className='learn-info'>
+                                    <p>{x.content1}</p>
+                                    <p>{x.content2}</p>
+                                    <p>{x.content3}</p>
+                                    <p>{x.content4}</p>
+
+
+
+                                </div>}
                         </div>
 
                     </div >

@@ -23,7 +23,7 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
                     return (
                         <tr>
                             <td data-cell="No: " className="No">{index + 1}</td>
-                            <td data-cell className="product-item">
+                            <td data-cell="" className="product-item">
                                 <img src={item.imgurl} alt="product" />
                                 <div className="product-info">
                                     <span className="product-name" onClick={() => { nav(`/products/${item.productCode}`) }}>{item.name}</span>
@@ -33,7 +33,7 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
 
                             </td>
                             <td data-cell="Price: " className="price">{item.price}<span>$</span></td>
-                            <td data-cell className="quantiy">
+                            <td data-cell="" className="quantiy">
                                 <div className="button-quantity">
                                     <button className="increase"
                                         onClick={() => {
@@ -52,7 +52,7 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
 
                             </td>
                             <td data-cell="Total: " className="total">{totalCost}<span>$</span></td>
-                            <td data-cell className="remove-btn"
+                            <td data-cell="" className="remove-btn"
                             >
                                 <button onClick={() => { removeFromCart(item) }}> <i className="fa-solid fa-trash"></i></button>
                             </td>

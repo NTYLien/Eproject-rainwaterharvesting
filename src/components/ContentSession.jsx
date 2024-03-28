@@ -64,10 +64,10 @@ function ContentSession(props) {
                         <div className="row-content">
                             <h3 className='name-title'>Rooftop Rainwater Harvesting System</h3>
                             <p>
-                                One of the most common methods of rainwater harvesting used in construction planning is the installation of rainwater tanks and storage systems. These structures are designed to collect rainwater from rooftops, storing it for later use.
+                                Rooftop rainwater harvesting is a method of collecting rain water where it falls and in which rain water is captured from the roof catchments of domestic houses or commercial buildings and stored in the tanks. Harvested rain water can either be stored in a tank or diverted to artificial recharge system to meet the household/commercial needs through storage in tanks.
                                 <br />
                                 <br />
-                                The benefits of rainwater tanks and storage systems are manifold. Firstly, they provide an alternative source of water for activities such as irrigation, flushing toilets, and washing cars. By using harvested rainwater, you can reduce your reliance on traditional water sources, thus conserving water and potentially lowering your water bills. Additionally, rainwater is naturally soft and free from chemicals, making it ideal for watering plants and gardens.
+                                This method is simple, eco-friendly, less expensive and truly effective. Roof-top rainwater harvesting method (RRH) involves diverting and recharging (or) storing rainwater that falls on the roof of a house/building. The main objective of rooftop rain water harvesting is to make water available for future use, to improve quality of ground water and etc.
                             </p>
                         </div>
                     </div>

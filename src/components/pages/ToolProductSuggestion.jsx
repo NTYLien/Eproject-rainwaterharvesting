@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import './ToolProductSuggestion.css'
 import { toast } from 'react-toastify';
+import ProductShow from '../ProductShow';
 
-function ToolProductSuggestion(props) {
+function ToolProductSuggestion({ productData }) {
 
-    const [radiochecked, setRadioChecked] = useState(false)
 
-    const [storage, setStorage] = useState(false)
-    const [location, setLocation] = useState(false)
-    const [purpose, setPurpose] = useState(false)
-    const [filter, setFilter] = useState(false)
+    const [storage, setStorage] = useState();
+    const [location, setLocation] = useState();
+    const [purpose, setPurpose] = useState();
+    const [filter, setFilter] = useState();
 
 
 
@@ -19,7 +19,7 @@ function ToolProductSuggestion(props) {
             <div class="form">
                 <div class="header">
                     <h2>Find the right products for your property</h2>
-                    <p>This tool will help to find out which product is perfect for residential rainwater harvesting system. If you are finding products for commercial - Click here.
+                    <p>This tool will help to find out which product is perfect for your rainwater harvesting system.
                     </p>
                 </div>
                 <form onSubmit={(e) => {
@@ -37,7 +37,8 @@ function ToolProductSuggestion(props) {
                         toast.error(errors.join(", "))
                         e.preventDefault();
                     } else {
-                        // navigation
+
+
                     }
                 }}>
                     <div class="body">
@@ -54,6 +55,7 @@ function ToolProductSuggestion(props) {
                                         <div class="checkbox">
                                             <input type="radio" name='storage' id="small-storage"
                                                 value="3000"
+                                                onChange={(e) => { setStorage(e.target.value) }}
                                             />
                                             <label for="small-storage">Less than 3.000L</label>
                                         </div>
@@ -61,15 +63,17 @@ function ToolProductSuggestion(props) {
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" name='storage' id="medium-storage" value="50000" />
-                                            <label for="medium-storage">3.000L-5.000L</label>
+                                            <input type="radio" name='storage' id="medium-storage" value="5000"
+                                                onChange={(e) => { setStorage(e.target.value) }} />
+                                            <label for="medium-storage">3.000L-6.000L</label>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" name='storage' id="large-storage" value='10000' />
-                                            <label for="large-storage">More than 5.000L</label>
+                                            <input type="radio" name='storage' id="large-storage" value='10000'
+                                                onChange={(e) => { setStorage(e.target.value) }} />
+                                            <label for="large-storage">More than 6.000L</label>
                                         </div>
                                     </div>
 
@@ -85,21 +89,24 @@ function ToolProductSuggestion(props) {
                                 <div class="grid">
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" name='location' id="above-ground" value='aboveground' />
+                                            <input type="radio" name='location' id="above-ground" value='aboveground'
+                                                onChange={(e) => { setLocation(e.target.value) }} />
                                             <label for="above-ground">Above Ground</label>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" name='location' id="partially-buried" value='partially burried' />
+                                            <input type="radio" name='location' id="partially-buried" value='partially burried'
+                                                onChange={(e) => { setLocation(e.target.value) }} />
                                             <label for="partially-buried">Partially Buried</label>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" name='location' id="in-ground" value='underground' />
+                                            <input type="radio" name='location' id="in-ground" value='underground'
+                                                onChange={(e) => { setLocation(e.target.value) }} />
                                             <label for="in-ground">In-Ground</label>
                                         </div>
                                     </div>
@@ -116,29 +123,27 @@ function ToolProductSuggestion(props) {
                                 <div class="grid">
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" id="irrigation-system" name='purpose' value="irrigation-system" />
+                                            <input type="radio" id="irrigation-system" name='purpose' value="irrigation-system"
+                                                onChange={(e) => { setPurpose(e.target.value) }} />
                                             <label for="irrigation-system">Irrigation System</label>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" id="appliances" name='purpose' value="appliances" />
+                                            <input type="radio" id="appliances" name='purpose' value="appliances"
+                                                onChange={(e) => { setPurpose(e.target.value) }} />
                                             <label for="appliances">Appliances</label>
                                         </div>
                                     </div>
 
-                                    <div class="col">
-                                        <div class="checkbox">
-                                            <input type="radio" id="drink" name='purpose' value="drink" />
-                                            <label for="drink">Drink</label>
-                                        </div>
-                                    </div>
+
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" id="all" name='purpose' value="all" />
-                                            <label for="all">Everything</label>
+                                            <input type="radio" id="all" name='purpose' value="both"
+                                                onChange={(e) => { setPurpose(e.target.value) }} />
+                                            <label for="all">Both</label>
                                         </div>
                                     </div>
 
@@ -154,21 +159,24 @@ function ToolProductSuggestion(props) {
                                 <div class="grid">
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" id="rain-water" name='filter' value="rain-water" />
+                                            <input type="radio" id="rain-water" name='filter' value="rain-water"
+                                                onChange={(e) => { setFilter(e.target.value) }} />
                                             <label for="rain-water">Rain water</label>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" id="mains-water" name='filter' value="mains-water" />
+                                            <input type="radio" id="mains-water" name='filter' value="mains-water"
+                                                onChange={(e) => { setFilter(e.target.value) }} />
                                             <label for="mains-water">Mains water</label>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" id="both" name='filter' value='both' />
+                                            <input type="radio" id="both" name='filter' value='both'
+                                                onChange={(e) => { setFilter(e.target.value) }} />
                                             <label for="both">Both</label>
                                         </div>
                                     </div>
@@ -179,7 +187,7 @@ function ToolProductSuggestion(props) {
                             <div class="step">
                                 <div class="confirmation">
 
-                                    <p>It depends on where you live. In most states, it’s legal to collect your own rainwater for watering lawns and gardens, but it may be against the law to collect rainwater for drinking. Check your local ordinances to be certain of the regulations in your area of the country.
+                                    <p>For custom configurations and/or custom system drawings please give us a call at <span className='hotline'>1068.6801.</span> Price can vary significantly, based on configuration."
                                     </p>
 
                                     <div>
@@ -194,9 +202,9 @@ function ToolProductSuggestion(props) {
                     </div>
                 </form>
 
-            </div>
+            </div >
 
-        </div>
+        </div >
     );
 }
 

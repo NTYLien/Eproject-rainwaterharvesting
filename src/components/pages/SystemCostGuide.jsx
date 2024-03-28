@@ -9,6 +9,7 @@ function SystemCostGuide(props) {
     }
     return (
         <div className='cost-guide-page'>
+            <p className='notify'> We just got your form submission. For calcultating the cost, our team need to determine the amount of storage that is appropriate for you, how much rainwater you can collect from your roof (supply) and the amount of water you will need (demand). Our product team will analyze your information and come back to you within 24 hours for more requirement details.  Here is a little more information about the average cost based on the type of system, materials, and needed labor. Price can vary significantly, based on configuration. If you have any urgent issues, please contact our hotline: <span className='hotline'>1068.6801</span></p>
             <h2>Rainwater Collection System Cost Guide</h2>
             <p>A rainwater collection system is a way to capture rainwater to save and distribute later. They can be simple or complex, but either way are a great way to save on your water bill and conserve water over the long term.
                 <br />
@@ -46,6 +47,7 @@ function SystemCostGuide(props) {
 
             <div className='cost-container'>
                 <div className='system-method'>
+
                     <h3 className='title'
                     >Rainwater Collection System Costs by Method</h3>
                     <p>There are two main methods for harvesting rainwater: rooftop rainwater harvesting and surface runoff harvesting. These methods work differently, but both involve collecting and storing rainwater for reuse, rather than simply letting it run off and drain away.</p>

@@ -4,31 +4,43 @@
         "imgurl": "https://picsum.photos/200?random=1",
         "imgBg": "https://picsum.photos/200?random=1",
         "name": "Design & Consulting",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
+        "description": "Successful projects start with great designs",
+        "content1": "We are a licensed engineering firm in Vietnam that provides design and consulting services for rainwater harvesting systems on residential and commercial projects.  We specialize in systems that are used for irrigation, potable, and stormwater detention purposes.",
+        "content2": "It might be a surprise to you but we see many rainwater collection systems that are either not designed on residential projects (so it’s thrown onto the builder or other contractor to “figure out”) or under-designed on commercial projects (a circle drawn on the plans for the cistern does not constituent a rainwater harvesting system).",
+        "content3": "This leads to cost overruns or even cutting the rainwater collection system from the project altogether due to not planning for its integration into the project.  You don’t want this to happen.  Save money, save time, and relieve stress during the construction process by allowing us to design the rainwater harvesting system upfront.",
+        "content4": ""
     },
     {
         "id": "2",
         "imgurl": "https://picsum.photos/200?random=2",
         "imgBg": "https://picsum.photos/200?random=1",
         "name": "Residential Installation",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
+        "description": "Offering systems for irrigation, potable, and stormwater detention",
+        "content1": "We have been designing and installing rainwater collection systems since 2024.  While there are consistent principles to rainwater harvesting, our systems have evolved through our knowledge, experience, and the latest technology. We provide customized rainwater harvesting systems that are optimized for your collection area and give you the most convenient method of using rainwater to maximize your savings and reduce your environmental footprint.",
+        "content2": "Rainwater catchment systems aren’t just glorified rain barrels. They can be sophisticated and complex systems. While everyone focuses on the rainwater tank or cistern, there are so many other parts and pieces of the system that require expertise and attention to detail in order to integrate the system with your house or property.  Our experience will help you create an efficient, safe, aesthetically fitting, and “as maintenance-free as possible” system.",
+        "content3": "We specialize in custom, individualized rainwater harvesting systems that allow you to collect the most rainwater which in turn, conserves municipal water use and saves you money on your water bill. We believe that rainwater harvesting systems are the next frontier in water conservation gains for urban households. Not only are rainwater harvesting systems great for water conservation but they can also aid in solving drainage issues around your house.",
+        "content4": "We also install rainwater harvesting systems that can supply your whole household with potable water. Don’t take a chance with drilling a well and the quality of the well water you could get. Rainwater is a high-quality, naturally soft, water source that needs minimal treatment. Why fool with water softeners, aeration tanks, or ion exchange systems that you may need to make well water drinkable. Get off the grid with a rainwater harvesting system."
     },
     {
         "id": "3",
         "imgurl": "https://picsum.photos/200?random=3",
         "imgBg": "https://picsum.photos/200?random=1",
         "name": "Commercial Construction",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
+        "description": "Comprehensive Experience that Delivers Results",
+        "content1": "We have been providing commercial rainwater harvesting system construction services since 2024.  Our main goal is to alleviate any and all confusion that may surround the rainwater harvesting system on a commercial project.  Many times, these rainwater collection systems don’t have the same design detail as the other mechanical systems in the building. Therefore, we provide this experience to fill in the gaps in a commercial rainwater harvesting system in the hopes of ensuring the completion of the system according to its design intent.",
+        "content2": "Commercial rainwater harvesting systems often fall into a gray area between many traditional trade contractors on commercial projects.  Should the site or utility contractor install the system?  What about the plumbing subcontractor?  How about the irrigation subcontractor?  While a rainwater harvesting system can have parts and pieces that fall into these traditional trade contractors, who should be tasked with ensuring the complete system is installed and works as intended?  Most of the time, these subcontractors don’t have the necessary experience to complete the entire system. Therefore, we are here to fill in the gray area and connect the various trades by providing complete installation services for the rainwater harvesting system",
+        "content3": "We specialize in custom, individualized rainwater harvesting systems that allow you to collect the most rainwater which in turn, conserves municipal water use and reduces operating costs for your project. We believe that rainwater harvesting systems are the next frontier in water conservation gains for commercial properties. Not only are rainwater harvesting systems great for water conservation but they can also aid in managing stormwater issues on your project site.",
+        "content4": ""
     },
     {
         "id": "4",
         "imgurl": "https://picsum.photos/200?random=4",
         "imgBg": "https://picsum.photos/200?random=1",
-        "name": "DIY & System Kits",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
+        "name": "Support Services",
+        "description": "Options for Service, Maintenance, Inspection, and Testing",
+        "content1": "While rainwater harvesting systems are conceptually simple, they can be very technical. The practice and technology of rainwater harvesting have advanced greatly. These systems are not your grandmother’s rain barrels anymore.  They have multi-point filtration methods as the rainwater makes its way from the roof to the cistern and ultimately to its end use. No matter what size or scale of your rainwater harvesting system, we can keep the system in optimum condition to ensure that you continue to save water and money.  This also keeps you doing your part to help the environment.",
+        "content2": "Rainwater Harvesting is a professional engineering company that specializes in rainwater harvesting system design and construction.  We have designed and installed systems ranging from simple residential systems to complex commercial systems.  From this expertise, we have developed an industry-leading service and maintenance program. Our service technicians are trained in all types of systems and system designs.",
+        "content3": "Rainwater collection systems can be simple but they can also be very complicated, depending on the design and the components used. It is important to service and maintain the rainwater harvesting system on a regular basis. This will ensure that the system is operating effectively and efficiently in order to prolong the life of the system. Failure to maintain the system will lead to a loss of system efficiency.",
+        "content4": ""
     }
 ]

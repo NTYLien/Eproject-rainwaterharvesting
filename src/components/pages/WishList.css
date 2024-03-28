@@ -216,6 +216,11 @@
 
 @media (max-width: 650px) {
 
+    .wishlist-page {
+        margin: 16px;
+        margin-left: 0px;
+    }
+
     .wishlist-page h1 {
         margin-top: 16px;
         font-size: 24px;

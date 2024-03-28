@@ -15,7 +15,7 @@ function Products({ result, handleChange }) {
             <div className="filter-category">
 
 
-                <div className="title" onClick={handleClick}> Filter Product<i className={click ? "fa-solid fa-xmark" : "fa-solid fa-angles-right"}></i></div>
+                <div className="title" onClick={handleClick}>  Filter Product   <i className={click ? "fa-solid fa-xmark" : "fa-solid fa-angles-right"}></i></div>
 
                 <div className={click ? 'show-filter active' : "show-filter"}> <CategoryFilter handleChange={handleChange}
                 />

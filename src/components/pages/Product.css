@@ -96,6 +96,7 @@ body {
     .product-list {
         display: flex;
         flex-direction: column;
+
     }
 
     .product-show {
@@ -125,7 +126,31 @@ body {
     .fa-xmark,
     .fa-angles-right {
         display: block;
+        color: #e0e0e0;
 
+    }
+
+    .filter-category .title {
+        font-size: 20px;
+        background: var(--neutral-blue);
+        color: var(--text-white);
+        border-radius: 8px;
+        margin-left: 12px;
+        width: 200px;
+        display: flex;
+        place-items: center;
+        margin-bottom: 8px;
+
+
+
+    }
+
+    .filter-category p {
+        margin-bottom: 0;
+    }
+
+    .filter-category .title i {
+        padding: 8px;
     }
 
 

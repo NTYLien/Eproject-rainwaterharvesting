@@ -61,3 +61,14 @@
 .contact span:hover {
     color: var(--primary-blue);
 }
+
+.notify {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--black-dark);
+    margin-bottom: 16px;
+    background: var(--green-light);
+    padding: 16px;
+    border-radius: 8px;
+}

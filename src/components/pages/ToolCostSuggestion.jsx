@@ -216,7 +216,7 @@ function ToolCostSuggestion(props) {
                             <div class="step">
                                 <div class="confirmation">
 
-                                    <p>It depends on where you live. In most states, it's legal to collect your own rainwater for watering lawns and gardens, but it may be against the law to collect rainwater for drinking. Check your local ordinances to be certain of the regulations in your area of the country.
+                                    <p>We have created the rainwater collection calculator team to assist you with understanding the rainwater collection opportunity you have and to assist you in sizing an optimal rainwater collection tank size for your situation.This form will learn-intro us know more about your requirements.
                                     </p>
 
                                     <div>

@@ -203,7 +203,7 @@ function App() {
 
 
 
-    return filteredProducts.map(({ id, name, productCode, price, imgurl, description, type, category, storageCapacity, material, location, features1, features2, features3, features4, features5, features6 }) => (<ProductShow
+    return filteredProducts.map(({ id, name, productCode, price, imgurl, description, type, category, storageCapacity, material, location, purpose, features1, features2, features3, features4, features5, features6 }) => (<ProductShow
 
 
       key={id}
@@ -213,6 +213,7 @@ function App() {
       imgurl={imgurl}
       description={description}
       type={type}
+      purpose={purpose}
       category={category}
       storageCapacity={storageCapacity}
       material={material}
@@ -288,7 +289,10 @@ function App() {
         <Route path='/interactive-tools' element={<InteractiveTools />}></Route >
         <Route path='/interactive-tools-cost-suggesttion/' element={<ToolCostSugeestion />}></Route >
         <Route path='/system-cost-guide' element={<SystemCostGuide />}></Route >
-        <Route path='/interactive-tools-product-suggesttion/' element={<ToolProductSuggestion />}></Route >
+        <Route path='/interactive-tools-product-suggesttion/' element={<ToolProductSuggestion
+          productData={productData}
+
+        />}></Route >
         <Route path='/contact-us' element={<ContactUs />}></Route >
         <Route path='/payment/:productCode' element={<Payment />}></Route >
         <Route path='/thankyou' element={<ThankYou />}></Route >

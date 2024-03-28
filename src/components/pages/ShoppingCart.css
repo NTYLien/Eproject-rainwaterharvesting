@@ -28,6 +28,10 @@
     margin: 16px 16px;
 }
 
+.fa-eye {
+    padding-right: 8px;
+}
+
 .shoppingcart-page h1 {
     margin-top: 16px;
     font-size: var(--Desktop-Text-Heading3);

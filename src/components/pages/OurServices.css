@@ -38,7 +38,7 @@
     background: #e2e2e2;
     padding: 16px;
     text-align: center;
-    width: 50%;
+    width: 80%;
     border-radius: 8px;
     color: var(--text-black);
 }
@@ -49,7 +49,9 @@
 }
 
 .learn-info {
-    margin-top: 16px;
+    margin: 16px 64px;
+    text-align: left;
+
 }
 
 .our-service .service-intro .title:hover {

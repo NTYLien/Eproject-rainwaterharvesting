@@ -31,3 +31,13 @@
     width: fit-content;
     font-style: italic;
 }
+
+.hotline {
+    color: var(--primary-blue);
+    cursor: pointer;
+
+}
+
+.hotline:hover {
+    color: var(--neutral-blue);
+}
