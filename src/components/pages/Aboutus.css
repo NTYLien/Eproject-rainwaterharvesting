@@ -104,3 +104,66 @@
 .imgs-small img {
     width: 200px;
 }
+
+@media (max-width: 1200px) {
+
+    .aboutus {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .ourstory-text {
+        text-align: center;
+        width: 90%;
+
+    }
+
+    .ourstory-image {
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+
+    .ourstory-container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        gap: 0
+    }
+
+    .mission-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 90%;
+        gap: 0
+    }
+
+    .mission-text {
+        width: 100%;
+        text-align: center;
+
+
+    }
+
+    .mission-image img {
+        width: 350px;
+        margin-left: 0;
+    }
+
+    .mission-image {
+        margin-bottom: 16px;
+    }
+
+
+
+}

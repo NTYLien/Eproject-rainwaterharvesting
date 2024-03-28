@@ -41,3 +41,46 @@
 .hotline:hover {
     color: var(--neutral-blue);
 }
+
+.result-product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    margin: 0 300px;
+
+}
+
+
+
+.result-product ul li {
+
+    font-size: 0.9rem;
+    color: var(--black-dark);
+    text-align: left;
+}
+
+.result-product ul {
+    font-size: 1.2rem;
+}
+
+.result-product img {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+}
+
+.buynow-btn {
+    background: var(--primary-blue);
+    color: var(--text-white);
+    padding: 8px 32px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.buynow-btn:hover {
+    background: var(--green-light);
+    color: var(--text-black);
+}

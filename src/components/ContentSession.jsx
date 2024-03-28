@@ -5,8 +5,11 @@ import "react-multi-carousel/lib/styles.css";
 import ServiceCard from './ServiceCard';
 import TopBanner from './TopBanner';
 import ProjectCard from './pages/ProjectCard';
+import { useNavigate } from 'react-router-dom';
 
 function ContentSession(props) {
+
+    const nav = useNavigate();
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -163,7 +166,7 @@ function ContentSession(props) {
 
                                     </p>
 
-                                    <button className='getstart-btn'>Read more <i class="fa-solid fa-arrow-right"></i></button>
+                                    <button className='getstart-btn' onClick={() => { nav("/news") }}>Read all news <i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
 
 
@@ -181,7 +184,7 @@ function ContentSession(props) {
                                     </h4>
                                     <p className='description'>Over the weekend, Burning Man attendees were forced to shelter in place when the usually-parched Black Rock Desert got roughly 3 months’ worth of rain in 24 hours.  </p>
 
-                                    <button className='getstart-btn'>Read more <i class="fa-solid fa-arrow-right"></i></button>
+                                    <button className='getstart-btn' onClick={() => { nav("/news") }}>Read all news <i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
 
 
@@ -196,7 +199,7 @@ function ContentSession(props) {
                                     </h4>
                                     <p className='description'>Over the weekend, Burning Man attendees were forced to shelter in place when the usually-parched Black Rock Desert got roughly 3 months' worth of rain in 24 hours.</p>
 
-                                    <button className='getstart-btn'>Read more <i class="fa-solid fa-arrow-right"></i></button>
+                                    <button className='getstart-btn' onClick={() => { nav("/news") }}>Read all news<i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
                             </div>
 

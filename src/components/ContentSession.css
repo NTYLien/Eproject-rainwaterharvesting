@@ -159,6 +159,10 @@ button.getstart-btn {
 
 }
 
+.news-card-content .description {
+    color: var(--text-white);
+}
+
 .news-card-colunm2,
 .news-card-colunm {
 
@@ -222,5 +226,9 @@ button.getstart-btn {
 
     .news-row {
         display: block;
+    }
+
+    .content-session {
+        margin-bottom: 64px;
     }
 }

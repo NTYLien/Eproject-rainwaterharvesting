@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './TopBanner.css'
 import videoBg from '../assets/video-raining.mp4'
+import { useNavigate } from 'react-router-dom';
 
 function TopBanner(props) {
+
+    const nav = useNavigate();
     const videoRef = useRef();
 
     const [isPlay, setIsPlay] = useState(true);
@@ -44,7 +47,7 @@ function TopBanner(props) {
                     <h1>What is Rain Harvesting & why do it?</h1>
                     <p className='banner-description'>Rainwater harvesting has gained increasing attention in recent years as a sustainable water management practice. Education about the benefits of rainwater harvesting can encourage behaviour change. </p>
 
-                    <button className='getstart-btn'>Get Start <i class="fa-solid fa-arrow-right"></i></button>
+                    <button className='getstart-btn' onClick={() => { nav('/learn-and-ask') }}>Get Start <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
 
 

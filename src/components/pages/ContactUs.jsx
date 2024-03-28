@@ -32,16 +32,18 @@ function ContactUs(props) {
 
                 <div className="right-side">
                     <div className="topic-text">Find Us On Google Maps</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur voluptatum maxime architecto nulla vitae labi.</p>
-                    <div className='map'>
+                    <p>Need you get in touch with us? Call us to schedule a tour of our RainWaterHarvesting office! Scroll down to fill out the form and our sales team will get back to with in 24 hours.</p>
+                    <div className='google-map' style={{ width: "100%" }} >
                         <GoogleMaps />
+
+
                     </div>
 
 
 
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 export default ContactUs;

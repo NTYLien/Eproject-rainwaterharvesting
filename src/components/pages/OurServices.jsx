@@ -29,6 +29,7 @@ function OurServices(props) {
                                 <div className='learn-info'>
                                     <p>{x.content1}</p>
                                     <p>{x.content2}</p>
+                                    <img className='service-img' src={x.imgBg} alt="service" />
                                     <p>{x.content3}</p>
                                     <p>{x.content4}</p>
 

@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import './ToolProductSuggestion.css'
 import { toast } from 'react-toastify';
 import ProductShow from '../ProductShow';
+import { useNavigate } from 'react-router-dom';
 
 function ToolProductSuggestion({ productData }) {
-
+    const nav = useNavigate();
 
     const [storage, setStorage] = useState();
     const [location, setLocation] = useState();
     const [purpose, setPurpose] = useState();
     const [filter, setFilter] = useState();
 
+    const [clickSubmit, setClickSubmit] = useState(false)
 
 
 
@@ -23,6 +25,7 @@ function ToolProductSuggestion({ productData }) {
                     </p>
                 </div>
                 <form onSubmit={(e) => {
+                    e.preventDefault();
                     const data = new FormData(e.target);
                     const errors = ['storage', 'location', 'purpose', 'filter'].map(inputName => {
                         const value = data.get(inputName);
@@ -35,10 +38,10 @@ function ToolProductSuggestion({ productData }) {
                     if (errors.length > 0) {
                         // toast
                         toast.error(errors.join(", "))
-                        e.preventDefault();
+
                     } else {
 
-
+                        setClickSubmit(true)
                     }
                 }}>
                     <div class="body">
@@ -123,7 +126,7 @@ function ToolProductSuggestion({ productData }) {
                                 <div class="grid">
                                     <div class="col">
                                         <div class="checkbox">
-                                            <input type="radio" id="irrigation-system" name='purpose' value="irrigation-system"
+                                            <input type="radio" id="irrigation-system" name='purpose' value="irrigation"
                                                 onChange={(e) => { setPurpose(e.target.value) }} />
                                             <label for="irrigation-system">Irrigation System</label>
                                         </div>
@@ -155,7 +158,7 @@ function ToolProductSuggestion({ productData }) {
                             <div class="step">
                                 <h4>Will you filter be used for rain water, mains water or both?</h4>
                                 <p className='category-question'>Filter question</p>
-                                <p>If you use rainwater for drink, we recommend choosing both</p>
+                                <p>If you use rainwater for appliances systems, we recommend choosing both</p>
                                 <div class="grid">
                                     <div class="col">
                                         <div class="checkbox">
@@ -203,6 +206,42 @@ function ToolProductSuggestion({ productData }) {
                 </form>
 
             </div >
+            {
+                clickSubmit && (
+
+                    productData.map(product => {
+                        return <div className='result-product'>
+                            <h4>{product.name}</h4>
+                            <img src={product.imgurl} alt="" />
+
+                            <p>{product.description}</p>
+                            <ul className='Feature-list'>
+                                Features of the GWDD System:
+                                <li>{product.features1}</li>
+                                <li>{product.features2}</li>
+                                <li>{product.features3}</li>
+                                <li>{product.features4}</li>
+                                <li>{product.features5}</li>
+                                <li>{product.features6}</li>
+
+
+                            </ul>
+
+                            <button className='buynow-btn'
+                                onClick={() => { nav(`/products/${product.productCode}`) }}
+                            >Buy Now</button>
+                        </div>
+                    }))
+
+            }
+
+
+
+
+
+
+
+
 
         </div >
     );

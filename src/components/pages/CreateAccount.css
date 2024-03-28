@@ -190,6 +190,12 @@
 
 
 @media (max-width: 584px) {
+
+    .create-account-page {
+        margin: 0px 8px;
+
+    }
+
     .container {
         max-width: 100%;
     }
@@ -201,16 +207,12 @@
 
 
     .create-account-page form .gender-details .category {
-
         width: 100%;
     }
 
-    .container form .user-details {
-        max-height: 300px;
-        overflow-y: scroll;
+    .create-account-page .container {
+        padding: 0px;
     }
 
-    .user-details::-webkit-scrollbar {
-        width: 10;
-    }
+
 }

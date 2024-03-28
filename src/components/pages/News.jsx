@@ -48,8 +48,7 @@ function News(props) {
                                     {index !== mainContentIndex &&
                                         <>
 
-                                            <img src={thumbnail} alt="news"
-                                                onClick={() => { setMainContentIndex(index) }} />
+                                            <img src={thumbnail} alt="news" onClick={() => { setMainContentIndex(index) }} />
                                             <span className='date-publish'>{date}</span>
                                             <h4>{title}</h4>
                                         </>

@@ -1,34 +1,57 @@
 [
     {
         "id": "1",
-        "imgurl": "https://picsum.photos/200?random=1",
-        "imgBg": "https://picsum.photos/200?random=1",
-        "name": "Design & Consulting",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.Lorem sectetur adipisicing elit. If you are interested in the more in-depth specifics of rainwater filters, we also carry a range of micron size options for rain water filter products, and the micron sizes range from 280 to 900 microns. Furthermore, you have the opportunity to choose a specific inlet size for your rainwater filter, including 4, 6, and 12-inch size options. Keep your rainwater harvest clean and free of harmful debris with rainwater water filters from Rainwater Management Solutions. "
+        "imgurl": "https://rainharvesting.com.au/wp-content/uploads/2022/10/tank-new-home-iStock-1263464381-scaled-e1664231271985.jpg",
+        "imgBg1": "https://qph.cf2.quoracdn.net/main-qimg-51342de920ec07cc76ca880163536670",
+        "imgBg2": "https://www.researchgate.net/publication/339398594/figure/fig1/AS:860828211351563@1582248847346/Rainwater-harvesting-tank-supplied-by-Weida-M-Bhd.png",
+        "name": "Why Collect Rainwater?",
+        "description": "There are many reasons people choose to use rainwater around their home, their property and even for drinking. In fact, the reality is that using rainwater can bring significant economic, social and environmental benefits. Below are just a few reasons people choose to use rainwater – and the benefits this choice brings.",
+        "content1": "REDUCING DEPENDENCE ON MAINS WATER | By using a rain harvesting system to supply water for some or all of your requirements, you can reduce your dependence on mains water. In turn, this will reduce your water bills and save you money. It will also ensure you’re less affected by any water restrictions that are put in place due to drought or the need to protect community water supplies from overuse. ",
+        "content2": "NECESSITY | Mains water is not available in many rural or low population density areas. In these areas, the most obvious benefit of rain harvesting is to have a supply of water to sustain life and meet your other needs. It may also be necessary to use rainwater as a backup or supplement for other water supplies, such as a bore or a dam on your property, or to ensure that you have a store of water available to fight bushfires. ",
+        "content3": "SAVING MONEY OR QUALIFYING FOR REBATES | Using rainwater can bring many economic benefits. Rain harvesting can help you to save money on your water bills and store water in an economically sensible way. In some areas, local councils have even introduced cash-back rebate plans for anyone who chooses to install a rainwater tank on their property."
     },
     {
         "id": "2",
-        "imgurl": "https://picsum.photos/200?random=2",
-        "imgBg": "https://picsum.photos/200?random=1",
-        "name": "Residential Installation",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
+        "imgurl": "https://rainharvesting.com.au/wp-content/uploads/2022/10/tank-new-home-iStock-1263464381-scaled-e1664231271985.jpg",
+        "imgBg1": "https://rainharvesting.com.au/wp-content/uploads/2023/05/Refilling-water-bottle-from-tap.jpg",
+        "imgBg2": "https://rainharvesting.com.au/wp-content/uploads/2023/05/Water-sprinkler.jpg",
+        "name": "Understand your rainwater needs",
+        "description": "How you plan to use your rainwater and how much you need for that use are the cornerstones in your decision-making when building an effective rainwater harvesting system. ",
+        "content1": "HOW MUCH CAN I COLLECT? | This is dependent on the size of your roof, and how it is being directed to your tank. As a general rule of thumb, for every 1 millimetre of rainfall, you will collect 1 litre of water per square metre of the collection area. For example, if it rained 100mm in a month, you could potentially capture 13,000L from a 130m² roof. ",
+        "content2": "WHAT ARE YOU GOING TO USE YOUR RAINWATER FOR | To determine how much you need, simply check your recent water bill to see how much you use. Alternatively, you can get a snapshot of your water usage by using our mass balance tool. The tool guides assess your water applications and how much water you might need to use. It addresses location and seasonality so that you can determine what your water balance is throughout the year to make sure you’re not caught short. ",
+        "content3": "WHAT QUALITY OF WATER DO YOU NEED? | If you’re using rainwater for irrigation and other outdoor purposes, you’ll only need to do a minimum amount of work to bring it up to a moderate level. Minimal filtration is required as the key is keeping our larger debris to ensure pumps are protected and irrigation equipment can function smoothly without the risk of blockages .For use with internal appliances, such as washing machines, and toilets – you will need to attain a higher level of water quality to minimise water colour and odour. If you’re planning on using rainwater for all purposes, especially drinking, the system will need to be designed to achieve the highest quality and best tasting water by eliminating any remaining sediment before use."
     },
     {
         "id": "3",
-        "imgurl": "https://picsum.photos/200?random=3",
-        "imgBg": "https://picsum.photos/200?random=1",
-        "name": "Commercial Construction",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
+        "imgurl": "https://rainharvesting.com.au/wp-content/uploads/2023/04/Saving-Money.jpg",
+        "imgBg1": "https://qph.cf2.quoracdn.net/main-qimg-51342de920ec07cc76ca880163536670",
+        "imgBg2": "https://www.researchgate.net/publication/339398594/figure/fig1/AS:860828211351563@1582248847346/Rainwater-harvesting-tank-supplied-by-Weida-M-Bhd.png",
+        "name": "Store your rainwater",
+        "description": "Make the right choice for your property. Choose an appropriate storage vessel for your needs.",
+        "content1": "Reduced Water Bills: By utilizing harvested rainwater for non-potable purposes like irrigation, toilet flushing, or laundry, you can significantly reduce your reliance on municipal water supplies. This can lead to cost savings on your water bills, especially if you live in an area with high water prices. Rebates and Incentives: Some governments, water utilities, and environmental organizations offer rebates and incentives to encourage rainwater harvesting. These programs provide financial support or incentives to individuals or businesses that install rainwater harvesting systems. Rebates can help offset the initial costs associated with purchasing and installing rainwater collection systems, making it more affordable for homeowners and businesses to implement. Reduced Infrastructure Costs: In areas where water supply infrastructure is limited or expensive to expand, rainwater harvesting can be a cost-effective alternative. By utilizing rainwater for non-potable purposes, communities can reduce the demand on existing water infrastructure and delay the need for costly infrastructure expansions.",
+        "content2": "Conservation of Mains Water: By using rainwater for non-potable purposes, you help conserve mains water for essential uses like drinking, cooking, and bathing. This is particularly crucial during periods of drought or in regions where water resources are limited. Water Security and Resilience: Rainwater harvesting provides a degree of water security and resilience. Having an independent water source can be beneficial during emergencies, natural disasters, or instances of infrastructure failure that disrupt the mains water supply. Environmental Impact: Reducing dependence on mains water through rainwater harvesting can have positive environmental impacts. It helps conserve freshwater resources, reduces the energy required for water treatment and distribution, and mitigates the strain on natural ecosystems that supply water to the mains system. ",
+        "content3": "Water conservation is critical. If we don't learn to conserve water, our generation and future generations will suffer. There is hope, however. More and more folks like you are becoming educated about the importance of water conservation and doing their parts to save water, thus contributing to the well-being of our planet.The more water the world saves, the healthier our planet for humans, animals, ecosystems, and the environment."
     },
     {
         "id": "4",
-        "imgurl": "https://picsum.photos/200?random=4",
-        "imgBg": "https://picsum.photos/200?random=1",
-        "name": "DIY & System Kits",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam.",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam qui illo eum ea magnam, dolorem iste numquam."
+        "imgurl": "https://rainharvesting.com.au/wp-content/uploads/2023/04/Lowering-Ecological-footprint.jpg",
+        "imgBg1": "https://rainharvesting.com.au/wp-content/uploads/2022/09/respolytank-1.png",
+        "imgBg2": "https://rainharvesting.com.au/wp-content/uploads/2023/04/choosing-the-best-storage-vessel.jpg",
+        "name": "Lowering ecological footprint",
+        "description": "Rainwater harvesting can contribute to lowering your ecological footprint in several ways:",
+        "content1": " CHOOSING THE BEST STORAGE VESSEL | Depending on the aesthetic of your property, and the space you have available, you may opt for an above-ground tank or an in-ground tank. First, consider the position of the tank.  It could be stand-alone next to the building, under a deck, or down the side of the house. From here, you can select between above-ground or in-ground tanks, which opens up the options for locations.",
+        "content2": "The next step is to consider the type of material used to create your tank – this typically comes down to the aesthetic you prefer, and what is made available through local tank manufacturers. The most popular materials are concrete, steel, and plastic, all of which provide a strong, durable vessel to store your rainwater. When it comes to shape, it’s important to consider space.  If your property has limited space, and tight specifications, then you may prefer to opt for a slimline tank that can hug the side of your house. However, if you have more space and flexibility – you can opt for a classic round tank, and increase your storage capacity.",
+        "content3": "Whatever your choice, it is important to note that you can connect multiple smaller tanks to increase your volume if your requirements change. This is dependent on the shape and size of your space."
+    },
+    {
+        "id": "5",
+        "imgurl": "https://rainharvesting.com.au/wp-content/uploads/2023/04/Health-Personal-Preference.jpg",
+        "imgBg1": "https://rainharvesting.com.au/wp-content/uploads/2022/09/tank-cover-500mm-6-1_crop.jpg",
+        "imgBg2": "https://rainharvesting.com.au/wp-content/uploads/2022/09/wetsystem-1.png",
+        "name": "Consider your whole rain water system.",
+        "description": "When connecting your roof and downpipes to your tank, there are two main systems – Dry and Wet. ",
+        "content1": "DRY SYSTEM | A Dry System enables water to flow directly from the roof to the tank. There are no upward sections in the pipe so water is never stored in the pipes, as they completely drain every time there is rainfall.Dry Systems are often simpler to install with existing buildings and can be achieved by re-routing a few pipes, with minimal plumbing or groundwork required. However, depending on the roof style you have, like gabled,  it might be difficult to connect a large area of the roof to the tank. In this case, if you need to increase your collection area, then you might need to consider a wet system to set you up for more water capture.",
+        "content2": "WETSYSTEM | Wet Systems (or Charged Systems) enable you to connect much more of your building to the tank, maximising water capture. This is achieved by connecting pipes that come from the building, into the ground, and then back up to your tank. These are often easier to set up on a new site, as the pipes need to be routed underground to get back into the tank. ",
+        "content3": "Once you have determined the appropriate system and storage vessel for your property, it’s time to assess and prepare your roof or collection area to get the best quality rainwater."
     }
 ]

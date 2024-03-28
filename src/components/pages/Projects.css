@@ -54,3 +54,15 @@
     background-color: var(--green-light);
 
 }
+
+@media screen and (max-width: 768px) {
+    .projects-page header {
+        text-align: center;
+        color: var(--text-white);
+        margin: 16px
+    }
+
+    .projects-content .title {
+        margin: 32px 16px;
+    }
+}

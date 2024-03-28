@@ -39,7 +39,7 @@ body {
 
 .product-detail {
     width: 100%;
-    z-index: 2000;
+    z-index: 0;
 
     border: none;
 
@@ -82,7 +82,7 @@ body {
 
 .product-detail .container {
     position: relative;
-    max-width: 1200px;
+
     padding: 0 1rem;
     margin: 0 auto;
 
@@ -298,6 +298,8 @@ body {
         margin-right: auto;
         margin-left: auto;
     }
+
+
 }
 
 @media screen and (max-width: 400px) {
@@ -311,4 +313,24 @@ body {
         background-color: var(--background-white);
 
     }
+
+    .feature-content ul li {
+        text-align: left;
+    }
+
+    .product-detail .product-div {
+
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background-white);
+        column-gap: 10px;
+
+    }
+
+
+
+
+
+
 }

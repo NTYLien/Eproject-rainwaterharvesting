@@ -146,3 +146,13 @@
     background: var(--green-light);
     color: var(--black-dark);
 }
+
+@media (max-width: 650px) {
+    .tool-page-form .body {
+        margin: 8px;
+
+
+    }
+
+
+}

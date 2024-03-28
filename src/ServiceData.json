@@ -1,8 +1,8 @@
 [
     {
         "id": "1",
-        "imgurl": "https://picsum.photos/200?random=1",
-        "imgBg": "https://picsum.photos/200?random=1",
+        "imgurl": "https://images.squarespace-cdn.com/content/v1/5de4a4ea9ab6b86728febff8/1579144031332-W3A1N1AF127UY3ZLCD0W/Corporate-Construction-Group-Services-2.jpg",
+        "imgBg": "https://media.istockphoto.com/id/1495081566/id/vektor/skema-pemanenan-air-hujan-ilustrasi-vektor-terisolasi-yang-dapat-diedit.jpg?s=170667a&w=0&k=20&c=m_yUtyyi5TRjw6ehqiICugE_duW1L3fyS9zY3n5DMIs=",
         "name": "Design & Consulting",
         "description": "Successful projects start with great designs",
         "content1": "We are a licensed engineering firm in Vietnam that provides design and consulting services for rainwater harvesting systems on residential and commercial projects.  We specialize in systems that are used for irrigation, potable, and stormwater detention purposes.",
@@ -12,8 +12,8 @@
     },
     {
         "id": "2",
-        "imgurl": "https://picsum.photos/200?random=2",
-        "imgBg": "https://picsum.photos/200?random=1",
+        "imgurl": "https://huoarchitects.com/wp-content/uploads/2013/08/3522-E-Martin-Luther-King-053-cropped-resized.jpg",
+        "imgBg": "https://www.treehugger.com/thmb/tHf5zRBEj6sbkpzIHIucC4fw2wI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/beginners-guide-to-rainwater-harvesting-5089884_V3-d4a6f6a568fc4f348598d9b98f96b6b7.png",
         "name": "Residential Installation",
         "description": "Offering systems for irrigation, potable, and stormwater detention",
         "content1": "We have been designing and installing rainwater collection systems since 2024.  While there are consistent principles to rainwater harvesting, our systems have evolved through our knowledge, experience, and the latest technology. We provide customized rainwater harvesting systems that are optimized for your collection area and give you the most convenient method of using rainwater to maximize your savings and reduce your environmental footprint.",
@@ -23,8 +23,8 @@
     },
     {
         "id": "3",
-        "imgurl": "https://picsum.photos/200?random=3",
-        "imgBg": "https://picsum.photos/200?random=1",
+        "imgurl": "https://www.google.com/search?sca_esv=9272d84fbffb95f6&sxsrf=ACQVn0_1u3eIWypdfqOU554MedrhddkJoA:1711591549847&q=construction&tbm=isch&source=lnms&prmd=invsbtz&sa=X&ved=2ahUKEwjz1dCy75WFAxV-9DgGHd_UAoAQ0pQJegQIChAB&biw=1336&bih=726&dpr=2.2#imgrc=7BnwGEAX_yWiMM",
+        "imgBg": "https://www.neoakruthi.com/blog/infographics/rainwater-harvesting-for-commercial-buildings.jpg",
         "name": "Commercial Construction",
         "description": "Comprehensive Experience that Delivers Results",
         "content1": "We have been providing commercial rainwater harvesting system construction services since 2024.  Our main goal is to alleviate any and all confusion that may surround the rainwater harvesting system on a commercial project.  Many times, these rainwater collection systems don’t have the same design detail as the other mechanical systems in the building. Therefore, we provide this experience to fill in the gaps in a commercial rainwater harvesting system in the hopes of ensuring the completion of the system according to its design intent.",
@@ -34,8 +34,8 @@
     },
     {
         "id": "4",
-        "imgurl": "https://picsum.photos/200?random=4",
-        "imgBg": "https://picsum.photos/200?random=1",
+        "imgurl": "https://www.propertiesinsiliconvalley.com/wp-content/uploads/2021/03/campbell-ca-home-valuation.jpg",
+        "imgBg": "https://www.grafuk.co.uk/wp-content/uploads/2020/08/Installing-a-Platin-Rainwater-Tank.jpg",
         "name": "Support Services",
         "description": "Options for Service, Maintenance, Inspection, and Testing",
         "content1": "While rainwater harvesting systems are conceptually simple, they can be very technical. The practice and technology of rainwater harvesting have advanced greatly. These systems are not your grandmother’s rain barrels anymore.  They have multi-point filtration methods as the rainwater makes its way from the roof to the cistern and ultimately to its end use. No matter what size or scale of your rainwater harvesting system, we can keep the system in optimum condition to ensure that you continue to save water and money.  This also keeps you doing your part to help the environment.",

@@ -50,8 +50,12 @@
 
 .learn-info {
     margin: 16px 64px;
-    text-align: left;
+    text-align: center;
 
+}
+
+.service-img {
+    margin-bottom: 16px;
 }
 
 .our-service .service-intro .title:hover {
