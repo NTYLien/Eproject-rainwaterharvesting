@@ -33,7 +33,7 @@ function Login({ setLoggedUser }) {
 
 
             });
-    }, [id]);
+    }, []);
 
 
 

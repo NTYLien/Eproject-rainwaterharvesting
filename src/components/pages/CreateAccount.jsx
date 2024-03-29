@@ -37,18 +37,6 @@ function CreateAccount(props) {
             });
     }, [id]);
 
-    useEffect(() => {
-        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/${id}`,
-            {
-                method: 'POST',
-                headers: { 'content-type': 'application/json' },
-                body: JSON.stringify(newAccount)
-            }).then(res => {
-                if (res.ok) {
-                    return res.json();
-                }
-            })
-    }, [id])
 
     return (
         <div className='create-account-page'>
@@ -127,17 +115,29 @@ function CreateAccount(props) {
                             onClick={(e) => {
                                 e.preventDefault();
 
+                                fetch('https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting', {
+                                    method: 'POST',
+                                    headers: { 'content-type': 'application/json' },
+                                    // Send your data in the request body as JSON
+                                    body: JSON.stringify(newAccount)
+                                }).then(() => {
+
+
+                                    nav("/")
+                                })
+
+
                                 if (!newAccount.userName || !newAccount.email || !newAccount.phone || !newAccount.password || !newAccount.confirmPassword) {
                                     toast.error("Sorry! Please fill-in required information before submit the form");
                                     return;
                                 }
-
                                 const foundEmail = userList.find((user) => user.email === newAccount.email)
                                 if (foundEmail) {
 
                                     toast.error("This email is already exist! Please change your email")
                                     return;
                                 }
+
 
                                 const nameRegEx = /^\w{3,}$/;
                                 if (!newAccount.userName.match(nameRegEx)) {
@@ -169,6 +169,7 @@ function CreateAccount(props) {
                                     toast.error("Confirm Password not match!")
                                     return;
                                 }
+
 
                                 toast.success('Congratulation, your account has been successfully created!')
                                 nav("/")
