@@ -128,7 +128,7 @@ body {
     }
 
     .category-filter input {
-        margin: 9px;
+        margin: 12px;
     }
 
     .show-filter {
@@ -144,6 +144,7 @@ body {
 
     .property-show {
         display: flex;
+        justify-content: center;
 
 
 
@@ -151,6 +152,8 @@ body {
 
     .product-type-show {
         display: flex;
+        justify-content: center;
+
     }
 
 
