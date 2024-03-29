@@ -12,6 +12,7 @@ function ProductDetails(props) {
 
 
     const nav = useNavigate();
+    const isUserLoggedIn = props.isUserLoggedIn;
     const addToWishList = props.addToWishList;
     const addToCart = props.addToCart;
     const productData = props.productData;
@@ -140,7 +141,14 @@ function ProductDetails(props) {
 
                                 <button type="button" className="buy-now-btn"
                                     onClick={() => {
-                                        nav(`/payment/${productCode}`)
+                                        if (isUserLoggedIn) { nav(`/payment/${productCode}`) } else {
+                                            if (window.confirm("You must log in before doing payment. Login now?")) {
+                                                nav("/log-in")
+                                            }
+
+                                        }
+
+
                                     }}
                                 >Buy Now</button>
                             </div>

@@ -1,8 +1,10 @@
 import React from 'react';
 import './Navbar.css'
 import logo from './logo-rainharvesting.jpg'
-import { NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import Breadcrums from './Breadcrumbs';
+import Breadcrumbs from './Breadcrumbs';
 
 
 
@@ -88,7 +90,11 @@ function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem, i
                             <li className='nav-item'
 
                             >
-                                <NavLink to="/products" className='nav-links' onClick={closeMobileMenu} >PRODUCTS </NavLink></li>
+                                <NavLink to="/products" className='nav-links' onClick={closeMobileMenu} >PRODUCTS </NavLink>
+                                <li>
+                                    <Link to="/our-projects/:id"></Link>
+                                </li>
+                            </li>
 
 
                             <li className='nav-item'>
@@ -100,7 +106,20 @@ function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem, i
                             <li className='nav-item'>
                                 <NavLink to="/news" className='nav-links' onClick={closeMobileMenu} >NEWS</NavLink></li>
                             <li className='nav-item'>
-                                <NavLink to="/interactive-tools" className='nav-links' onClick={closeMobileMenu} >INTERACTIVE TOOLS</NavLink></li>
+                                <NavLink to="/interactive-tools" className='nav-links' onClick={closeMobileMenu} >INTERACTIVE TOOLS</NavLink>
+
+                                <li>
+                                    <Link to="/interactive-tools/interactive-tools-cost-suggestion"></Link>
+                                    <li>
+                                        <Link to="/interactive-tools/interactive-tools-cost-suggestion/system-cost-guide"></Link>
+                                    </li>
+                                </li>
+
+
+                                <li>
+                                    <Link to="/interactive-tools/interactive-tools-product-suggestion"></Link>
+                                </li>
+                            </li>
                             <li className='nav-item'>
                                 <NavLink to="/contact-us" className='nav-links' onClick={closeMobileMenu} >CONTACT US</NavLink></li>
 
@@ -110,6 +129,7 @@ function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem, i
 
 
                 </div>
+                <Breadcrumbs />
             </div>
 
 

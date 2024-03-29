@@ -281,7 +281,8 @@ function App() {
         <Route path='/learn-and-ask' element={<LearnandAsk LearnAndAsk={LearnAndAsk} />}></Route >
         <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} handleClickQuickView={handleClickQuickView} />}>
         </Route >
-        <Route path='/products/:productCode' element={<ProductDetails productData={productData} addToCart={addToCart} addToWishList={addToWishList} />}>
+        <Route path='/products/:productCode' element={<ProductDetails productData={productData} addToCart={addToCart} addToWishList={addToWishList}
+          isUserLoggedIn={isUserLoggedIn} />}>
         </Route >
 
         <Route path='/our-projects' element={<Projects ProjectData={ProjectData} />}></Route >
@@ -290,9 +291,9 @@ function App() {
 
         <Route path='/news' element={<News newsData={NewsData} />}></Route >
         <Route path='/interactive-tools' element={<InteractiveTools />}></Route >
-        <Route path='/interactive-tools-cost-suggesttion/' element={<ToolCostSugeestion />}></Route >
-        <Route path='/system-cost-guide' element={<SystemCostGuide />}></Route >
-        <Route path='/interactive-tools-product-suggesttion/' element={<ToolProductSuggestion
+        <Route path='/interactive-tools/interactive-tools-cost-suggestion' element={<ToolCostSugeestion />}></Route >
+        <Route path='/interactive-tools/interactive-tools-cost-suggestion/system-cost-guide' element={<SystemCostGuide />}></Route >
+        <Route path='/interactive-tools/interactive-tools-product-suggestion' element={<ToolProductSuggestion
           productData={productData}
 
         />}></Route >

@@ -71,7 +71,7 @@ function ToolCostSuggestion(props) {
 
                         } else {
                             toast.info('Successfull! Thank you for sending us your infomation!')
-                            nav('/system-cost-guide')
+                            nav('/interactive-tools/interactive-tools-cost-suggestion/system-cost-guide')
                         }
 
 

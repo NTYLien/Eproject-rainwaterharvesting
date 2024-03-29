@@ -16,7 +16,7 @@ function InteractiveTools(props) {
                     <div className="toolbox" >
                         Caculate the cost of your project
                         <div> <button className='get-start-btn'
-                            onClick={() => { nav(`/interactive-tools-cost-suggesttion`) }}
+                            onClick={() => { nav(`/interactive-tools/interactive-tools-cost-suggestion`) }}
                         >Get Start
                             <i className="fa-solid fa-arrow-right"></i>
                         </button></div>
@@ -29,7 +29,7 @@ function InteractiveTools(props) {
                     <div className="toolbox">
                         Find the right products for your property
                         <div> <button className='get-start-btn'
-                            onClick={() => { nav(`/interactive-tools-product-suggesttion`) }}
+                            onClick={() => { nav(`/interactive-tools/interactive-tools-product-suggestion`) }}
                         >Get Start
                             <i className="fa-solid fa-arrow-right"></i>
                         </button></div>

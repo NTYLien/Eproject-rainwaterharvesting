@@ -24,15 +24,29 @@
     --Common-Text-Caption: 13px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+.breadcrumbs {
+    max-width: 1200;
+    margin-left: 150px;
+    display: flex;
+
 }
 
+.breadcrumbs>* {
+    display: block;
+    margin-right: 10px;
 
-body {
-    background: var(--background-white);
+}
 
+.breadcrumbs .crumb:after {
+    content: ">";
+    margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child::after {
+    display: none;
+}
+
+.breadcrumbs .crumb a {
+    color: var(--primary-blue);
+    text-decoration: none;
 }
