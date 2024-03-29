@@ -173,7 +173,7 @@ function CreateAccount(props) {
 
 
                                 toast.success('Congratulation, your account has been successfully created!')
-                                nav("/log-in")
+
 
 
                             }}
