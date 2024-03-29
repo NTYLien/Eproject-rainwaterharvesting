@@ -95,13 +95,13 @@ function CreateAccount(props) {
 
                         <div className="input-box">
                             <span className="details">Password*</span>
-                            <input type="text" placeholder="Enter your password" required
+                            <input type="password" placeholder="Enter your password" required
                                 onChange={(e) => { setPassword(e.target.value) }} />
                         </div>
 
                         <div className="input-box">
                             <span className="details">Confirm Password*</span>
-                            <input type="text" placeholder="Confirm your password" required
+                            <input type="password" placeholder="Confirm your password" required
                                 onChange={(e) => { setConfirmPassword(e.target.value) }} />
                         </div>
                     </div>
