@@ -29,6 +29,7 @@
     background: var(--primary-blue);
     height: 100%;
     padding-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 .projects-page header {
