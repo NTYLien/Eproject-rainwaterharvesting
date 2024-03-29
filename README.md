@@ -1,14 +1,21 @@
 # Visit our website
 You can view our website at: https://ntylien.github.io/Eproject-rainwaterharvesting/
 
-# Video User Guide: 
-You can watch how to use our website at video: https://drive.google.com/file/d/1J_0_TLLdhmys8FM2lUMySR9HoLS3mRGi/view?usp=drive_link
+## Testing Account
+We have already created a default testing account:
+- Username: "test"
+- Email: "test@gmail.com"
+- Password: "test123"
 
-# Documentation
+You can use this account for testing or create your account.
+
+## Documentation
 https://docs.google.com/document/d/1gt6lfDtOecEYm8iliTyovladKm6wdNl-01N86EeUVek/edit?usp=drive_link
 
-# Source Code
+## Source Code
 https://github.com/NTYLien/Eproject-rainwaterharvesting.git
+
+
 
 # Getting Started with Create React App
 
