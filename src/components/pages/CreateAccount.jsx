@@ -136,6 +136,7 @@ function CreateAccount(props) {
 
                                     toast.error("This email is already exist! Please change your email")
                                     return;
+
                                 }
 
 
@@ -172,7 +173,7 @@ function CreateAccount(props) {
 
 
                                 toast.success('Congratulation, your account has been successfully created!')
-                                nav("/")
+                                nav("/log-in")
 
 
                             }}
