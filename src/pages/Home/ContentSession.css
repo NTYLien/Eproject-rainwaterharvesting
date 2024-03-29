@@ -1,234 +1,202 @@
-@import '../../root.css';
+@import "../../root.css";
 
 :root {
-    --background-white: #ffff;
-    --background-red: #ff0037;
-    --primary-blue: #0766ad;
-    --blue-dark: #0D4C7C;
-    --green-light: #c5e897;
-    --green-dark: #9BBC6E;
-    --black-light: #C0C0C0;
-    --black-dark: #4E5656;
-    --neutral-blue: #29adb2;
-    --text-black: #3e4141;
-    --text-white: #f3f3f3;
-    --text-grey: #a7a7a7;
-    --Desktop-Text-Heading1: 48px;
-    --Desktop-Text-Heading2: 40px;
-    --Desktop-Text-Heading3: 32px;
-    --Desktop-Text-Heading4: 24px;
-    --Common-Text-Subtitle: 20px;
-    --Common-Text-Label: 16px;
-    --Common-Text-Body1: 20px;
-    --Common-Text-Body2: 16px;
-    --Common-Text-Caption: 13px;
+  --background-white: #ffff;
+  --background-red: #ff0037;
+  --primary-blue: #0766ad;
+  --blue-dark: #0d4c7c;
+  --green-light: #c5e897;
+  --green-dark: #9bbc6e;
+  --black-light: #c0c0c0;
+  --black-dark: #4e5656;
+  --neutral-blue: #29adb2;
+  --text-black: #3e4141;
+  --text-white: #f3f3f3;
+  --text-grey: #a7a7a7;
+  --Desktop-Text-Heading1: 48px;
+  --Desktop-Text-Heading2: 40px;
+  --Desktop-Text-Heading3: 32px;
+  --Desktop-Text-Heading4: 24px;
+  --Common-Text-Subtitle: 20px;
+  --Common-Text-Label: 16px;
+  --Common-Text-Body1: 20px;
+  --Common-Text-Body2: 16px;
+  --Common-Text-Caption: 13px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-
 body {
-    background: var(--background-white);
-
+  background: var(--background-white);
 }
 
 button.getstart-btn {
-    background: var(--background-white);
-}
-
-
-
-.content-homepage .title {
-    font-size: var(--Desktop-Text-Heading3);
-    margin-top: 16px;
-    color: var(--primary-blue);
+  background: var(--background-white);
 }
 
 .content-homepage .title {
-    margin-top: 32px;
-    margin-left: 32px;
-    color: var(--primary-blue);
+  font-size: var(--Desktop-Text-Heading3);
+  margin-top: 16px;
+  color: var(--primary-blue);
+}
+
+.content-homepage .title {
+  margin-top: 32px;
+  margin-left: 32px;
+  color: var(--primary-blue);
 }
 
 .content-homepage .title:hover {
-    color: var(--green-dark);
+  color: var(--green-dark);
 }
 
 .content-session1,
 .content-session2,
 .content-session3 {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-
-
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-
 
 .row1,
 .row2 {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    gap: 32px;
-    place-items: center;
-
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 32px;
+  place-items: center;
 }
 
 .row1 .photo {
-    width: 47%;
-    height: 50vh;
-    background: url('https://www.researchgate.net/publication/344498221/figure/fig1/AS:943696166014976@1602006107084/Typical-weir-for-flood-water-harvesting-and-stream-diversion-photo-by-B-Mati.png');
-    margin: 0px 32px;
-    border-radius: 8px;
-
+  width: 47%;
+  height: 50vh;
+  background: url("https://www.researchgate.net/publication/344498221/figure/fig1/AS:943696166014976@1602006107084/Typical-weir-for-flood-water-harvesting-and-stream-diversion-photo-by-B-Mati.png");
+  margin: 0px 32px;
+  border-radius: 8px;
 }
 
 .row-content {
-    width: 60%;
-    place-items: center;
-    margin-bottom: 8px;
-    margin-right: 24px;
+  width: 60%;
+  place-items: center;
+  margin-bottom: 8px;
+  margin-right: 24px;
 }
 
-
-
-
 .row2 .photo {
-    width: 47%;
-    height: 50vh;
-    background: url('https://st3.depositphotos.com/1866509/15860/i/450/depositphotos_158608054-stock-photo-green-recovery-of-rainwater-outside.jpg');
-    margin: 16px 32px;
-    border-radius: 8px;
+  width: 47%;
+  height: 50vh;
+  background: url("https://st3.depositphotos.com/1866509/15860/i/450/depositphotos_158608054-stock-photo-green-recovery-of-rainwater-outside.jpg");
+  margin: 16px 32px;
+  border-radius: 8px;
 }
 
 .fa-cloud-rain {
-    padding-right: 6px;
+  padding-right: 6px;
 }
 
 .news-row {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin: 0 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 0 32px;
 }
 
 .news-column {
-    height: 310px;
-    padding: 0 4px;
-
-
+  height: 310px;
+  padding: 0 4px;
 }
 
 .news-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .news-column {
-    width: 60%;
-    height: 500px;
+  width: 60%;
+  height: 500px;
 }
-
 
 .news-column1 {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 40%;
-    height: 500px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 40%;
+  height: 500px;
 }
-
 
 .news-column1 p {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
-
-
 .news-card-content {
-    position: relative;
-    text-align: left;
-
+  position: relative;
+  text-align: left;
 }
 
 .news-card-content .description {
-    color: var(--text-white);
+  color: var(--text-white);
 }
 
 .news-card-colunm2,
 .news-card-colunm {
-
-    border: 1px solid transparent;
-    padding: 16px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    background: url('https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-
+  border: 1px solid transparent;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  background: url("https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 .news-title {
-    color: var(--text-white)
+  color: var(--text-white);
 }
 
-
-
-
 @media screen and (max-width: 768px) {
+  .row1,
+  .row2 {
+    flex-direction: column;
+  }
 
+  .row1 .photo,
+  .row2 .photo {
+    width: 100%;
+  }
 
-
-
-    .row1,
-    .row2 {
-        flex-direction: column;
-    }
-
-    .row1 .photo,
-    .row2 .photo {
-        width: 100%;
-
-    }
-
-    .row-content {
-        width: 90%;
-    }
+  .row-content {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .content-session {
-        display: flex;
-        flex-direction: column;
-    }
+  .content-session {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .news-column {
-        width: 100%;
-        height: fit-content;
-        margin-bottom: 8px;
+  .news-column {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 8px;
+  }
 
-    }
+  .news-column1 {
+    width: 100%;
+    gap: 8px;
+  }
 
-    .news-column1 {
-        width: 100%;
-        gap: 8px;
+  .news-row {
+    display: block;
+  }
 
-    }
-
-    .news-row {
-        display: block;
-    }
-
-    .content-session {
-        margin-bottom: 64px;
-    }
+  .content-session {
+    margin-bottom: 64px;
+  }
 }

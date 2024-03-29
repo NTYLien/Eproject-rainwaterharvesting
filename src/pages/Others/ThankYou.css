@@ -1,49 +1,47 @@
-@import '../../root.css';
+@import "../../root.css";
 
 :root {
-    --background-white: #ffff;
-    --background-red: #ff0037;
-    --primary-blue: #0766ad;
-    --blue-dark: #0D4C7C;
-    --green-light: #c5e897;
-    --green-dark: #9BBC6E;
-    --black-light: #C0C0C0;
-    --black-dark: #4E5656;
-    --neutral-blue: #29adb2;
-    --text-black: #3e4141;
-    --text-white: #f3f3f3;
-    --text-grey: #a7a7a7;
-    --Desktop-Text-Heading1: 48px;
-    --Desktop-Text-Heading2: 40px;
-    --Desktop-Text-Heading3: 32px;
-    --Desktop-Text-Heading4: 24px;
-    --Common-Text-Subtitle: 20px;
-    --Common-Text-Label: 16px;
-    --Common-Text-Body1: 20px;
-    --Common-Text-Body2: 16px;
-    --Common-Text-Caption: 13px;
+  --background-white: #ffff;
+  --background-red: #ff0037;
+  --primary-blue: #0766ad;
+  --blue-dark: #0d4c7c;
+  --green-light: #c5e897;
+  --green-dark: #9bbc6e;
+  --black-light: #c0c0c0;
+  --black-dark: #4e5656;
+  --neutral-blue: #29adb2;
+  --text-black: #3e4141;
+  --text-white: #f3f3f3;
+  --text-grey: #a7a7a7;
+  --Desktop-Text-Heading1: 48px;
+  --Desktop-Text-Heading2: 40px;
+  --Desktop-Text-Heading3: 32px;
+  --Desktop-Text-Heading4: 24px;
+  --Common-Text-Subtitle: 20px;
+  --Common-Text-Label: 16px;
+  --Common-Text-Body1: 20px;
+  --Common-Text-Body2: 16px;
+  --Common-Text-Caption: 13px;
 }
 
 .thank-you-page {
-    text-align: center;
-    justify-content: center;
-    margin: 32px 64px;
+  text-align: center;
+  justify-content: center;
+  margin: 32px 64px;
 }
 
 .thank-you-page h2 {
-    color: var(--primary-blue);
-
+  color: var(--primary-blue);
 }
 
 .thank-you-page p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .thank-you-page span {
-    color: var(--primary-blue);
-
+  color: var(--primary-blue);
 }
 
 .thank-you-page span:hover {
-    color: var(--neutral-blue);
+  color: var(--neutral-blue);
 }

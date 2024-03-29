@@ -32,12 +32,14 @@ import ToolProductSuggestion from "./pages/InteractiveTools/ToolProductSuggestio
 import ToolCostSugeestion from "./pages/InteractiveTools/ToolCostSuggestion";
 import SystemCostGuide from "./pages/InteractiveTools/SystemCostGuide";
 import CreateAccount from "./pages/Login/CreateAccount";
+
 import NotFound from "./pages/Others/NotFound";
+
 import ThankYou from "./pages/Others/ThankYou";
 
 const useLocalStorageState = (initialData, key) => {
   const localStorageState = JSON.parse(
-    window.localStorage.getItem(key) || JSON.stringify(initialData),
+    window.localStorage.getItem(key) || JSON.stringify(initialData)
   );
   const [state, setState] = useState(localStorageState);
   const setLocalStorageState = (newState) => {
@@ -161,7 +163,7 @@ function App() {
         -1 ||
       product.category
         .toLocaleLowerCase()
-        .indexOf(query.toLocaleLowerCase()) !== -1,
+        .indexOf(query.toLocaleLowerCase()) !== -1
   );
 
   // Category Filter
@@ -187,7 +189,7 @@ function App() {
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, type, name }) =>
-          category === selected || type === selected || name === selected,
+          category === selected || type === selected || name === selected
       );
     }
 
@@ -232,7 +234,7 @@ function App() {
           features5={features5}
           features6={features6}
         />
-      ),
+      )
     );
   }
 

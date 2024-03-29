@@ -1,190 +1,183 @@
-@import '../../root.css';
+@import "../../root.css";
 
 :root {
-    --background-white: #ffff;
-    --background-red: #ff0037;
-    --primary-blue: #0766ad;
-    --blue-dark: #0D4C7C;
-    --green-light: #c5e897;
-    --green-dark: #9BBC6E;
-    --black-light: #C0C0C0;
-    --black-dark: #4E5656;
-    --neutral-blue: #29adb2;
-    --text-black: #3e4141;
-    --text-white: #f3f3f3;
-    --text-grey: #a7a7a7;
-    --Desktop-Text-Heading1: 48px;
-    --Desktop-Text-Heading2: 40px;
-    --Desktop-Text-Heading3: 32px;
-    --Desktop-Text-Heading4: 24px;
-    --Common-Text-Subtitle: 20px;
-    --Common-Text-Label: 16px;
-    --Common-Text-Body1: 20px;
-    --Common-Text-Body2: 16px;
-    --Common-Text-Caption: 13px;
+  --background-white: #ffff;
+  --background-red: #ff0037;
+  --primary-blue: #0766ad;
+  --blue-dark: #0d4c7c;
+  --green-light: #c5e897;
+  --green-dark: #9bbc6e;
+  --black-light: #c0c0c0;
+  --black-dark: #4e5656;
+  --neutral-blue: #29adb2;
+  --text-black: #3e4141;
+  --text-white: #f3f3f3;
+  --text-grey: #a7a7a7;
+  --Desktop-Text-Heading1: 48px;
+  --Desktop-Text-Heading2: 40px;
+  --Desktop-Text-Heading3: 32px;
+  --Desktop-Text-Heading4: 24px;
+  --Common-Text-Subtitle: 20px;
+  --Common-Text-Label: 16px;
+  --Common-Text-Body1: 20px;
+  --Common-Text-Body2: 16px;
+  --Common-Text-Caption: 13px;
 }
-
 
 .login-page {
-    display: grid;
-    height: 100vh;
-    place-items: center;
-    background: none;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: none;
 }
-
 
 .main_div {
-    width: 365px;
-    background: var(--green-light);
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 24px auto;
-    text-align: center;
+  width: 365px;
+  background: var(--green-light);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 24px auto;
+  text-align: center;
 }
 
-
 .main_div .title {
-    font-size: 30px;
-    text-align: center;
-    font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .main_div .social-icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons a {
-    display: block;
-    height: 45px;
-    width: 100%;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.3s linear;
+  display: block;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s linear;
 }
 
 .social-icons span {
-    margin-left: 5px;
-    font-size: 18px;
+  margin-left: 5px;
+  font-size: 18px;
 }
 
 .social-icons a:first-child {
-    margin-left: 5px;
-    background: #4267b2;
+  margin-left: 5px;
+  background: #4267b2;
 }
 
 .social-icons a:first-child:hover {
-    background: #375695;
+  background: #375695;
 }
 
 .social-icons a:last-child {
-    margin-left: 5px;
-    background: #1da1f2;
+  margin-left: 5px;
+  background: #1da1f2;
 }
 
 .social-icons a:last-child:hover {
-    background: var(--primary-blue);
+  background: var(--primary-blue);
 }
 
 form {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 form .input-box {
-    height: 45px;
-    width: 100%;
-    position: relative;
-    margin-top: 15px;
-
+  height: 45px;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
 }
 
 .input-box input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    font-size: 17px;
-    padding-left: 45px;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    transition: all 0.3s ease;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 45px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  transition: all 0.3s ease;
 }
 
 .input-box input:focus {
-    border-color: var(--primary-blue);
+  border-color: var(--primary-blue);
 }
 
 .input-box .icon {
-    position: absolute;
-    top: 50%;
-    left: 20px;
-    color: grey;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: grey;
+  transform: translateY(-50%);
 }
 
 form .option_div {
-    margin-top: 5px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .option_div .checkbox {
-    display: flex;
-    align-items: center;
-
+  display: flex;
+  align-items: center;
 }
 
 .option_div span {
-    margin-left: 5px;
-    font-size: 16px;
-    color: #333;
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333;
 }
 
 .option_div .forget_div a {
-    font-size: 16px;
-    color: var(--primary-blue);
+  font-size: 16px;
+  color: var(--primary-blue);
 }
 
 .button input {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    padding-left: 0;
-    background: var(--primary-blue);
-    cursor: pointer;
-    transition: all 0.3s linear;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  padding-left: 0;
+  background: var(--primary-blue);
+  cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 .button input:hover {
-    background: var(--blue-dark);
-    ;
+  background: var(--blue-dark);
 }
 
 form .sign_up {
-    text-align: center;
-    margin-top: 25px;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .sign_up a {
-    font-size: 16px;
-    color: var(--primary-blue);
+  font-size: 16px;
+  color: var(--primary-blue);
 }
 
 form a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 form a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .rememberme {
-    cursor: pointer;
+  cursor: pointer;
 }

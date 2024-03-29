@@ -1,120 +1,112 @@
-@import '../../root.css';
+@import "../../root.css";
 
 :root {
-    --background-white: #ffff;
-    --background-red: #ff0037;
-    --primary-blue: #0766ad;
-    --blue-dark: #0D4C7C;
-    --green-light: #c5e897;
-    --green-dark: #9BBC6E;
-    --black-light: #C0C0C0;
-    --black-dark: #4E5656;
-    --neutral-blue: #29adb2;
-    --text-black: #3e4141;
-    --text-white: #f3f3f3;
-    --text-grey: #a7a7a7;
-    --Desktop-Text-Heading1: 48px;
-    --Desktop-Text-Heading2: 40px;
-    --Desktop-Text-Heading3: 32px;
-    --Desktop-Text-Heading4: 24px;
-    --Common-Text-Subtitle: 20px;
-    --Common-Text-Label: 16px;
-    --Common-Text-Body1: 20px;
-    --Common-Text-Body2: 16px;
-    --Common-Text-Caption: 13px;
+  --background-white: #ffff;
+  --background-red: #ff0037;
+  --primary-blue: #0766ad;
+  --blue-dark: #0d4c7c;
+  --green-light: #c5e897;
+  --green-dark: #9bbc6e;
+  --black-light: #c0c0c0;
+  --black-dark: #4e5656;
+  --neutral-blue: #29adb2;
+  --text-black: #3e4141;
+  --text-white: #f3f3f3;
+  --text-grey: #a7a7a7;
+  --Desktop-Text-Heading1: 48px;
+  --Desktop-Text-Heading2: 40px;
+  --Desktop-Text-Heading3: 32px;
+  --Desktop-Text-Heading4: 24px;
+  --Common-Text-Subtitle: 20px;
+  --Common-Text-Label: 16px;
+  --Common-Text-Body1: 20px;
+  --Common-Text-Body2: 16px;
+  --Common-Text-Caption: 13px;
 }
 
 .our-learn {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin: 16px auto;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 16px auto;
 }
 
 .our-learn .learn-intro {
-    background: #e2e2e2;
-    padding: 16px;
-    text-align: center;
-    width: 70%;
-    border-radius: 8px;
-    color: var(--text-black);
+  background: #e2e2e2;
+  padding: 16px;
+  text-align: center;
+  width: 70%;
+  border-radius: 8px;
+  color: var(--text-black);
 }
 
 .our-learn .learn-intro:hover {
-    scale: 1.1;
+  scale: 1.1;
 }
 
 .our-learn .learn-intro .title:hover {
-    color: var(--primary-blue);
+  color: var(--primary-blue);
 }
 
 .our-learn .showmore-btn {
-    background: var(--primary-blue);
-    color: var(--text-white);
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    margin-top: 8px;
-    font-weight: 500;
+  background: var(--primary-blue);
+  color: var(--text-white);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-weight: 500;
 }
 
 .our-learn .showmore-btn:hover {
-    color: var(--text-white);
-    background: var(--neutral-blue);
+  color: var(--text-white);
+  background: var(--neutral-blue);
 }
 
 .our-learn .learn-content {
-    margin: 16px 64px;
+  margin: 16px 64px;
 }
 
 .youtube-videos {
-    text-align: center;
-
+  text-align: center;
 }
 
 .youtube-videos h3 {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .video-list {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin-bottom: 24px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 .learn-content img {
-    width: 500px;
-    border-radius: 8px;
+  width: 500px;
+  border-radius: 8px;
 }
 
 @media (max-width: 650px) {
+  .our-learn .learn-intro {
+    width: 90%;
+  }
 
-    .our-learn .learn-intro {
-        width: 90%;
+  .our-learn .learn-info {
+    width: 100%;
+    margin: 0;
+  }
 
-    }
+  .our-learn .learn-content {
+    padding: 0;
+    margin: 16px;
+  }
 
-    .our-learn .learn-info {
-        width: 100%;
-        margin: 0;
-
-
-    }
-
-    .our-learn .learn-content {
-        padding: 0;
-        margin: 16px;
-
-    }
-
-    .video-list {
-        flex-direction: column;
-    }
-
+  .video-list {
+    flex-direction: column;
+  }
 }

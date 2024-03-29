@@ -1,81 +1,80 @@
-@import '../../root.css';
+@import "../../root.css";
 
 :root {
-    --background-white: #ffff;
-    --background-red: #ff0037;
-    --primary-blue: #0766ad;
-    --blue-dark: #0D4C7C;
-    --green-light: #c5e897;
-    --green-dark: #9BBC6E;
-    --black-light: #C0C0C0;
-    --black-dark: #4E5656;
-    --neutral-blue: #29adb2;
-    --text-black: #3e4141;
-    --text-white: #f3f3f3;
-    --text-grey: #a7a7a7;
-    --Desktop-Text-Heading1: 48px;
-    --Desktop-Text-Heading2: 40px;
-    --Desktop-Text-Heading3: 32px;
-    --Desktop-Text-Heading4: 24px;
-    --Common-Text-Subtitle: 20px;
-    --Common-Text-Label: 16px;
-    --Common-Text-Body1: 20px;
-    --Common-Text-Body2: 16px;
-    --Common-Text-Caption: 13px;
+  --background-white: #ffff;
+  --background-red: #ff0037;
+  --primary-blue: #0766ad;
+  --blue-dark: #0d4c7c;
+  --green-light: #c5e897;
+  --green-dark: #9bbc6e;
+  --black-light: #c0c0c0;
+  --black-dark: #4e5656;
+  --neutral-blue: #29adb2;
+  --text-black: #3e4141;
+  --text-white: #f3f3f3;
+  --text-grey: #a7a7a7;
+  --Desktop-Text-Heading1: 48px;
+  --Desktop-Text-Heading2: 40px;
+  --Desktop-Text-Heading3: 32px;
+  --Desktop-Text-Heading4: 24px;
+  --Common-Text-Subtitle: 20px;
+  --Common-Text-Label: 16px;
+  --Common-Text-Body1: 20px;
+  --Common-Text-Body2: 16px;
+  --Common-Text-Caption: 13px;
 }
 
 .our-service {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 32px auto;
 }
 
 .our-service .service-intro {
-    background: #e2e2e2;
-    padding: 16px;
-    text-align: center;
-    width: 80%;
-    border-radius: 8px;
-    color: var(--text-black);
+  background: #e2e2e2;
+  padding: 16px;
+  text-align: center;
+  width: 80%;
+  border-radius: 8px;
+  color: var(--text-black);
 }
 
 .our-service .service-intro:hover {
-    /* width: 100%; */
-    scale: 1.1
+  /* width: 100%; */
+  scale: 1.1;
 }
 
 .learn-info {
-    margin: 16px 64px;
-    text-align: center;
-
+  margin: 16px 64px;
+  text-align: center;
 }
 
 .service-img {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .our-service .service-intro .title:hover {
-    color: var(--primary-blue);
+  color: var(--primary-blue);
 }
 
 .our-service .showmore-btn {
-    background: var(--primary-blue);
-    color: var(--text-white);
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    margin-top: 8px;
-    font-weight: 500;
+  background: var(--primary-blue);
+  color: var(--text-white);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-weight: 500;
 }
 
 .our-service .showmore-btn:hover {
-    color: var(--text-white);
-    background: var(--neutral-blue);
+  color: var(--text-white);
+  background: var(--neutral-blue);
 }
 
 .our-service .service-content {
-    margin: 16px 64px;
+  margin: 16px 64px;
 }

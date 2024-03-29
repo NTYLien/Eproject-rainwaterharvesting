@@ -28,7 +28,7 @@ function CreateAccount(props) {
       {
         method: "GET",
         headers: { "content-type": "application/json" },
-      },
+      }
     )
       .then((res) => {
         if (res.ok) {
@@ -151,16 +151,16 @@ function CreateAccount(props) {
                   !newAccount.confirmPassword
                 ) {
                   toast.error(
-                    "Sorry! Please fill-in required information before submit the form",
+                    "Sorry! Please fill-in required information before submit the form"
                   );
                   return;
                 }
                 const foundEmail = userList.find(
-                  (user) => user.email === newAccount.email,
+                  (user) => user.email === newAccount.email
                 );
                 if (foundEmail) {
                   toast.error(
-                    "This email is already exist! Please change your email",
+                    "This email is already exist! Please change your email"
                   );
                   return;
                 }
@@ -168,7 +168,7 @@ function CreateAccount(props) {
                 const nameRegEx = /^\w{3,}$/;
                 if (!newAccount.userName.match(nameRegEx)) {
                   toast.error(
-                    "Username have to at least 3 alphabet characters ",
+                    "Username have to at least 3 alphabet characters "
                   );
                   return;
                 }
@@ -188,7 +188,7 @@ function CreateAccount(props) {
                 const passwordRegEx = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/;
                 if (!newAccount.password.match(passwordRegEx)) {
                   toast.error(
-                    "Password have to minimum 5 characters, at least one letter and one number.",
+                    "Password have to minimum 5 characters, at least one letter and one number."
                   );
                   return;
                 }
@@ -205,10 +205,10 @@ function CreateAccount(props) {
                     headers: { "content-type": "application/json" },
                     // Send your data in the request body as JSON
                     body: JSON.stringify(newAccount),
-                  },
+                  }
                 ).then(() => {
                   toast.success(
-                    "Congratulation, your account has been successfully created!",
+                    "Congratulation, your account has been successfully created!"
                   );
                   nav("/log-in");
                 });
