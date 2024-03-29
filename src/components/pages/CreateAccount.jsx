@@ -23,7 +23,7 @@ function CreateAccount(props) {
     const [userList, setUserList] = useState(null);
 
     useEffect(() => {
-        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/${id}`
+        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/`
             , {
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
@@ -38,15 +38,16 @@ function CreateAccount(props) {
     }, [id]);
 
     useEffect(() => {
-        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/${id}`, {
-            method: 'POST',
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify(newAccount)
-        }).then(res => {
-            if (res.ok) {
-                return res.json();
-            }
-        })
+        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/`,
+            {
+                method: 'POST',
+                headers: { 'content-type': 'application/json' },
+                body: JSON.stringify(newAccount)
+            }).then(res => {
+                if (res.ok) {
+                    return res.json();
+                }
+            })
     }, [])
 
     return (

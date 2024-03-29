@@ -19,7 +19,7 @@ function Login({ setLoggedUser }) {
 
 
     useEffect(() => {
-        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/${id}`
+        fetch(`https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting/`
             , {
                 method: 'GET',
                 headers: { 'content-type': 'application/json' },
@@ -33,7 +33,7 @@ function Login({ setLoggedUser }) {
 
 
             });
-    }, [id]);
+    }, []);
 
 
 
