@@ -89,13 +89,14 @@ function Login({ setLoggedUser }) {
 
                         <div className="forget_div" onClick={() => {
                             if (!loginAccount.userName) {
-                                toast.info("Please enter your email address so we can send you an email to reset your password.");
-                                return;
+                                window.prompt("Please enter your email address so we can send you an email to reset your password.");
+                                toast.info("Please check your email to reset your password")
+
                             }
-                            toast.success("We sent you an email to reset your password. Please check!")
+
 
                         }}>
-                            <a href="#">Forget password</a>
+                            <a>Forget password</a>
                         </div>
 
                     </div>

@@ -25,9 +25,11 @@
 }
 
 .breadcrumbs {
-    max-width: 1200;
+
     margin-left: 150px;
     display: flex;
+
+
 
 }
 

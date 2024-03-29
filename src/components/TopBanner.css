@@ -76,7 +76,7 @@ video {
     opacity: 40%;
     display: flex;
     position: absolute;
-    top: 198px;
+    top: 190px;
     object-fit: fill;
 }
 
@@ -151,7 +151,7 @@ video {
         opacity: 100%;
         display: flex;
         position: absolute;
-        top: 198px;
+        top: 190px;
         object-fit: fill;
     }
 

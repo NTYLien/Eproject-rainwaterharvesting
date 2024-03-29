@@ -129,7 +129,7 @@ function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem, i
 
 
                 </div>
-                <Breadcrumbs />
+
             </div>
 
 
