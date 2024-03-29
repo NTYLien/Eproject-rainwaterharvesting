@@ -1,3 +1,15 @@
+# Visit our website
+You can view our website at: https://ntylien.github.io/Eproject-rainwaterharvesting/
+
+# Video User Guide: 
+You can watch how to use our website at video: https://drive.google.com/file/d/1J_0_TLLdhmys8FM2lUMySR9HoLS3mRGi/view?usp=drive_link
+
+# Documentation
+https://docs.google.com/document/d/1gt6lfDtOecEYm8iliTyovladKm6wdNl-01N86EeUVek/edit?usp=drive_link
+
+# Source Code
+https://github.com/NTYLien/Eproject-rainwaterharvesting.git
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
