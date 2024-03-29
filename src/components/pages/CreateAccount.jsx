@@ -115,16 +115,7 @@ function CreateAccount(props) {
                             onClick={(e) => {
                                 e.preventDefault();
 
-                                fetch('https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting', {
-                                    method: 'POST',
-                                    headers: { 'content-type': 'application/json' },
-                                    // Send your data in the request body as JSON
-                                    body: JSON.stringify(newAccount)
-                                }).then(() => {
 
-
-                                    nav("/")
-                                })
 
 
                                 if (!newAccount.userName || !newAccount.email || !newAccount.phone || !newAccount.password || !newAccount.confirmPassword) {
@@ -171,8 +162,17 @@ function CreateAccount(props) {
                                     return;
                                 }
 
+                                fetch('https://65d55b7e3f1ab8c63436c5ea.mockapi.io/userrainharvesting', {
+                                    method: 'POST',
+                                    headers: { 'content-type': 'application/json' },
+                                    // Send your data in the request body as JSON
+                                    body: JSON.stringify(newAccount)
+                                }).then(() => {
+                                    toast.success('Congratulation, your account has been successfully created!')
+                                    nav('/log-in')
 
-                                toast.success('Congratulation, your account has been successfully created!')
+
+                                })
 
 
 

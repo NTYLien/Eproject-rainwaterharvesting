@@ -143,7 +143,7 @@ function ProductDetails(props) {
                                     onClick={() => {
                                         if (isUserLoggedIn) { nav(`/payment/${productCode}`) } else {
                                             if (window.confirm("You must log in before doing payment. Login now?")) {
-                                                nav("/log-in")
+                                                nav(`/log-in?ref=${window.location.hash}`)
                                             }
 
                                         }

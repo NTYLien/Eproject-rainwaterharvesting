@@ -66,7 +66,9 @@ function Navbar({ handleInputChange, query, totalCartItems, totalWishListItem, i
                             </button>
                         ) : (
                             <button className='log-in'
-                                onClick={() => { nav('/log-in') }}>
+                                onClick={() => {
+                                    nav(`/log-in?ref=${window.location.hash}`)
+                                }}>
                                 <span>Login</span>
                                 <i className="fa-solid fa-circle-user"></i>
                             </button>

@@ -76,14 +76,9 @@ function ShoppingCart({ ProductData: productData, removeFromCart, increaseCartQu
                         if (totalCost !== 0) {
                             if (isUserLoggedIn) { nav('/payment') } else {
                                 if (window.confirm("You must log in before doing payment. Login now?")) {
-                                    nav("/log-in")
+                                    nav(`/log-in?ref=${window.location.hash}`)
                                 }
-
                             }
-
-
-
-
                         }
 
                     }}>Check out
