@@ -1,0 +1,93 @@
+@import '../../root.css';
+
+:root {
+    --background-white: #ffff;
+    --background-red: #ff0037;
+    --primary-blue: #0766ad;
+    --blue-dark: #0D4C7C;
+    --green-light: #c5e897;
+    --green-dark: #9BBC6E;
+    --black-light: #C0C0C0;
+    --black-dark: #4E5656;
+    --neutral-blue: #29adb2;
+    --text-black: #3e4141;
+    --text-white: #f3f3f3;
+    --text-grey: #a7a7a7;
+    --Desktop-Text-Heading1: 48px;
+    --Desktop-Text-Heading2: 40px;
+    --Desktop-Text-Heading3: 32px;
+    --Desktop-Text-Heading4: 24px;
+    --Common-Text-Subtitle: 20px;
+    --Common-Text-Label: 16px;
+    --Common-Text-Body1: 20px;
+    --Common-Text-Body2: 16px;
+    --Common-Text-Caption: 13px;
+}
+
+.category-question {
+    background: var(--green-light);
+    border-radius: 8px;
+    padding: 6px;
+    width: fit-content;
+    font-style: italic;
+}
+
+.hotline {
+    color: var(--primary-blue);
+    cursor: pointer;
+
+}
+
+.hotline:hover {
+    color: var(--neutral-blue);
+}
+
+.result-product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    margin: 0 300px;
+
+}
+
+
+
+.result-product ul li {
+
+    font-size: 0.9rem;
+    color: var(--black-dark);
+    text-align: left;
+}
+
+.result-product ul {
+    font-size: 1.2rem;
+}
+
+.result-product img {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+}
+
+.buynow-btn {
+    background: var(--primary-blue);
+    color: var(--text-white);
+    padding: 8px 32px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.buynow-btn:hover {
+    background: var(--green-light);
+    color: var(--text-black);
+}
+
+.result-product {
+    border: 2px solid var(--green-light);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 64px;
+}

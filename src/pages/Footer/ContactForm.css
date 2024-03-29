@@ -1,0 +1,154 @@
+@import '../../root.css';
+
+:root {
+    --background-white: #ffff;
+    --background-red: #ff0037;
+    --primary-blue: #0766ad;
+    --blue-dark: #0D4C7C;
+    --green-light: #c5e897;
+    --green-dark: #9BBC6E;
+    --black-light: #C0C0C0;
+    --black-dark: #4E5656;
+    --neutral-blue: #29adb2;
+    --text-black: #3e4141;
+    --text-white: #f3f3f3;
+    --text-grey: #a7a7a7;
+    --Desktop-Text-Heading1: 48px;
+    --Desktop-Text-Heading2: 40px;
+    --Desktop-Text-Heading3: 32px;
+    --Desktop-Text-Heading4: 24px;
+    --Common-Text-Subtitle: 20px;
+    --Common-Text-Label: 16px;
+    --Common-Text-Body1: 20px;
+    --Common-Text-Body2: 16px;
+    --Common-Text-Caption: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: var(--background-white);
+
+}
+
+
+.contact-form {
+    margin-bottom: 32px;
+}
+
+.name-input {
+    display: flex;
+    gap: 32px;
+}
+
+.user-details form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+}
+
+
+
+.contact-form form .user-details .input-box {
+    margin: 8px 0 8px 0;
+    height: auto;
+    width: 100%;
+}
+
+.user-details .input-box .details {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+
+
+}
+
+.subscribes-news-dot span {
+    padding: 8px;
+}
+
+.user-details textarea {
+    height: 100px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: var(--primary-blue);
+}
+
+.user-details textarea:focus {
+    border-color: var(--primary-blue);
+}
+
+.submit-btn {
+    height: 100%;
+    width: 100px;
+    color: var(--text-white);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-blue);
+    margin-top: 16px;
+
+}
+
+.user-details form .button {
+    height: 45px;
+    margin: 24px 0;
+
+}
+
+
+.submit-btn:hover {
+    background: var(--neutral-blue)
+}
+
+.submit-btn {
+    padding: 8px;
+}
+
+@media (max-width: 1200px) {
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .user-details form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%
+    }
+
+
+    .user-details form .subscribes-news-dot {
+
+        width: 100%;
+    }
+
+
+
+
+}

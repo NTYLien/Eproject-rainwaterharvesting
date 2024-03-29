@@ -1,40 +1,40 @@
 
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
+import Navbar from './pages/Navbar/Navbar.jsx';
 import Headroom from 'react-headroom';
-import Footer from './components/Footer';
-import ContentSession from './components/ContentSession';
+import Footer from './pages/Footer/Footer';
+import ContentSession from './pages/Home/ContentSession';
 import { Route, Routes } from 'react-router-dom';
-import LearnandAsk from './components/pages/LearnandAsk';
-import Projects from './components/pages/Projects';
-import Products from './components/pages/Products';
-import News from './components/pages/News';
-import InteractiveTools from './components/pages/InteractiveTools';
-import Aboutus from './components/pages/Aboutus';
-import ContactUs from './components/pages/ContactUs';
-import productData from './ProductData.json';
+import LearnAsk from './pages/LearnAsk/LearnAsk.jsx';
+import Projects from './pages/Projects/Projects';
+import Products from './pages/Products/Products';
+import News from './pages/News/News';
+import InteractiveTools from './pages/InteractiveTools/InteractiveTools';
+import Aboutus from './pages/AboutUs/Aboutus';
+import ContactUs from './pages/ContactUs/ContactUs';
+import productData from './pages/Products/ProductData.json';
 import { useState } from 'react';
-import ProductShow from './components/ProductShow';
-import ProductDetails from './components/pages/ProductDetails';
-import Login from './components/pages/Login';
-import { ToastContainer, toast } from 'react-toastify';
+import ProductShow from './pages/Products/ProductShow';
+import ProductDetails from './pages/Products/ProductDetails';
+import Login from './pages/Login/Login';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Payment from './components/pages/Payment';
-import ShoppingCart from './components/pages/ShoppingCart';
-import WishList from './components/pages/WishList';
-import ProjectData from './ProjectData.json';
-import ServiceData from './ServiceData.json';
-import LearnAndAsk from './LearnAndAsk.json';
-import NewsData from "./News.json"
-import ProjectDetail from './components/pages/ProjectDetail';
-import OurServices from './components/pages/OurServices';
-import ToolProductSuggestion from './components/pages/ToolProductSuggestion';
-import ToolCostSugeestion from './components/pages/ToolCostSuggestion';
-import SystemCostGuide from './components/pages/SystemCostGuide';
-import CreateAccount from './components/pages/CreateAccount';
-import NotFound from './components/pages/NotFound';
-import ThankYou from './components/pages/ThankYou';
+import Payment from './pages/ShoppingCart/Payment';
+import ShoppingCart from './pages/ShoppingCart/ShoppingCart';
+import WishList from './pages/WishList/WishList';
+import ProjectData from './pages/Projects/ProjectData.json';
+import ServiceData from './pages/Services/ServiceData.json';
+import LearnAskData from './pages/LearnAsk/LearnAskData.json';
+import NewsData from "./pages/News/NewsData.json"
+import ProjectDetail from './pages/Projects/ProjectDetail';
+import OurServices from './pages/Services/OurServices';
+import ToolProductSuggestion from './pages/InteractiveTools/ToolProductSuggestion';
+import ToolCostSugeestion from './pages/InteractiveTools/ToolCostSuggestion';
+import SystemCostGuide from './pages/InteractiveTools/SystemCostGuide';
+import CreateAccount from './pages/Login/CreateAccount';
+import NotFound from './pages/Others/NotFound';
+import ThankYou from './pages/Others/ThankYou';
 
 
 const useLocalStorageState = (initialData, key) => {
@@ -54,9 +54,6 @@ function App() {
   const logOut = () => {
     setLoggedUser(null)
   }
-
-
-
 
 
   const [wishList, setWishList] = useLocalStorageState([], "wishlist");
@@ -278,7 +275,7 @@ function App() {
         <Route path='/log-in' element={<Login
           setLoggedUser={setLoggedUser} />}></Route >
         <Route path='/create-account' element={<CreateAccount />}></Route >
-        <Route path='/learn-and-ask' element={<LearnandAsk LearnAndAsk={LearnAndAsk} />}></Route >
+        <Route path='/learn-and-ask' element={<LearnAsk LearnAskData={LearnAskData} />}></Route >
         <Route path='/products' element={<Products productData={productData} handleChange={handleChange} result={result} handleClickQuickView={handleClickQuickView} />}>
         </Route >
         <Route path='/products/:productCode' element={<ProductDetails productData={productData} addToCart={addToCart} addToWishList={addToWishList}
