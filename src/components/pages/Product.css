@@ -88,6 +88,8 @@ body {
 
 @media screen and (max-width: 768px) {
 
+
+
     .product-show {
         width: 100%;
         flex-direction: column;
