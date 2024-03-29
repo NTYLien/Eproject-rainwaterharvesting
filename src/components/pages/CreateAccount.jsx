@@ -15,7 +15,7 @@ function CreateAccount(props) {
     const newAccount = {
         id: id,
         userName: userName.trim(),
-        email: email.trim(),
+        email: email.trim().toLowerCase(),
         phone: phone.trim(),
         password: password.trim(),
         confirmPassword: confirmPassword.trim(),
@@ -138,7 +138,7 @@ function CreateAccount(props) {
 
                                 }
 
-                                const emailRegEx = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+                                const emailRegEx = /^[a-zA-Z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
                                 if (!newAccount.email.match(emailRegEx)) {
                                     toast.error("Invalid email")

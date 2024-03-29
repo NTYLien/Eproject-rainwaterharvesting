@@ -39,7 +39,7 @@ function ToolCostSuggestion(props) {
 
 
 
-                        const emailRegEx = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+                        const emailRegEx = /^[a-zA-Z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
                         if (!userInfoFromTool.email.match(emailRegEx)) {
                             toast.error("Invalid email")
