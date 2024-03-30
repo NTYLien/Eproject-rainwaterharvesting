@@ -50,7 +50,7 @@ const useLocalStorageState = (initialData, key) => {
 };
 
 function App() {
-  const [loggedUser, setLoggedUser] = useState(null);
+  const [loggedUser, setLoggedUser] = useLocalStorageState(null, "user");
   const isUserLoggedIn = loggedUser != null;
   const logOut = () => {
     setLoggedUser(null);
@@ -285,7 +285,18 @@ function App() {
             />
           }
         ></Route>
-        <Route path="/payment" element={<Payment />}></Route>
+        <Route
+          path="/payment"
+          element={
+            <Payment setCart={setCart} buyNow={false} loggedUser={loggedUser} />
+          }
+        ></Route>
+        <Route
+          path="/payment/:productCode"
+          element={
+            <Payment setCart={setCart} buyNow={true} loggedUser={loggedUser} />
+          }
+        ></Route>
         <Route
           path="/wishlist"
           element={

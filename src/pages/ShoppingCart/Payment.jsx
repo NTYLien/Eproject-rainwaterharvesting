@@ -3,11 +3,11 @@ import "./Payment.css";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
-function Payment(props) {
+function Payment({ setCart, buyNow, loggedUser }) {
   const nav = useNavigate();
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
+  const [name, setName] = useState(loggedUser.userName);
+  const [phone, setPhone] = useState(loggedUser.phone);
+  const [email, setEmail] = useState(loggedUser.email);
   const [city, setCity] = useState("");
   const [district, setDistrict] = useState("");
   const [address, setAddress] = useState("");
@@ -48,7 +48,7 @@ function Payment(props) {
             !cvv.trim()
           ) {
             toast.error(
-              "Sorry! Please fill-in required information before submit the form",
+              "Sorry! Please fill-in required information before submit the form"
             );
             return;
           }
@@ -84,8 +84,13 @@ function Payment(props) {
           }
 
           toast.success(
-            "Thank you for your shopping. Our sales team will contact to you in 1 hours for confirmation!",
+            "Thank you for your shopping. Our sales team will contact to you in 1 hours for confirmation!"
           );
+
+          if (!buyNow) {
+            setCart([]);
+          }
+
           nav("/thankyou");
         }}
       >
@@ -106,6 +111,7 @@ function Payment(props) {
                   id="Fullname"
                   placeholder="Enter name"
                   required
+                  value={name}
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
@@ -122,6 +128,7 @@ function Payment(props) {
                   id="phone"
                   placeholder="Enter phone number"
                   required
+                  value={phone}
                   onChange={(e) => {
                     setPhone(e.target.value);
                   }}
@@ -137,6 +144,7 @@ function Payment(props) {
                   id="Email"
                   placeholder="Enter email"
                   required
+                  value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}

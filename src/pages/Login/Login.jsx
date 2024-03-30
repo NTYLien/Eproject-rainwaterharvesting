@@ -22,7 +22,7 @@ function Login({ setLoggedUser }) {
       {
         method: "GET",
         headers: { "content-type": "application/json" },
-      },
+      }
     )
       .then((res) => {
         if (res.ok) {
@@ -92,7 +92,7 @@ function Login({ setLoggedUser }) {
               onClick={() => {
                 if (!loginAccount.userName) {
                   window.prompt(
-                    "Please enter your email address so we can send you an email to reset your password.",
+                    "Please enter your email address so we can send you an email to reset your password."
                   );
                 }
               }}
@@ -114,13 +114,13 @@ function Login({ setLoggedUser }) {
                 }
 
                 const foundUser = userList.find(
-                  (user) => user.userName === loginAccount.userName,
+                  (user) => user.userName === loginAccount.userName
                 );
 
                 if (foundUser) {
                   if (foundUser.password === loginAccount.password) {
                     toast.success("Login Successfully!");
-                    setLoggedUser(loginAccount.userName);
+                    setLoggedUser(foundUser);
                     const prevUrl =
                       window.location.hash.split("ref=#")[1] || "/";
                     nav(prevUrl);
